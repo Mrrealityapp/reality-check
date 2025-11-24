@@ -26,7 +26,10 @@ h2 {
 }Add starter CSS styling
 
 
-/* Paragraphs */
+/* Paragraphs */h1 {
+  color: #005f99;
+}
+
 p {
   color: #333;
   line-height: 1.6;
