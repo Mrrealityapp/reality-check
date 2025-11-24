@@ -1,214 +1,24 @@
 /* General page styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-}<link rel="stylesheet" href="style.css">
 
-h1 {
-  color: red;
-}body {
-  background-color: lightblue;/* Global page styling *//* Global page styling */
-body {
+ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f7fb; /* soft gray-blue background */
-  color: #2c3e50; /* dark slate text */
-  margin: 0;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Main headings */
-h1 {
-  color: #1a3d6d; /* deep trust blue */
-  margin-bottom: 20px;
-}
-
-/* Subheadings */
-h2 {
-  color: #007acc; /* bright accent blue */
-  margin-top: 30px;
-}
-
-/* Paragraphs */
-p {
-  color: #333;
-  line-height: 1.8;
-  margin: 15px 0;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Navigation links styled as buttons */
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1a3d6d;
-  font-weight: bold;
-  padding: 10px 16px;
-  border: 2px solid #1a3d6d;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1a3d6d;
-  color: #fff;
-}
-
-/* Footer or small text */
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #666;
-}
-
-body {/* Global page styling */
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f7fb; /* soft gray-blue background */
-  color: #2c3e50; /* dark slate text */
-  margin: 0;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Main headings */
-h1 {
-  color: #1a3d6d; /* deep trust blue */
-  margin-bottom: 20px;
-}
-
-/* Subheadings */
-h2 {
-  color: #007acc; /* bright accent blue */
-  margin-top: 30px;
-}
-
-/* Paragraphs */
-p {
-  color: #333;
-  line-height: 1.8;
-  margin: 15px 0;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Navigation links styled as buttons */
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1a3d6d;
-  font-weight: bold;
-  padding: 10px 16px;
-  border: 2px solid #1a3d6d;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1a3d6d;
-  color: #fff;
-}
-
-/* Footer or small text */
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #666;
-}
-
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f7fb; /* soft gray-blue background */
-  color: #2c3e50; /* dark slate text */
-  margin: 0;
-  padding: 30px;
-  text-align: center;
-}
-
-/* Main headings */
-h1 {
-  color: #1a3d6d; /* deep trust blue */
-  margin-bottom: 20px;
-}
-
-/* Subheadings */
-h2 {
-  color: #007acc; /* bright accent blue */
-  margin-top: 30px;
-}
-
-/* Paragraphs */
-p {
-  color: #333;
-  line-height: 1.8;
-  margin: 15px 0;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Navigation links styled as buttons */
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1a3d6d;
-  font-weight: bold;
-  padding: 10px 16px;
-  border: 2px solid #1a3d6d;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1a3d6d;
-  color: #fff;
-}
-
-/* Footer or small text */
-footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #666;
-}
-
-}
-
-
-/* Headings */
-h1 {
+  background-color: #f4f7fb;
   color: #2c3e50;
-  margin-bottom: 10px;Fix incomplete CSS rules in style.css
-
-}
-
-h2 {/* Global page styling */
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f7fb; /* soft gray-blue background */
-  color: #2c3e50; /* dark slate text */
   margin: 0;
   padding: 30px;
   text-align: center;
 }
 
-/* Main headings */
 h1 {
-  color: #1a3d6d; /* deep trust blue */
+  color: #1a3d6d;
   margin-bottom: 20px;
 }
 
-/* Subheadings */
 h2 {
-  color: #007acc; /* bright accent blue */
+  color: #007acc;
   margin-top: 30px;
 }
 
-/* Paragraphs */
 p {
   color: #333;
   line-height: 1.8;
@@ -218,7 +28,6 @@ p {
   margin-right: auto;
 }
 
-/* Navigation links styled as buttons */
 nav a {
   margin: 0 10px;
   text-decoration: none;
@@ -235,36 +44,8 @@ nav a:hover {
   color: #fff;
 }
 
-/* Footer or small text */
 footer {
   margin-top: 40px;
   font-size: 0.9em;
   color: #666;
-}
-
-  color: #007acc;
-  margin-top: 20px;
-}Add starter CSS styling
-Fix incomplete CSS color rule
-
-
-/* Paragraphs */h1 {
-  color: #005f99;
-}
-
-p {
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Navigation links */
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff6600;
 }
