@@ -1,0 +1,37 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #007acc;
+  margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation links */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
