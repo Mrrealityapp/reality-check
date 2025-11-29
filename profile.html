@@ -8,7 +8,65 @@
   <meta charset="UTF-8">
   <title>Profile - Reality Check</title>
   <link rel="stylesheet" href="style.css">
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verified Profiles — Reality Check</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header class="site-header">
+    <h1>Reality Check</h1>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="profile.html" aria-current="page">Profile</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Verified Profiles</h2>
+    <p>These profiles have been verified by Reality Check. Each badge represents evidence-based trust.</p>
+
+    <!-- Example verified profile card -->
+    <section class="profile-card">
+      <h3>Jane Doe</h3>
+      <p>Community organizer verified for transparency and trust.</p>
+      <span class="rc-badge" aria-label="Verified by Reality Check">
+        <svg width="16" height="16" aria-hidden="true">
+          <path fill="#1FA97A" d="M6.5 11.5l-3-3 1.4-1.4 1.6 1.6 4-4 1.4 1.4-5.4 5.4z"/>
+        </svg>
+        Verified by Reality Check
+      </span>
+    </section>
+
+    <!-- Schema markup for search engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jane Doe",
+      "url": "https://yourusername.github.io/reality-check/profile/jane-doe",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "RealityCheckID",
+        "value": "RC-000123"
+      },
+      "sameAs": ["https://linkedin.com/in/janedoe"],
+      "award": "Verified by Reality Check"
+    }
+    </script>
+  </main>
+
+  <footer class="site-footer">
+    <p>Support Hands of Hope — <a href="https://paypal.me/YOURPAYPAL">Donate here</a></p>
+    <p>&copy; 2025 Reality Check. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
 <body>
   <header class="site-header">
     <div class="brand">
@@ -38,3 +96,4 @@
   </footer>
 </body>
 </html>
+
