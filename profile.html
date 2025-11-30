@@ -10,7 +10,61 @@
   <link rel="stylesheet" href="style.css">
 </head><!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify Your Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body { font-family:'Open Sans', sans-serif; margin:0; background:#F3F4F6; color:#1E3A8A; }
+    header { background:#1E3A8A; color:white; text-align:center; padding:2rem; }
+    header h1 { font-family:'Montserrat', sans-serif; margin:0; }
+    form { max-width:500px; margin:2rem auto; background:white; padding:2rem; border-radius:8px; }
+    label { display:block; margin-top:1rem; font-weight:bold; }
+    input, textarea { width:100%; padding:0.5rem; margin-top:0.5rem; border:1px solid #ccc; border-radius:5px; }
+    button { margin-top:1.5rem; background:#10B981; color:white; padding:1rem; border:none; border-radius:5px; cursor:pointer; }
+    .trust-badge { text-align:center; margin-top:2rem; }
+    .trust-badge img { width:100px; }
+    footer { background:#1E3A8A; color:white; text-align:center; padding:1rem; margin-top:2rem; }
+    footer a { color:#10B981; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Verify Your Profile</h1>
+    <p>Earn your Reality Check trust badge</p>
+  </header>
+
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="organization">Organization (optional)</label>
+    <input type="text" id="organization" name="organization">
+
+    <label for="id">Upload ID (optional)</label>
+    <input type="file" id="id" name="id">
+
+    <button type="submit">Submit for Verification</button>
+  </form>
+
+  <div class="trust-badge">
+    <h2>Your Trust Badge</h2>
+    <p>Once verified, you’ll receive a badge like this:</p>
+    <img src="https://via.placeholder.com/100x100.png?text=✓" alt="Trust Badge">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Reality Check | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+  </footer>
+</body>
+</html>
+
   <meta charset="UTF-8">
   <title>Verified Profiles — Reality Check</title>
   <link rel="stylesheet" href="style.css">
@@ -96,4 +150,5 @@
   </footer>
 </body>
 </html>
+
 
