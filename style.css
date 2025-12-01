@@ -9,7 +9,109 @@
   --accent-dark: #1e40af; /* darker blue hover */
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; }/* Reality Check Futuristic Theme */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0A0F24, #111827);
+  color: #E5E7EB;
+}
+
+header {
+  background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+header h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFFF;
+}
+
+button, .cta {
+  background: #06B6D4;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #06B6D4;
+}
+
+button:hover, .cta:hover {
+  background: #3B82F6;
+  box-shadow: 0 0 20px #3B82F6;
+}
+
+section {
+  padding: 3rem;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.step {
+  background: #1F2937;
+  color: #E5E7EB;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #1F2937;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #06B6D4;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background: #111827;
+  color: #E5E7EB;
+}
+
+footer {
+  background: #0A0F24;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #06B6D4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 html, body {
   margin: 0;
   padding: 0;
