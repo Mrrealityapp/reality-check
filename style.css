@@ -214,7 +214,59 @@ a { text-decoration:none; }
 .privacy-note { background:#E6F4EA; border-left:4px solid #1FA97A; padding:15px; margin:40px auto; max-width:600px; text-align:center; font-weight:500; }
 
 /* Footer */
-.site-footer { text-align:center; padding:30px; background:#0B2748; color:#fff; }
+.site-footer { text-align:center; padding:30px; background:#0B2748; color:#fff; }/* Futuristic Theme */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0A0F24, #111827);
+  color: #E5E7EB;
+}
+
+header {
+  background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFFF;
+}
+
+button, .cta {
+  background: #06B6D4;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #06B6D4;
+}
+
+button:hover, .cta:hover {
+  background: #3B82F6;
+  box-shadow: 0 0 20px #3B82F6;
+}
+
+.step {
+  background: #1F2937;
+  color: #E5E7EB;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
 .site-footer a { color:#FFD36E; font-weight:600; }
 
 }
