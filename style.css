@@ -3,12 +3,46 @@
 /* Base layout */
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
+  margin: 0;.trust-score {
+  margin: 2rem 0;
+}
+
+.trust-bar {
+  background: #E5E7EB;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+}
+
+.trust-bar-fill {
+  background: #06B6D4; /* teal */
+  height: 100%;
+  width: 75%; /* example: 75/100 score */
+}
+
   background: linear-gradient(135deg, #0A0F24, #111827);
   color: #E5E7EB;
   line-height: 1.6;
 }body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;.trust-score {
+  margin: 2rem 0;
+}
+
+.trust-bar {
+  background: #E5E7EB;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+}
+
+.trust-bar-fill {
+  background: #06B6D4; /* teal */
+  height: 100%;
+  width: 75%; /* example: 75/100 score */
+}
+
   margin: 0;
   background: #F3F4F6;
   color: #1E3A8A;.badge {
