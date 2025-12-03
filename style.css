@@ -6,6 +6,23 @@ body {
   margin: 0;.trust-score {
   margin: 2rem 0;
 }
+.trust-score {
+  margin: 2rem 0;
+}
+
+.trust-bar {
+  background: #E5E7EB;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+}
+
+.trust-bar-fill {
+  background: #06B6D4; /* teal */
+  height: 100%;
+  width: 75%; /* example: 75/100 score */
+}
 
 .trust-bar {
   background: #E5E7EB;
