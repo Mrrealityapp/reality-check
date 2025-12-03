@@ -11,7 +11,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   background: #F3F4F6;
-  color: #1E3A8A;
+  color: #1E3A8A;.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0.3rem;
+}
+
+.badge.verified {
+  background: #10B981; /* green */
+  color: white;
+}
+
+.badge.pending {
+  background: #F59E0B; /* yellow */
+  color: white;
+}
+
+.badge.flagged {
+  background: #EF4444; /* red */
+  color: white;
+}
+
 }
 
 header {
