@@ -7,7 +7,84 @@ body {
   background: linear-gradient(135deg, #0A0F24, #111827);
   color: #E5E7EB;
   line-height: 1.6;
+}body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #F3F4F6;
+  color: #1E3A8A;
 }
+
+header {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, #1E3A8A, #06B6D4);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary, .btn-secondary, .btn-donate {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #06B6D4;
+  color: white;
+}
+
+.btn-secondary {
+  background: #1E3A8A;
+  color: white;
+}
+
+.btn-donate {
+  background: #10B981;
+  color: white;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
 
 /* Header */
 header {
