@@ -383,6 +383,33 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* Sustainability Page Styles */
+.mission-section, 
+.vision-section, 
+.how-it-works {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    line-height: 1.7;
+}
+
+.mission-section h2,
+.vision-section h2,
+.how-it-works h2 {
+    margin-bottom: 15px;
+    color: #2a5d2a;
+}
+
+.how-it-works ul {
+    padding-left: 20px;
+}
+
+.how-it-works li {
+    margin-bottom: 10px;
+}
 
   margin-top: 2rem;
 }
