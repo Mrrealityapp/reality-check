@@ -1,7 +1,15 @@
 /* Reality Check Futuristic Theme */
 
 /* Base layout */
-body {
+body {.site-header {
+  text-align: center;   /* centers the logo */
+  padding: 20px;
+}
+.site-logo {
+  max-width: 200px;     /* adjust size */
+  height: auto;
+}
+
   font-family: 'Open Sans', sans-serif;
   margin: 0;.trust-score {
   margin: 2rem 0;
