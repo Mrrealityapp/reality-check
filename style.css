@@ -1,6 +1,15 @@
 /* Reality Check Futuristic Theme */
 
-/* Base layout */
+/* Base layout */.site-logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-top: 10px;
+}
+
 body {.site-header {.site-header {.site-header {
   text-align: center;
   padding: 20px;
