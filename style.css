@@ -1,4 +1,9 @@
-/* Reality Check Futuristic Theme */
+/* Reality Check Futuristic Theme */<header>
+  <a href="index.html">
+    <img src="images/realitycheck-logo.png" alt="Reality Check Logo" class="site-logo">
+  </a>
+</header>
+
 .site-logo {
   height: 60px;
   margin-right: 20px;
