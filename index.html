@@ -1,12 +1,19 @@
 
-<header>
+<header><script 
+  src="https://www.paypal.com/sdk/js?client-id=BAASZZKZyKYdYk0DidrMY5MgNV4WqduWbD-hjFU72vXCCYT-4J59HjrBu1fD3AGNVWBBhvJ1knCyg-xqjA&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
   <header class="site-header">
   <img src="assets/logo.png" alt="RealityCheck Logo" class="site-logo" />
 </header>
 <header>
   <img src="Realitycheck_logo.png" alt="Reality Check Logo" width="200">
   <h1>Reality Check</h1>
-</header>
+</header><div id="paypal-container-U5Y923FVNEFRC"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "U5Y923FVNEFRC",
+  }).render("#paypal-container-U5Y923FVNEFRC")
+</script>
 
 <div class="donate-button">
   <a href="https://www.paypal.com/donate/?business=YOURBUSINESSID&currency_code=USD" target="_blank">
@@ -105,6 +112,7 @@
 </footer>
 
 </html>
+
 
 
 
