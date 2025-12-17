@@ -113,7 +113,11 @@ body {.site-header {.site-header {.site-header {footer img.logo {
 .donate-button {
   background: #e63946;
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px 30px;.donate-section img.logo {
+  max-height: 50px;
+  margin-right: 0.5rem;
+}
+
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
