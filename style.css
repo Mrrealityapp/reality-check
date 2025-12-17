@@ -199,7 +199,11 @@ nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
+}.site-nav img.logo {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
+
 
 nav a:hover {
   text-decoration: underline;
