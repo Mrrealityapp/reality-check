@@ -4,7 +4,12 @@
   </a>
 </header>
 
-.site-logo {
+.site-logo {.site-header .logo {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
   height: 60px;
   margin-right: 20px;
 }
