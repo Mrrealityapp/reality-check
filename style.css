@@ -528,6 +528,10 @@ footer a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     line-height: 1.7;
 }
+img.logo:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
 
 .mission-section h2,
 .vision-section h2,
