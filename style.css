@@ -29,7 +29,11 @@
   margin-top: 10px;
 }
 
-body {.site-header {.site-header {.site-header {
+body {.site-header {.site-header {.site-header {footer img.logo {
+  max-height: 40px;
+  margin-top: 0.5rem;
+}
+
   text-align: center;
   padding: 20px;
 }
