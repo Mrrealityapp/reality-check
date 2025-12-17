@@ -6,7 +6,12 @@
 
 .site-logo {.site-header .logo {
   display: inline-block;
+  margin-right: 1rem;.site-header .logo {
+  display: inline-block;
   margin-right: 1rem;
+  vertical-align: middle;
+}
+
   vertical-align: middle;
 }
 
