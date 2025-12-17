@@ -79,7 +79,11 @@ body {.site-header {.site-header {.site-header {
   color: #fff;
   text-align: center;
   padding: 60px 20px;
+}.hero img.logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
 }
+
 
 .hero .cta-button {
   background: #ffcc00;
