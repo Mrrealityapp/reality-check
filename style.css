@@ -465,7 +465,11 @@ body {
   padding: 2rem;
   text-align: center;
 }
-.mission h2 {
+.mission h2 {link[rel="icon"] {
+  height: 16px;
+  width: 16px;
+}
+
   color: #0a3d62;
 }
 
