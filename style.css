@@ -185,7 +185,37 @@ body {.site-header {.site-header {.site-header {footer img.logo {
 .badge.verified {
   background: #10B981; /* green */
   color: white;
+}/* Center everything consistently */
+.hero, .mission, .donation, .footer-punchline {
+  text-align: center;
+  margin: 0 auto;
 }
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  text-align: center;
+}
+
+.donation {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-punchline {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
 
 .badge.pending {
   background: #F59E0B; /* yellow */
