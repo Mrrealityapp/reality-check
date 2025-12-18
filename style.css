@@ -683,3 +683,24 @@ footer a:hover {
 }
 
 
+/* Meet Charlie section */
+#meet-charlie {
+  text-align: center;       /* centers text inside */
+  margin: 40px auto;        /* centers the whole block */
+  max-width: 700px;         /* keeps it from stretching too wide */
+  background-color: #e6f0ff; /* light blue background */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;       /* ensures heading and paragraph are centered */
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto; /* centers the image */
+  max-width: 300px;
+  border-radius: 12px;
+}
