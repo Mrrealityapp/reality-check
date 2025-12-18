@@ -556,4 +556,25 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}/* === Charlie Banner Styles === */
+.banner-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
+
+.banner-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.banner-slide {
+  position: relative; /* ensures caption overlays correctly */
+}
+
