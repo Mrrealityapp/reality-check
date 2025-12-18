@@ -11,6 +11,9 @@
   margin-right: 1rem;
   vertical-align: middle;
 }
+git add style.css
+git commit -m "fix(style): center all sections and add bold highlight colors for mission, donation, and Meet Charlie"
+git push origin main
 
   vertical-align: middle;
 }
