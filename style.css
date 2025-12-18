@@ -227,7 +227,25 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   color: white;
 }
 
+}/* Meet Charlie section */
+#meet-charlie {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
 }
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
 
 header {
   background: #1E3A8A;
