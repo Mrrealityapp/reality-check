@@ -225,6 +225,42 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   <!-- <img src="images/charlie/charlie-banner.jpg" alt="Charlie the cat"> -->
 </section>
 
+/* General section styling for white boxes */
+section {
+  width: 80%;               /* shrink width */
+  max-width: 900px;         /* keep neat */
+  margin: 40px auto;        /* center block */
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff; /* white background */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* bold shadow for readability */
+}
+
+/* Mission section highlight */
+.mission {
+  background-color: #fef4d9; /* soft yellow for contrast */
+}
+
+/* Donation section highlight */
+.donation {
+  background-color: #ffe6e6; /* light red/pink for urgency */
+}
+
+/* Meet Charlie section */
+#meet-charlie {
+  background-color: #e6f0ff; /* light blue */
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* bold shadow */
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+}
 <footer>/* Meet /* Meet Charlie/* Meet Charlie section */
 #meet-charlie {
   display: flex;             /* use flexbox */
