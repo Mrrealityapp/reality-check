@@ -216,6 +216,34 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   font-weight: 600;
 }
 
+</section> <!-- end of donation section -->
+
+<!-- MEET CHARLIE -->
+<section id="meet-charlie">
+  <h2>Meet Charlie 🐾</h2>
+  <p>Charlie is the heart of Reality Check — reminding us that every life deserves dignity and compassion.</p>
+  <!-- <img src="images/charlie/charlie-banner.jpg" alt="Charlie the cat"> -->
+</section>
+
+<footer>/* Meet Charlie section */
+#meet-charlie {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
 
 .badge.pending {
   background: #F59E0B; /* yellow */
