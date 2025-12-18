@@ -225,7 +225,33 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   <!-- <img src="images/charlie/charlie-banner.jpg" alt="Charlie the cat"> -->
 </section>
 
-<footer>/* Meet /* Meet Charlie section */
+<footer>/* Meet /* Meet Charlie/* Meet Charlie section */
+#meet-charlie {
+  display: flex;             /* use flexbox */
+  flex-direction: column;    /* stack heading, paragraph, image vertically */
+  align-items: center;       /* center everything horizontally */
+  justify-content: center;   /* center vertically inside the block */
+  margin: 40px auto;         /* center the block itself */
+  max-width: 700px;          /* keep it from stretching too wide */
+  background-color: #e6f0ff; /* light blue background */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;        /* fallback for text */
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 300px;
+  border-radius: 12px;
+}
+ section */
 #meet-charlie {
   text-align: center;
   margin: 40px auto;
