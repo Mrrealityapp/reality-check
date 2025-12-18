@@ -764,5 +764,50 @@ footer a:hover {
   display: block;
   margin: 0 auto 20px auto; /* centers the image */
   max-width: 300px;
+  b/* General section styling */
+section {
+  width: 80%;                  /* shrink width */
+  max-width: 900px;             /* keep neat */
+  margin: 40px auto;            /* center block horizontally */
+  padding: 20px;
   border-radius: 12px;
+  text-align: center;           /* center text inside */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* bold shadow for readability */
+}
+
+/* Mission section highlight */
+.mission {
+  background-color: #fef4d9;    /* soft yellow for contrast */
+}
+
+/* Donation section highlight */
+.donation {
+  background-color: #ffe6e6;    /* light red/pink for urgency */
+}
+
+/* Meet Charlie section highlight */
+#meet-charlie {
+  background-color: #e6f0ff;    /* light blue */
+  width: 80%;
+  max-width: 700px;
+  margin: 40px auto;            /* center the block itself */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto;     /* center image */
+  max-width: 300px;
+  border-radius: 12px;
+}
+order-radius: 12px;
 }
