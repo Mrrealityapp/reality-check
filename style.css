@@ -814,3 +814,78 @@ section {
 }
 order-radius: 12px;
 }
+/* Universal section styling */
+section {
+  width: 85%;                  /* shrink width for readability */
+  max-width: 900px;             /* keep neat */
+  margin: 40px auto;            /* center block horizontally */
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;           /* center text inside */
+  box-shadow: 0 0 20px rgba(0,0,0,0.25); /* bold shadow for contrast */
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #004aad, #0073e6); /* bold blue gradient */
+  color: #ffffff;
+}
+
+/* Mission section */
+.mission {
+  background-color: #fff3cd;    /* strong yellow highlight */
+  color: #333333;
+}
+
+/* Donation section */
+.donation {
+  background-color: #f8d7da;    /* bold pink/red highlight */
+  color: #333333;
+}
+
+.donate-button {
+  background-color: #c82333;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* Meet Charlie section */
+#meet-charlie {
+  background-color: #cce5ff;    /* bold light blue */
+  width: 85%;
+  max-width: 700px;
+  margin: 40px auto;            /* center the block itself */
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+#meet-charlie h2,
+#meet-charlie p {
+  text-align: center;
+  margin: 12px 0;
+}
+
+#meet-charlie img {
+  display: block;
+  margin: 0 auto 20px auto;     /* center image */
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0;
+}
