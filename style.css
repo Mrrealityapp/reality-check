@@ -929,3 +929,11 @@ footer {
   font-weight: bold;
   margin-top: 15px;
 }
+.donation-options, .subscription-options {
+  margin: 20px 0;
+}
+
+.donation-options a,
+.subscription-options a {
+  margin: 8px;
+}
