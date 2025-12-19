@@ -14,6 +14,29 @@
 git add style.css
 git commit -m "fix(style): center all sections and add bold highlight colors for mission, donation, and Meet Charlie"
 git push origin main
+/* Line 20–45: Theme colors */
+:root {
+  --primary-color: #1E3A8A;   /* deep blue: trust */
+  --secondary-color: #059669; /* emerald green: compassion */
+  --accent-color: #F97316;    /* warm orange: action */
+  --text-color: #0B1220;      /* near-black for readability */
+  --bg-color: #F8FAFC;        /* soft slate background */
+}
+
+/* Line 46–55: Buttons and highlights */
+button,
+.btn,
+.donate-button,
+.paypal-button,
+.highlight {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.25);
+}
 
   vertical-align: middle;
 }
