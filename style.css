@@ -222,6 +222,27 @@ body {.site-header {.site-header {.site-header {footer img.logo {
 </section> <!-- end of donation section -->
 
 <!-- MEET CHARLIE -->
+/* Line 224–234: Meet Charlie layout fix */
+#meet-charlie {
+  display: block;
+  margin: 0 auto 2rem auto;   /* centers and adds bottom spacing */
+  padding: 1.5rem;
+  max-width: 900px;
+  text-align: center;
+  clear: both;                /* prevents overlap with floats */
+  position: relative;
+  z-index: 1;
+}
+
+/* Line 235–242: Donate button separation */
+#donate-button,
+.donate-button,
+.paypal-button {
+  display: inline-block;
+  margin-top: 2rem;           /* pushes button down */
+  position: relative;
+  z-index: 2;                 /* ensures button stays visible */
+}
 <section id="meet-charlie">
   <h2>Meet Charlie 🐾</h2>
   <p>Charlie is the heart of Reality Check — reminding us that every life deserves dignity and compassion.</p>
