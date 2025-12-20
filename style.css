@@ -1426,3 +1426,32 @@ footer {
 .subscription-options a {
   margin: 8px;
 }
+/* Final polish – unify spacing, shadows, and typography */
+section {
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Headings consistency */
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Paragraph consistency */
+section p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto 1rem auto;
+  color: var(--text-color);
+  text-align: center;
+}
