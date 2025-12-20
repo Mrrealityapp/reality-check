@@ -221,46 +221,48 @@ section, .section {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-/* Line 224–244: Meet Charlie advanced layout */
+/* Line 224–260: Meet Charlie advanced modern layout */
 #meet-charlie {
-  display: flex;                  /* modern flexbox layout */
+  display: flex;
   flex-direction: column;
-  align-items: center;            /* centers horizontally */
-  justify-content: center;        /* centers vertically */
-  margin: 3rem auto;              /* spacing above/below */
-  padding: 2rem;
+  align-items: center;               /* centers everything */
+  justify-content: center;
+  margin: 3rem auto;                 /* clean spacing above/below */
+  padding: 2.5rem;
   max-width: 1000px;
-  background: var(--card-bg);     /* clean card background */
+  background: var(--card-bg);        /* clean white card */
   border: 1px solid var(--border-color);
-  border-radius: 16px;            /* rounded corners for modern look */
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12); /* subtle depth */
+  border-radius: 20px;               /* modern rounded corners */
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12); /* soft depth */
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
-/* Line 245–252: Meet Charlie image styling */
+/* Charlie image */
 #meet-charlie img {
-  max-width: 280px;
-  border-radius: 50%;             /* circular portrait */
+  max-width: 260px;
+  border-radius: 50%;                /* circular portrait */
   margin-bottom: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
-/* Line 253–260: Meet Charlie text */
+/* Charlie title */
 #meet-charlie h2 {
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
   margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
+/* Charlie description */
 #meet-charlie p {
   color: var(--text-color);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 700px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin-bottom: 1rem;
 }
 
 .columns {
