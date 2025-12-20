@@ -21,7 +21,12 @@ git push origin main
   --accent-color: #F97316;    /* warm orange: action */
   --text-color: #0B1220;      /* near-black for readability */
   --bg-color: #F8FAFC;        /* soft slate background */
+
+  /* ✅ Missing variables that make your cards visible */
+  --card-bg: #FFFFFF;         /* clean white card background */
+  --border-color: #E2E8F0;    /* soft slate border */
 }
+
 /* Global spacing cleanup */
 section {
   margin: 2.5rem auto;
