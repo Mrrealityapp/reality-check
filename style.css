@@ -197,29 +197,31 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   height: 100%;
   width: 75%; /* example: 75/100 score */
 }
-
-  margin: 0;
-  background: #F3F4F6;
-  color: #1E3A8A;.badge {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-weight: bold;
-  margin: 0.3rem;
+/* Line 200–223: Homepage section order + modern layout */
+main, .main, .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;                 /* clean spacing between sections */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.badge.verified {
-  background: #10B981; /* green */
-  color: white;
-}/* Center everything consistently */
-.hero, .mission, .donation, .footer-punchline {
-  text-align: center;
-  margin: 0 auto;
-}
+/* Force correct homepage order */
+#mission { order: 1; }
+#donate { order: 2; }
+#meet-charlie { order: 3; }
+#transparency { order: 4; }
+footer { order: 5; }
 
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+/* Modern card styling for all sections */
+section, .section {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 /* Line 224–244: Meet Charlie advanced layout */
 #meet-charlie {
