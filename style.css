@@ -176,26 +176,60 @@ body {.site-header {.site-header {.site-header {footer img.logo {
   width: 75%; /* example: 75/100 score */
 }
 
-  background: linear-gradient(135deg, #0A0F24, #111827);
-  color: #E5E7EB;
-  line-height: 1.6;
-}body {
-  font-family: 'Open Sans', sans-serif;.trust-score {
-  margin: 2rem 0;
+/* Line 180–199: Donate section modern layout */
+#donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;                 /* centers everything */
+  justify-content: center;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+  text-align: center;
 }
 
-.trust-bar {
-  background: #E5E7EB;
-  border-radius: 8px;
-  overflow: hidden;
-  height: 20px;
-  width: 100%;
+/* Donate title */
+#donate h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
 
-.trust-bar-fill {
-  background: #06B6D4; /* teal */
-  height: 100%;
-  width: 75%; /* example: 75/100 score */
+/* Donate description */
+#donate p {
+  color: var(--text-color);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+/* PayPal / Donate button */
+#donate-button,
+.donate-button,
+.paypal-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover effect for modern feel */
+#donate-button:hover,
+.donate-button:hover,
+.paypal-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(249, 115, 22, 0.35);
 }
 /* Line 200–223: Homepage section order + modern layout */
 main, .main, .container {
