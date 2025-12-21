@@ -5,7 +5,7 @@
   border-radius: 20px;
   box-shadow: 0 0 25px #00C6FF40;
   margin-top: 40px;
-  text-align: center; /* ensures all content centers */
+  text-align: center;
 }
 
 #charlie img {
@@ -15,5 +15,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   box-shadow: 0 0 20px #00C6FF;
 }
