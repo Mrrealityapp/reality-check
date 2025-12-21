@@ -1,123 +1,86 @@
-/* GLOBAL RESET *//* rebuild-css-1 */
-
+/* GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* PAGE BACKGROUND */
+/* BODY */
 body {
-  background: linear-gradient(to bottom, #f7efe7, #f3e6d8);
-  color: #3a2f2a;
+  background: #F7F7F7;
+  color: #1A1A1A;
   line-height: 1.6;
-  padding-bottom: 50px;
-}
-
-/* HEADER */
-header {
-  text-align: center;
-  padding: 25px 0;
-  background: #e8d5c4;
-  border-bottom: 3px solid #d4b59e;
-}
-
-header img.logo {
-  width: 180px;
-}
-
-/* SECTION WRAPPER */
-section {
-  width: 90%;
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 25px;
-  background: #ffffffcc;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  backdrop-filter: blur(4px);
-}
-
-/* SECTION HEADINGS */
-section h2 {
-  font-size: 28px;
-  margin-bottom: 12px;
-  color: #5a3f34;
-  text-align: center;
-}
-
-/* MISSION TEXT */
-#mission p {
-  font-size: 18px;
-  text-align: center;
-  color: #4a3a33;
 }
 
 /* HERO SECTION */
 #hero {
+  background: linear-gradient(135deg, #1A1A1A, #4A90E2);
+  color: white;
+  padding: 120px 20px;
   text-align: center;
-  background: #f0d9c7;
-  border-left: 6px solid #d4a98c;
 }
 
 #hero .tagline {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #5a3f34;
 }
 
-/* CTA BUTTON */
-.cta-button,
-.donate-button {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #c97f5f;
+.cta-button {
+  background: #FF3B3B;
   color: white;
-  text-decoration: none;
-  font-size: 18px;
+  padding: 15px 30px;
   border-radius: 8px;
-  margin-top: 10px;
-  transition: 0.3s ease;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-.cta-button:hover,
-.donate-button:hover {
-  background: #a9654a;
+.cta-button:hover {
+  background: #D92F2F;
 }
 
-/* DONATION SECTION */
-#donate {
-  background: #f7e3d4;
-  border-left: 6px solid #d4a98c;
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-#donate p {
-  text-align: center;
-  font-size: 18px;
+section h2 {
+  font-size: 2rem;
   margin-bottom: 15px;
+  color: #1A1A1A;
 }
 
-/* MEET CHARLIE */
-#meet-charlie {
-  background: #f5e9e1;
-  border-left: 6px solid #cfa58a;
+/* DONATE BUTTON */
+.donate-button {
+  background: #FF3B3B;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-#meet-charlie p {
-  text-align: center;
-  font-size: 18px;
-  color: #4a3a33;
+.donate-button:hover {
+  background: #D92F2F;
 }
 
 /* FOOTER */
 footer {
+  background: #1A1A1A;
+  color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background: #e8d5c4;
-  border-top: 3px solid #d4b59e;
-  color: #5a3f34;
 }
 
