@@ -59,6 +59,30 @@ body {
   align-items: center;
   gap: 10px;
 }
+.donation-box-purple {
+  background: #5e4a7b;
+  color: white;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 650px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+}
+
+.donation-box-purple h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.donation-box-purple p {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
 
 .site-logo-mark {
   width: 34px;
