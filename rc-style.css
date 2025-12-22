@@ -33,9 +33,9 @@ body {
 }
 
 .orb-2 {
-  background: #ff00ff;
-  bottom: 10%;
-  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Layout */
