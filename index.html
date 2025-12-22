@@ -1,80 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reality Check</title>
-<link rel="stylesheet" href="rc-style.css?v=2">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reality Check</title>
 
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  /* Floating Orbs */
+  .floating-orb {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .orb-1 {
+    background: #00C6FF;
+    top: 10%;
+    left: 10%;
+  }
+  .orb-2 {
+    background: #ff00ff;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 40px #00C6FF;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Mission Section */
+  .mission {
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.6em;
+  }
+
+  /* Donate Button */
+  .donate-button {
+    display: inline-block;
+    background: #ff4444;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    box-shadow: 0 0 20px #ff444480;
+  }
+</style>
 </head>
 
 <body>
+
 <div class="floating-orb orb-1"></div>
 <div class="floating-orb orb-2"></div>
+
+<!-- HERO SECTION WITH CHARLIE -->
 <section class="hero">
   <div class="hero-image">
     <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" alt="Charlie the cat">
   </div>
   <h1 class="hero-title">Reality Check</h1>
-  <p class="hero-subtitle">Restoring trust, protecting people, and giving hope to those who need it most.</p>
+  <p class="hero-subtitle">
+    Restoring trust, protecting people, and giving hope to those who need it most.
+  </p>
 </section>
 
-  <!-- GLOWING BORDER AROUND PAGE -->
-  <div id="page-border"></div>
-
-  <!-- HEADER WITH LOGO + NAME -->
-  <header>
-    <h1 class="logo">REALITY CHECK</h1>
-  </header>
-
- <section class="hero">
-  <div class="hero-image">
-    <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" alt="Charlie the cat">
-  </div>
-  <h1 class="hero-title">Reality Check</h1>
-  <p class="hero-subtitle">Restoring trust, protecting people, and giving hope to those who need it most.</p>
+<!-- MISSION SECTION -->
+<section class="mission">
+  Reality Check empowers vulnerable communities and supports animal welfare with radical transparency.
+  We verify people, organizations, and stories so donors can give with confidence.
+  Charlie is my daily companion and emotional anchor. This mission is for both of us.
 </section>
 
-  <!-- MISSION SECTION -->
-  <section id="mission">
-    <h2>Our Mission</h2>
-    <p>Reality Check empowers vulnerable communities and supports animal welfare with radical transparency. We verify people, organizations, and stories so donors can give with confidence.</p>
-  </section>
-
- <section id="charlie">
-  <div style="text-align:center;">
-    <img src="https://via.placeholder.com/180" alt="Charlie the cat" style="display:block;margin:0 auto 20px auto;border-radius:50%;box-shadow:0 0 20px #00C6FF;">
-  </div>
-  <p>Charlie is the emotional anchor of Reality Check — a daily companion who inspires compassion in everything we do.</p>
-</section>
-<section id="charlie">
-  <div style="text-align:center;">
-    style="max-width:300px;border-radius:12px;box-shadow:0 0 20px #00C6FF80;margin-bottom:20px;">
-    <p style="font-size:1.1em;color:#ccc;">Charlie is my daily companion and emotional anchor. This mission is for both of us.</p>
-  </div>
-</section>
-
- <section id="donate">
-  <h2>Support the Mission</h2>
-  <p>Your donation helps us verify people in need, protect animals, and build trust in a world full of uncertainty.</p>
-
-  <a href="YOUR_PAYPAL_DONATE_LINK_HERE" class="donate-button">
-    Donate securely with PayPal
-  </a>
-</section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Reality Check — Radical Transparency for a Better World</p>
-  </footer>
+<!-- DONATE BUTTON -->
+<a href="YOUR_PAYPAL_LINK_HERE" class="donate-button">Donate securely with PayPal</a>
 
 </body>
 </html>
-
-
-
-
-
-
-
