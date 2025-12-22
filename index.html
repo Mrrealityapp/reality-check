@@ -1,123 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reality Check</title>
-
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-
-  /* Floating Orbs */
-  .floating-orb {
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.4;
-    z-index: -1;
-  }
-  .orb-1 {
-    background: #00C6FF;
-    top: 10%;
-    left: 10%;
-  }
-  .orb-2 {
-    background: #ff00ff;
-    bottom: 10%;
-    right: 10%;
-  }
-
-  /* HERO SECTION */
-  .hero {
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-
-  .hero-image {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 0 40px #00C6FF;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hero-title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2em;
-    color: #ccc;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  /* Mission Section */
-  .mission {
-    max-width: 700px;
-    margin: 40px auto;
-    font-size: 1.2em;
-    color: #ddd;
-    line-height: 1.6em;
-  }
-
-  /* Donate Button */
-  .donate-button {
-    display: inline-block;
-    background: #ff4444;
-    padding: 15px 25px;
-    border-radius: 8px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: 20px;
-    box-shadow: 0 0 20px #ff444480;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality Check – Verify, Protect, Give</title>
+  <link rel="stylesheet" href="rc-style.css">
 </head>
-
 <body>
+  <div class="floating-orb orb-1"></div>
+  <div class="floating-orb orb-2"></div>
 
-<div class="floating-orb orb-1"></div>
-<div class="floating-orb orb-2"></div>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="site-logo">
+        <div class="site-logo-mark">RC</div>
+        <div>
+          <div class="site-title">Reality Check</div>
+          <div class="site-tagline">Verify truth. Protect people. Support hope.</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support & Donate</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
 
-<!-- HERO SECTION WITH CHARLIE -->
-<section class="hero">
-  <div class="hero-image">
-    <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" alt="Charlie the cat">
+    <main>
+      <!-- HERO WITH CHARLIE -->
+      <section class="hero">
+        <div class="hero-image">
+          <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" alt="Charlie the cat">
+        </div>
+        <h1 class="hero-title">Reality Check</h1>
+        <p class="hero-subtitle">
+          Restoring trust in a noisy world. Helping vulnerable people and animals get the support they need —
+          with proof, transparency, and heart.
+        </p>
+      </section>
+
+      <!-- MISSION -->
+      <section class="section">
+        <div class="section-title">Why Reality Check exists</div>
+        <div class="section-tagline">Real people. Real need. Real proof.</div>
+        <div class="card">
+          <span class="info-pill">Radical transparency for people and animals in need</span>
+          <p>
+            Reality Check was born from lived experience: trying to survive on a fixed income, caring for animals,
+            and seeing how hard it is to know who to trust online. Fake profiles and staged stories make it scary
+            to give — even when your heart wants to help.
+          </p>
+          <p>
+            This project uses verification, receipts, and clear updates so donors can see where help is going.
+            When you support Reality Check, you’re not just helping one person. You’re helping build a safer
+            way to give, especially for those who usually get ignored.
+          </p>
+        </div>
+      </section>
+
+      <!-- DONATE SECTION -->
+      <section class="section">
+        <div class="section-title">Support the mission</div>
+        <div class="section-tagline">Every bit of support keeps people and animals safer.</div>
+        <div class="card">
+          <p>
+            Your support helps cover essentials (housing, food, care for Charlie), outreach to others in crisis,
+            and the tools needed to verify stories and share honest updates. No tricks. No vague “admin fees.”
+          </p>
+          <div class="button-row">
+            <a href="YOUR_PAYPAL_DONATE_LINK_HERE" class="button-primary">
+              Donate securely with PayPal
+            </a>
+            <a href="support.html" class="button-secondary">
+              See more ways to help
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      Reality Check · Radical transparency for people and animals in need ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="terms.html">Terms</a>
+    </footer>
   </div>
-  <h1 class="hero-title">Reality Check</h1>
-  <p class="hero-subtitle">
-    Restoring trust, protecting people, and giving hope to those who need it most.
-  </p>
-</section>
-
-<!-- MISSION SECTION -->
-<section class="mission">
-  Reality Check empowers vulnerable communities and supports animal welfare with radical transparency.
-  We verify people, organizations, and stories so donors can give with confidence.
-  Charlie is my daily companion and emotional anchor. This mission is for both of us.
-</section>
-
-<!-- DONATE BUTTON -->
-<a href="YOUR_PAYPAL_LINK_HERE" class="donate-button">Donate securely with PayPal</a>
-
 </body>
 </html>
