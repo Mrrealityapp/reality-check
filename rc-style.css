@@ -1,4 +1,56 @@
-/* Global reset & base */
+/* Global r/* ===== HEADER LAYOUT ===== */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    background: #0a0a0f; /* deep dark background */
+}
+
+/* Logo */
+.site-logo {
+    height: 64px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation */
+.nav-links a {
+    color: #c28bff; /* signature purple */
+    margin-left: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-image img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 24px;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 8px;
+    color: #c28bff;
+}
+eset & base */
 * {
   box-sizing: border-box;
 }
