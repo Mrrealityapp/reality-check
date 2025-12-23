@@ -25,7 +25,18 @@
 
 .nav-links a:hover {
     color: #ffffff;
+}.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.site-logo {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
 .site-logo {
     height: 80px;   /* adjust this number to make the logo bigger */
     width: auto;
@@ -101,6 +112,17 @@ body {
   padding: 20px 16px 60px 16px;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  height: 100px;   /* adjust size as needed */
+  width: auto;
+  display: block;
+}
 /* Header / Nav */
 .site-header {
   display: flex;
