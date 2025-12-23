@@ -26,6 +26,10 @@
 .nav-links a:hover {
     color: #ffffff;
 }
+.site-logo {
+    height: 80px;   /* adjust this number to make the logo bigger */
+    width: auto;
+}
 
 /* ===== HERO SECTION ===== */
 .hero-image img {
@@ -370,5 +374,16 @@ li {
   font-size: 0.95rem;
   line-height: 1.4;
   opacity: 0.95;
+}
+.hero {
+    padding-top: 120px;   /* pushes hero down below header */
+    position: relative;
+}
+
+.value-box-top-right {
+    position: absolute;
+    top: 20px;     /* adjust this number to move the box lower */
+    right: 20px;
+    z-index: 2;
 }
 
