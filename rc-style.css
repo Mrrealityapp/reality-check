@@ -369,12 +369,11 @@ li {
 
   .hero {
     margin-top: 24px;
-  }
-.value-box-top-right {
+  }.value-box-top-right {
   position: absolute;
   top: 80px;        /* clears Charlie’s circle */
   right: 24px;
-  background-color: #5B2E91; /* deeper purple */
+  background-color: #5B2E91; /* deep purple */
   color: #ffffff;
   border-radius: 12px;
   padding: 16px 20px;
