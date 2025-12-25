@@ -1,423 +1,106 @@
-/* Global r/* ===== HEADER LAYOUT ===== */
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 32px;
-    background: #0a0a0f; /* deep dark background */
-}
+/* Reality Check Updated Styles */
 
-/* Logo */
-.site-logo {
-    height: 64px;
-    width: auto;
-    display: block;
-}
-
-/* Navigation */<header class="site-header">
-    <div class="header-inner">
-        <a href="index.html" class="logo-link">
-            <img src="Realitychecklogo.png?v=4" alt="Reality Check Logo" class="site-logo">
-        </a>
-
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="donate.html">Support &amp; Donate</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-.nav-links a {
-    color: #c28bff; /* signature purple */
-    margin-left: 24px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-}
-
-.nav-links a:hover {
-    color: #ffffff;
-}.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-logo {
-  height: 100px;
-  width: auto;
-  display: block;
-}
-
-.site-logo {
-    height: 80px;   /* adjust this number to make the logo bigger */
-    width: auto;
-}
-
-/* ===== HERO SECTION ===== */
-.hero-image img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 24px;
-}
-
-.hero-title {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-top: 24px;
-    color: #ffffff;
-}
-
-.hero-subtitle {
-    text-align: center;
-    font-size: 1.25rem;
-    margin-top: 8px;
-    color: #c28bff;
-}
-eset & base */
+/* Reset */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
+/* Body */
 body {
-  background: #02030b;
-  color: #f5f5f5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9fb;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Background orbs */
-.floating-orb {
-  position: fixed;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.45;
-  z-index: -1;
-}
-
-.orb-1 {
-  background: #00C6FF;
-  top: 8%;
-  left: 8%;
-}
-
-.orb-2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Layout */
-.page-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px 16px 60px 16px;
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #6a0dad, #b19cd9);
+  padding: 10px 20px;
 }
 
 .header-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site-logo {
-  height: 100px;   /* adjust size as needed */
+  height: 60px;
   width: auto;
-  display: block;
 }
-/* Header / Nav */
-.site-header {
+
+/* Navigation */
+.nav-links ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px 0 8px 0;
-}
-
-.site-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.donation-box-purple {
-  background: #5e4a7b;
-  color: white;
-  padding: 35px;
-  border-radius: 12px;
-  text-align: center;
-  margin: 40px auto;
-  max-width: 650px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.25);
-}
-
-.donation-box-purple h2 {
-  margin-top: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.donation-box-purple p {
-  font-size: 1.15rem;
-  margin-bottom: 25px;
-  line-height: 1.5;
-  opacity: 0.95;
-}
-
-.site-logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 2px solid #00C6FF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: #00C6FF;
-}
-
-.site-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.site-tagline {
-  font-size: 0.85rem;
-  color: #9ea5c4;
-}
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-end;
+  gap: 20px;
 }
 
 .nav-links a {
-  font-size: 0.9rem;
-  color: #d8defb;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: 0.2s ease;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  border-color: #00C6FF;
-  background: rgba(0, 198, 255, 0.06);
+  color: #ffd700;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.hero-image {
-  width: 230px;
-  height: 230px;
+/* Floating Orbs */
+.floating-orb {
+  position: absolute;
   border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 20px auto;
-  box-shadow: 0 0 45px #00C6FF;
+  opacity: 0.3;
+  animation: float 6s ease-in-out infinite;
 }
 
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.orb-1 {
+  width: 120px;
+  height: 120px;
+  background: #6a0dad;
+  top: 100px;
+  left: 50px;
 }
 
-.hero-title {
-  font-size: 2.3rem;
-  margin-bottom: 8px;
+.orb-2 {
+  width: 80px;
+  height: 80px;
+  background: #b19cd9;
+  bottom: 100px;
+  right: 50px;
 }
 
-.hero-subtitle {
-  font-size: 1.05rem;
-  color: #c4c9e6;
-  max-width: 620px;
-  margin: 0 auto;
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
-/* Sections */
-.section {
-  margin: 40px 0;
-  text-align: left;
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 80px 20px;
 }
 
-.section-title {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
+.intro h1 {
+  font-size: 2.5rem;
+  color: #6a0dad;
+  margin-bottom: 20px;
 }
 
-.section-tagline {
-  font-size: 0.95rem;
-  color: #a8b0d8;
-  margin-bottom: 14px;
-}
-
-.card {
-  background: rgba(8, 10, 30, 0.9);
-  border-radius: 14px;
-  padding: 18px 18px 20px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
-}
-
-/* Lists */
-ul {
-  padding-left: 18px;
-  margin-top: 6px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* Buttons */
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 14px;
-}
-
-.button-primary,
-.button-secondary {
-  display: inline-block;
-  padding: 12px 18px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 0.98rem;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: 0.2s ease;
-}
-
-.button-primary {
-  background: #ff4444;
-  color: #fff;
-  box-shadow: 0 0 18px rgba(255, 68, 68, 0.6);
-}
-
-.button-primary:hover {
-  background: #ff5f5f;
-}
-
-.button-secondary {
-  background: transparent;
-  color: #dbe2ff;
-  border-color: #5160ff;
-}
-
-.button-secondary:hover {
-  background: rgba(81, 96, 255, 0.12);
-}
-
-/* Info pill / badges */
-.info-pill {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(0, 198, 255, 0.12);
-  color: #c9efff;
-  font-size: 0.8rem;
-  margin-bottom: 14px;
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
 /* Footer */
 .site-footer {
-  margin-top: 40px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  font-size: 0.8rem;
-  color: #8f96b8;
   text-align: center;
+  background: #6a0dad;
+  color: #fff;
+  padding: 15px;
+  margin-top: 40px;
 }
-.site-footer a {
-  color: #9fb6ff;
-  text-decoration: none;
-}
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Page titles for inner pages */
-.page-title {
-  font-size: 1.6rem;
-  margin-bottom: 6px;
-}
-
-.page-intro {
-  font-size: 0.95rem;
-  color: #b4bbdd;
-  margin-bottom: 18px;
-}
-
-/* Responsive */
-@media (max-width: 640px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    justify-content: flex-start;
-  }
-
-  .hero {
-    margin-top: 24px;
-  }.value-box-top-right {
-  position: absolute;
-  top: 80px;        /* clears Charlie’s circle */
-  right: 24px;
-  background-color: #5B2E91; /* deep purple */
-  color: #ffffff;
-  border-radius: 12px;
-  padding: 16px 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-}
-
-.value-box-top-right h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.value-box-top-right p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  opacity: 0.95;
-}
-.hero {
-    padding-top: 120px;   /* pushes hero down below header */
-    position: relative;
-}
-
-.value-box-top-right {
-    position: absolute;
-    top: 20px;     /* adjust this number to move the box lower */
-    right: 20px;
-    z-index: 2;
-}
-
