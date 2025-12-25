@@ -4,135 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reality Check – Verify, Protect, Give</title>
-
-  <!-- Embedded critical styles to guarantee layout -->
-  <style>
-    /* Reset */
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f9f9fb;
-      color: #333;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    /* Page structure */
-    .page-wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Header */
-    .site-header {
-      background: linear-gradient(90deg, #6a0dad, #b19cd9);
-      padding: 10px 20px;
-      color: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .logo-link { display: inline-flex; align-items: center; }
-    .site-logo {
-      height: 56px; /* sane size */
-      width: auto;  /* prevent stretching */
-      display: block;
-    }
-
-    /* Navigation */
-    .nav-links ul {
-      list-style: none;
-      display: flex;
-      gap: 18px;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-      padding: 8px 10px;
-      border-radius: 6px;
-      transition: background 0.25s ease, color 0.25s ease;
-    }
-    .nav-links a:hover { background: rgba(255, 255, 255, 0.15); color: #ffd700; }
-
-    /* Decorative Orbs */
-    .floating-orb {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.25;
-      pointer-events: none;
-      animation: float 6s ease-in-out infinite;
-      z-index: 0;
-    }
-    .orb-1 { width: 120px; height: 120px; background: #6a0dad; top: 110px; left: 40px; }
-    .orb-2 { width: 90px;  height: 90px;  background: #b19cd9; bottom: 120px; right: 50px; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
-
-    /* Main content */
-    main {
-      flex: 1 0 auto;
-      z-index: 1;
-    }
-    .intro {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .intro h1 {
-      font-size: 2.4rem;
-      color: #6a0dad;
-      margin-bottom: 16px;
-    }
-    .intro p {
-      font-size: 1.15rem;
-      color: #555;
-      margin-bottom: 24px;
-    }
-
-    /* Footer */
-    .site-footer {
-      flex-shrink: 0;
-      text-align: center;
-      background: #6a0dad;
-      color: #fff;
-      padding: 16px 20px;
-      z-index: 1;
-    }
-
-    /* Small screens */
-    @media (max-width: 640px) {
-      .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
-      .nav-links ul { flex-wrap: wrap; gap: 12px; }
-      .site-logo { height: 48px; }
-      .intro { padding: 40px 16px; }
-      .intro h1 { font-size: 2rem; }
-    }
-  </style>
-
-  <!-- Optional external CSS (will be used if present) -->
   <link rel="stylesheet" href="rc-style.css" />
 </head>
 <body>
-  <!-- Page Wrapper -->
   <div class="page-wrapper">
     <!-- Header -->
     <header class="site-header">
@@ -146,20 +20,47 @@
             <li><a href="profile.html">Profile</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Decorative Orbs -->
-    <div class="floating-orb orb-1"></div>
-    <div class="floating-orb orb-2"></div>
+    <!-- Hero Section with Charlie -->
+    <section class="hero">
+      <div class="charlie-circle">
+        <img src="images/charlie/charlie.png" alt="Charlie the Cat" />
+      </div>
+      <div class="hero-text">
+        <h1>Welcome to Reality Check</h1>
+        <p>Charlie reminds us: trust, safety, and compassion are at the heart of everything we do.</p>
+        <a href="donate.html" class="donate-button">Support Our Mission</a>
+      </div>
+    </section>
 
-    <!-- Main Content -->
+    <!-- Mission Section -->
     <main>
       <section class="intro">
-        <h1>Welcome to Reality Check</h1>
-        <p>Verify what’s real, protect what matters, and give with confidence through radical transparency and empowerment.</p>
+        <h2>Our Mission</h2>
+        <p>Reality Check empowers donors and communities by verifying what’s real, protecting what matters, and giving with confidence.</p>
+      </section>
+
+      <!-- Transparency Section -->
+      <section class="transparency">
+        <h2>Radical Transparency</h2>
+        <p>We believe in showing exactly how your support is used. Every donation is tracked, every impact is visible.</p>
+      </section>
+
+      <!-- Compassion Section -->
+      <section class="compassion">
+        <h2>Compassion in Action</h2>
+        <p>From helping the homeless to protecting animals, your support fuels real change where it’s needed most.</p>
+      </section>
+
+      <!-- Empowerment Section -->
+      <section class="empowerment">
+        <h2>Empowerment Through Giving</h2>
+        <p>Donors aren’t just supporters — they’re partners in building a safer, kinder world.</p>
       </section>
     </main>
 
