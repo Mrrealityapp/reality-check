@@ -1,292 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Reality Check – Verify, Protect, Give</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: system-ui, sans-serif;
-      background: #050816;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-    header {
-      background: rgba(15,23,42,0.9);
-      border-bottom: 1px solid rgba(148,163,184,0.2);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 20;
-    }
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0.75rem 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      padding-bottom: 2px;
-    }
-    nav a:hover { border-color: #4ade80; }
-    .brand-title { color: #f97316; font-weight: 700; text-transform: uppercase; }
-    .brand-sub { font-size: 0.75rem; color: #9ca3af; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check – Verify, Protect, Give</title>
 
-    .hero {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      gap: 2rem;
-      align-items: center;
-    }
-    .hero-title {
-      font-size: clamp(2rem, 3vw + 1rem, 2.8rem);
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-    .hero-title span { color: #4ade80; }
-    .hero-subtitle { margin-bottom: 1rem; max-width: 32rem; }
-    .pill {
-      display: inline-block;
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148,163,184,0.6);
-      margin-right: 0.5rem;
-      font-size: 0.75rem;
-    }
-    .btn-primary {
-      background: linear-gradient(to right, #4ade80, #22c55e);
-      color: #022c22;
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 0.5rem;
-    }
-    .btn-secondary {
-      border: 1px solid rgba(148,163,184,0.8);
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      text-decoration: none;
-      color: #e5e7eb;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
 
-    .hero-right { text-align: center; }
-    .charlie-circle {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 20%, #a855f7, #4c1d95);
-      border: 3px solid #a855f7;
-      margin: 0 auto 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 0 30px rgba(168,85,247,0.6);
-    }
-    .charlie-photo {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-    }
-    .charlie-initials {
-      font-size: 2.7rem;
-      font-weight: 800;
-      color: #fff;
-      text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    }
-    .charlie-label {
-      position: absolute;
-      bottom: 0.5rem;
-      left: 0.5rem;
-      background: rgba(15,23,42,0.85);
-      padding: 0.2rem 0.5rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      border: 1px solid rgba(148,163,184,0.7);
-    }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .section {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .section-title {
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: #9ca3af;
-      margin-bottom: 1rem;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 1rem;
-    }
-    .card {
-      background: rgba(15,23,42,0.95);
-      border: 1px solid rgba(148,163,184,0.6);
-      padding: 1rem;
-      border-radius: 0.8rem;
-    }
-    .card-title { font-weight: 600; margin-bottom: 0.5rem; }
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #9ca3af;
-      border-top: 1px solid rgba(148,163,184,0.3);
-      background: #020617;
-      margin-top: 2rem;
-    }
+        nav {
+            background: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    @media (max-width: 800px) {
-      .hero { grid-template-columns: 1fr; }
-      .grid-3 { grid-template-columns: 1fr; }
-    }
-  </style>
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #00aaff;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom right, #0077cc, #00aaff);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: white;
+            margin: 40px auto;
+            padding: 40px 20px;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+
+        .section h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #0077cc;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .charlie-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .charlie-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0077cc;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 
 <body>
+
 <header>
-  <div class="nav-inner">
-    <div>
-      <div class="brand-title">Reality Check</div>
-      <div class="brand-sub">Verify what’s real. Protect who matters.</div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="support.html">Support & Donate</a></li>
-        <li><a href="charlie.html">Charlie</a></li>
-      </ul>
-    </nav>
-  </div>
+    <h1>Reality Check</h1>
 </header>
 
-<main>
-  <section class="hero">
- <div class="charlie-circle">
-  <img src="images/charlie/charlie.png" alt="Charlie the Cat">
-</div>
-   <div>
-  <img src="images/charlie/charlie.png" alt="Charlie the Cat">
-</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mission.html">Our Mission</a>
+    <a href="charlie.html">Charlie’s Corner</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-      <h1 class="hero-title">Verify what’s <span>real</span>. Protect who <span>matters</span>.</h1>
-      <p class="hero-subtitle">
-        Reality Check helps honest people, small organizations, and donors prove who they are
-        before anyone gets hurt, scammed, or turned away.
-      </p>
-
-      <span class="pill">No accounts</span>
-      <span class="pill">No apps</span>
-      <span class="pill">No credit card</span>
-
-      <div style="margin-top:1rem;">
-        <a class="btn-primary" href="support.html">Support Reality Check</a>
-        <a class="btn-secondary" href="about.html">How it works</a>
-      </div>
-    </div>
-<img src="charlie.jpeg" class="charlie-photo" alt="Charlie">
-
-    <div class="hero-right">
-      <div class="charlie-circle">
-       
-        <div class="charlie-initials">C</div>
-        <div class="charlie-label">Charlie – Emotional anchor</div>
-      </div>
-    </div>
-  </section>
-<section class="mission">
-  <h2>Our Mission</h2>
-  <p>
-    Reality Check exists to restore trust, dignity, and safety in a world where misinformation harms real people every day. 
-    We help individuals verify what’s real, protect who matters, and make informed decisions with confidence.
-  </p>
-</section></section>   <!-- end of mission section -->
-
-<section class="donation-empowerment">
-  <h2>Why Your Support Matters</h2>
-  <p>
-    Every contribution strengthens Reality Check’s ability to protect people from misinformation, scams, and digital harm. 
-    Your support isn’t charity — it’s empowerment. It helps individuals verify what’s real, make safer choices, and regain control in a confusing world.
-  </p>
-  <p>
-    When you give, you’re not just helping someone else. You’re helping build a safer, more trustworthy digital environment for everyone — including yourself.
-  </p>
-  <a href="donate.html" class="donate-button">Support the Mission</a>
-</section><section class="transparency-promise">
-  <h2>Our Transparency Promise</h2>
-  <p>
-    Reality Check is built on honesty. We believe donors deserve to know exactly how their support is used, 
-    what impact it creates, and how it protects real people from digital harm.
-  </p>
-  <p>
-    We publish clear, human-readable explanations of our work, our costs, and our mission — no jargon, no confusion, no hidden agendas.
-    Trust is earned through clarity, and we are committed to earning it every day.
-  </p>
-</section>
-<section class="meet-charlie">
-  <h2>Meet Charlie</h2>
-  <p>
-    Charlie is more than a mascot — he’s a reminder of why compassion, clarity, and protection matter. 
-    His calm presence represents the heart of Reality Check: helping people feel safe, supported, and grounded in truth.
-  </p>
-  <p>
-    Every time you see Charlie, remember that our mission is human. Real people. Real lives. Real impact.
-  </p>
+<section class="hero">
+    <h2>Verify. Protect. Give.</h2>
+    <p>Reality Check is a service built to restore trust in digital interactions while helping those who need it most.</p>
 </section>
 
+<section class="section">
+    <h3>Our Mission</h3>
+    <p>We believe in transparency, compassion, and empowerment. Reality Check exists to protect people from deception while uplifting the vulnerable through direct support.</p>
+</section>
 
+<section class="section">
+    <h3>Radical Transparency</h3>
+    <p>We show exactly where support goes. No hidden fees. No vague promises. Just honesty, clarity, and accountability.</p>
+</section>
 
-  <section class="section">
-    <h2 class="section-title">Why Reality Check Exists</h2>
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-title">Radical transparency</div>
-        <p>I’m a disabled veteran building Reality Check in the open. No vague admin costs, no blurry stories.</p>
-      </div>
-      <div class="card">
-        <div class="card-title">Compassion first</div>
-        <p>This service exists for people who get ignored or judged as “too messy.”</p>
-      </div>
-      <div class="card">
-        <div class="card-title">Empowerment through proof</div>
-        <p>Your support funds a verification layer that protects donors and those who need help.</p>
-      </div>
+<section class="section">
+    <h3>Compassion First</h3>
+    <p>Every interaction, every message, every donation is rooted in empathy. We help people feel safe, respected, and supported.</p>
+</section>
+
+<section class="section">
+    <h3>Empowerment Through Truth</h3>
+    <p>Reality Check gives people the tools to verify identities, avoid scams, and navigate the digital world with confidence.</p>
+</section>
+
+<section class="section">
+    <h3>Meet Charlie</h3>
+    <p>Charlie is more than a mascot — he’s a symbol of loyalty, comfort, and emotional grounding for those we serve.</p>
+
+    <div class="charlie-container">
+        <img src="charlie.jpg" alt="Charlie the cat" class="charlie-photo">
     </div>
-  </section>
-</main>
+</section>
+
+<section class="section">
+    <h3>Support the Mission</h3>
+    <p>Your contribution directly helps people in crisis, the homeless, the vulnerable, and animals in need. Every dollar makes a real impact.</p>
+</section>
 
 <footer>
-  © Reality Check — Built in the open so fewer people have to prove they’re real alone.
+    <p>© 2025 Reality Check – Restoring Trust, Protecting People, Helping Those in Need</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
