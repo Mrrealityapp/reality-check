@@ -1,0 +1,64 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (dark with subtle purple at bottom) -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050509"/>
+      <stop offset="100%" stop-color="#130323"/>
+    </linearGradient>
+    <radialGradient id="starGlow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="600" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Glow behind compass -->
+  <circle cx="300" cy="150" r="110" fill="url(#starGlow)"/>
+
+  <!-- Compass circle -->
+  <circle cx="300" cy="150" r="90" fill="none" stroke="#f5f5f5" stroke-width="3"/>
+
+  <!-- 4 main points (perfect vertical/horizontal alignment) -->
+  <!-- Top -->
+  <polygon points="300,40 292,105 308,105" fill="#fdfdfd"/>
+  <!-- Right -->
+  <polygon points="410,150 345,142 345,158" fill="#fdfdfd"/>
+  <!-- Bottom -->
+  <polygon points="300,260 308,195 292,195" fill="#fdfdfd"/>
+  <!-- Left -->
+  <polygon points="190,150 255,158 255,142" fill="#fdfdfd"/>
+
+  <!-- 4 secondary points (diagonals, symmetric) -->
+  <!-- Top-right -->
+  <polygon points="360,75 338,118 352,132" fill="#fdfdfd"/>
+  <!-- Bottom-right -->
+  <polygon points="360,225 352,168 338,182" fill="#fdfdfd"/>
+  <!-- Bottom-left -->
+  <polygon points="240,225 262,182 248,168" fill="#fdfdfd"/>
+  <!-- Top-left -->
+  <polygon points="240,75 248,132 262,118" fill="#fdfdfd"/>
+
+  <!-- Inner radiant star -->
+  <polygon points="
+    300,120
+    307,143
+    330,150
+    307,157
+    300,180
+    293,157
+    270,150
+    293,143
+  " fill="#ffffff"/>
+
+  <!-- Small center circle for extra glow -->
+  <circle cx="300" cy="150" r="6" fill="#ffffff"/>
+
+  <!-- TEXT: REALITY CHECK -->
+  <text x="300" y="315" text-anchor="middle" fill="#f7f7f7"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32" letter-spacing="3">
+    REALITY CHECK
+  </text>
+</svg>
