@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reality Check – Verify, Protect, Give</title>
+
+    <!-- Site stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- PayPal Hosted Buttons SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&components=hosted-buttons"></script>
 </head>
 
 <body>
 
 <header class="header">
-    <img src="images/logo.png" alt="Reality Check Logo" class="site-logo">
+    <img src="images/logo.png" alt="Reality Check Logo" class="site-logo" />
     <nav>
         <a href="index.html">Home</a>
         <a href="donate.html">Donate</a>
@@ -18,73 +23,87 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h1>Reality Check</h1>
-    <p>Verify. Protect. Give with confidence.</p>
-</section>
+<main>
 
-<!-- SUPPORT SECTION (Option C) -->
-<section class="support-section">
-    <h2>Support Reality Check</h2>
-    <p>Your support helps us protect people from scams, deception, and emotional harm.</p>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Reality Check</h1>
+        <p>Verify. Protect. Give with confidence.</p>
+    </section>
 
-    <!-- DONATE BUTTON -->
-    <div id="paypal-container-QNM7RLZWN5H2Q"></div>
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "QNM7RLZWN5H2Q",
-      }).render("#paypal-container-QNM7RLZWN5H2Q")
-    </script>
+    <!-- SUPPORT SECTION (Donate + Subscription near top) -->
+    <section class="support-section">
+        <h2>Support Reality Check</h2>
+        <p>Your support helps protect people from scams, deception, and emotional harm.</p>
 
-    <!-- SUBSCRIPTION BUTTON -->
-    <div id="paypal-container-U5Y923FVNEFRC"></div>
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "U5Y923FVNEFRC",
-      }).render("#paypal-container-U5Y923FVNEFRC")
-    </script>
-</section>
+        <div class="support-buttons">
+            <!-- DONATE BUTTON -->
+            <div class="support-button">
+                <h3>Make a One‑Time Gift</h3>
+                <div id="paypal-container-QNM7RLZWN5H2Q"></div>
+            </div>
 
-<!-- MISSION STATEMENT -->
-<section class="mission">
-    <h2>Our Mission</h2>
-    <p>
-        Reality Check exists to protect people from deception, manipulation, and emotional harm.
-        We provide clarity, safety, and truth in a world full of uncertainty.
-    </p>
-</section>
+            <!-- SUBSCRIPTION BUTTON -->
+            <div class="support-button">
+                <h3>Become a Monthly Supporter</h3>
+                <div id="paypal-container-U5Y923FVNEFRC"></div>
+            </div>
+        </div>
+    </section>
 
-<!-- WHY SUPPORT MATTERS -->
-<section class="why-support">
-    <h2>Why Your Support Matters</h2>
-    <p>
-        Every contribution helps us expand our tools, reach more people in crisis,
-        and provide real-time protection for those who need it most.
-    </p>
-</section>
+    <!-- MISSION STATEMENT -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            Reality Check exists to protect people from deception, manipulation, and emotional harm.
+            We provide clarity, safety, and truth in a world full of uncertainty.
+        </p>
+    </section>
 
-<!-- TRANSPARENCY PROMISE -->
-<section class="transparency">
-    <h2>Our Transparency Promise</h2>
-    <p>
-        We believe in radical honesty. Every dollar is used to strengthen Reality Check,
-        support those in need, and maintain the integrity of our mission.
-    </p>
-</section>
+    <!-- WHY SUPPORT MATTERS -->
+    <section class="why-support">
+        <h2>Why Your Support Matters</h2>
+        <p>
+            Every contribution helps expand our tools, reach more people in crisis,
+            and provide real-time protection for those who need it most.
+        </p>
+    </section>
 
-<!-- MEET CHARLIE -->
-<section class="meet-charlie">
-    <h2>Meet Charlie</h2>
-    <img src="images/charlie/charlie.png" alt="Charlie the Cat" class="charlie-photo">
-    <p>
-        Charlie is more than a companion — he’s a symbol of comfort, hope, and emotional grounding.
-        His presence reminds us why compassion and protection matter.
-    </p>
-</section>
+    <!-- TRANSPARENCY PROMISE -->
+    <section class="transparency">
+        <h2>Our Transparency Promise</h2>
+        <p>
+            We believe in radical honesty. Every dollar is used to strengthen Reality Check,
+            support those in need, and maintain the integrity of our mission.
+        </p>
+    </section>
+
+    <!-- MEET CHARLIE -->
+    <section class="meet-charlie">
+        <h2>Meet Charlie</h2>
+        <img src="images/charlie/charlie.png" alt="Charlie the Cat" class="charlie-photo" />
+        <p>
+            Charlie is more than a companion — he’s a symbol of comfort, hope, and emotional grounding.
+            His presence reminds us why compassion and protection matter.
+        </p>
+    </section>
+
+</main>
 
 <footer>
     <p>© Reality Check</p>
 </footer>
+
+<!-- PayPal Hosted Buttons render calls (must be after the SDK and containers) -->
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "QNM7RLZWN5H2Q",
+  }).render("#paypal-container-QNM7RLZWN5H2Q");
+
+  paypal.HostedButtons({
+    hostedButtonId: "U5Y923FVNEFRC",
+  }).render("#paypal-container-U5Y923FVNEFRC");
+</script>
 
 </body>
 </html>
