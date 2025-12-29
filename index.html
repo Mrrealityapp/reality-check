@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reality Check – Verify, Protect, Give</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-<header>
-    <h1>Reality Check</h1>
+<header class="header">
+    <img src="images/logo.png" alt="Reality Check Logo" class="site-logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a href="profile.html">Support</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="donate.html">Donate</a>
-    <a href="profile.html">Profile</a>
-    <a href="privacy.html">Privacy</a>
-</nav>
-
 <section class="hero">
-    <h2>Verify. Protect. Give.</h2>
-    <p>Helping communities distinguish real from fake — and support those who need it most.</p>
+    <h1>Reality Check</h1>
+    <p>Verify. Protect. Give with confidence.</p>
 </section>
 
-<section class="content">
-    <h2>Welcome to Reality Check</h2>
+<!-- SUPPORT SECTION (Option C) -->
+<section class="support-section">
+    <h2>Support Reality Check</h2>
+    <p>Your support helps us protect people from scams, deception, and emotional harm.</p>
+
+    <!-- DONATE BUTTON -->
+    <div id="paypal-container-QNM7RLZWN5H2Q"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "QNM7RLZWN5H2Q",
+      }).render("#paypal-container-QNM7RLZWN5H2Q")
+    </script>
+
+    <!-- SUBSCRIPTION BUTTON -->
+    <div id="paypal-container-U5Y923FVNEFRC"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "U5Y923FVNEFRC",
+      }).render("#paypal-container-U5Y923FVNEFRC")
+    </script>
+</section>
+
+<!-- MISSION STATEMENT -->
+<section class="mission">
+    <h2>Our Mission</h2>
     <p>
-        Our mission is simple: empower people with truth, protect the vulnerable, and build a community
-        where compassion and clarity guide every decision.
+        Reality Check exists to protect people from deception, manipulation, and emotional harm.
+        We provide clarity, safety, and truth in a world full of uncertainty.
+    </p>
+</section>
+
+<!-- WHY SUPPORT MATTERS -->
+<section class="why-support">
+    <h2>Why Your Support Matters</h2>
+    <p>
+        Every contribution helps us expand our tools, reach more people in crisis,
+        and provide real-time protection for those who need it most.
+    </p>
+</section>
+
+<!-- TRANSPARENCY PROMISE -->
+<section class="transparency">
+    <h2>Our Transparency Promise</h2>
+    <p>
+        We believe in radical honesty. Every dollar is used to strengthen Reality Check,
+        support those in need, and maintain the integrity of our mission.
+    </p>
+</section>
+
+<!-- MEET CHARLIE -->
+<section class="meet-charlie">
+    <h2>Meet Charlie</h2>
+    <img src="images/charlie/charlie.png" alt="Charlie the Cat" class="charlie-photo">
+    <p>
+        Charlie is more than a companion — he’s a symbol of comfort, hope, and emotional grounding.
+        His presence reminds us why compassion and protection matter.
     </p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Reality Check Project</p>
+    <p>© Reality Check</p>
 </footer>
 
 </body>
