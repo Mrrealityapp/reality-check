@@ -55,9 +55,12 @@
 
         <br><br>
 
-        <!-- DONATE BUTTON -->
-        <a href="https://www.paypal.com" class="donate-button">Donate Securely</a>
-    </section>
+        <div id="paypal-container-YOUR-DONATE-ID"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "YOUR-DONATE-ID",
+  }).render("#paypal-container-YOUR-DONATE-ID")
+</script>
 
     <!-- FOOTER -->
     <footer>
