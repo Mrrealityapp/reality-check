@@ -1,127 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reality Check – Verify, Protect, Give</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check Project</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- IMPORTANT: Replace "YOUR-LIVE-CLIENT-ID" with your real PayPal LIVE client ID -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR-LIVE-CLIENT-ID&components=hosted-buttons"></script><script src="https://www.paypal.com/sdk/js?client-id=ASmevrXzfqqwMNOaoOjJ1itrGCfoyJwcbgB5JOJ4-L4s1LbG7VMT6e-GG63YtGRJqPTY5BrKR__-kd5y"></script>
-
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ASmevrXzfqqwMNOaoOjJ1itrGCfoyJwcbgB5JOJ4-L4s1LbG7VMT6e-GG63YtGRJqPTY5BrKR__-kd5y"></script>
 </head>
 
 <body>
 
-<header class="header">
-    <img src="images/realitycheck.png" alt="Reality Check Logo" class="site-logo" />
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="donate.html">Donate</a>
-        <a href="profile.html">Support</a>
-    </nav>
-</header><div id="paypal-button-container"></div>
-<script>
-    paypal.Buttons({
-        style: {
-            color: 'gold',
-            shape: 'pill',
-            label: 'donate'
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '10.00'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Thank you for your donation, ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container');
-</script>
+    <!-- HEADER -->
+    <header>
+        <img src="images/realitycheck-logo.png" alt="Reality Check Logo" class="logo">
+        <h1>Reality Check Project</h1>
+    </header>
 
-
-<main>
-
+    <!-- HERO SECTION -->
     <section class="hero">
-        <h1>Reality Check</h1>
-        <p>Verify. Protect. Give with confidence.</p>
+        <img src="images/charlie.jpg" alt="Charlie the Cat" class="charlie-img">
+        <h2>Hope Begins With Connection</h2>
+        <p>Helping people, homeless veterans, and animals in crisis — one real conversation at a time.</p>
     </section>
 
-    <section class="support-section">
-        <h2>Support Reality Check</h2>
-        <p>Your support helps protect people from scams, deception, and emotional harm.</p>
-
-        <div class="support-buttons">
-
-            <div class="support-button">
-                <h3>Make a One‑Time Gift</h3>
-                <div id="paypal-container-QNM7RLZWN5H2Q"></div>
-            </div>
-
-            <div class="support-button">
-                <h3>Become a Monthly Supporter</h3>
-                <div id="paypal-container-U5Y923FVNEFRC"></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="mission">
+    <!-- ABOUT SECTION -->
+    <section class="about">
         <h2>Our Mission</h2>
         <p>
-            Reality Check exists to protect people from deception, manipulation, and emotional harm.
-            We provide clarity, safety, and truth in a world full of uncertainty.
+            Reality Check is built on lived experience — homelessness, service, compassion, and the belief that 
+            no one should face crisis alone. We provide real support, real connection, and real hope.
         </p>
     </section>
 
-    <section class="why-support">
-        <h2>Why Your Support Matters</h2>
-        <p>
-            Every contribution helps expand our tools, reach more people in crisis,
-            and provide real-time protection for those who need it most.
-        </p>
+    <!-- DONATE SECTION -->
+    <section class="donate">
+        <h2>Support the Mission</h2>
+        <p>Your donation helps people in crisis, homeless veterans, and animals in need.</p>
+
+        <div id="paypal-button-container"></div>
+
+        <script>
+            paypal.Buttons({
+                style: {
+                    color: 'gold',
+                    shape: 'pill',
+                    label: 'donate'
+                },
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: { value: '10.00' }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Thank you for your donation, ' + details.payer.name.given_name + '!');
+                    });
+                }
+            }).render('#paypal-button-container');
+        </script>
     </section>
 
-    <section class="transparency">
-        <h2>Our Transparency Promise</h2>
-        <p>
-            We believe in radical honesty. Every dollar is used to strengthen Reality Check,
-            support those in need, and maintain the integrity of our mission.
-        </p>
-    </section>
-
-    <section class="meet-charlie">
-        <h2>Meet Charlie</h2>
-        <img src="charlie/charlie.jpeg" alt="Charlie the Cat" class="charlie-photo" />
-        <p>
-            Charlie is more than a companion — he’s a symbol of comfort, hope, and emotional grounding.
-            His presence reminds us why compassion and protection matter.
-        </p>
-    </section>
-
-</main>
-
-<footer>
-    <p>© Reality Check</p>
-</footer>
-
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "QNM7RLZWN5H2Q",
-  }).render("#paypal-container-QNM7RLZWN5H2Q");
-
-  paypal.HostedButtons({
-    hostedButtonId: "U5Y923FVNEFRC",
-  }).render("#paypal-container-U5Y923FVNEFRC");
-</script>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Reality Check Project — Built with compassion and lived experience.</p>
+    </footer>
 
 </body>
 </html>
- 
