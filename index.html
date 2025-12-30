@@ -4,70 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reality Check Project</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=ASmevrXzfqqwMNOaoOjJ1itrGCfoyJwcbgB5JOJ4-L4s1LbG7VMT6e-GG63YtGRJqPTY5BrKR__-kd5y"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <img src="images/realitycheck-logo.png" alt="Reality Check Logo" class="logo">
-        <h1>Reality Check Project</h1>
-    </header>
+<!-- NAVIGATION -->
+<header class="navbar">
+    <div class="logo">Reality Check</div>
+    <nav>
+        <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#transparency">Transparency</a></li>
+            <li><a href="#charlie">Meet Charlie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <img src="images/charlie.jpg" alt="Charlie the Cat" class="charlie-img">
-        <h2>Hope Begins With Connection</h2>
-        <p>Helping people, homeless veterans, and animals in crisis — one real conversation at a time.</p>
-    </section>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Reality Check</h1>
+        <p class="tagline">Restoring trust, dignity, and human connection — one person at a time.</p>
+        <a href="#support" class="cta-button">Support the Mission</a>
+    </div>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <h2>Our Mission</h2>
+    <div class="hero-image">
+        <img src="images/charlie-circle.png" alt="Charlie the cat in purple circle">
+    </div>
+</section>
+
+<!-- MISSION SECTION -->
+<section id="mission" class="section">
+    <h2>Our Mission</h2>
+    <p>
+        Reality Check is a service built from lived experience — homelessness, military service, crisis support,
+        and decades of helping people one‑on‑one. We exist to restore trust, provide clarity, and offer real help
+        to those who feel invisible.
+    </p>
+    <p>
+        Every message, every design choice, every word is shaped by compassion, transparency, and the belief that
+        no one should face crisis alone.
+    </p>
+</section>
+
+<!-- SUPPORT SECTION -->
+<section id="support" class="section dark-section">
+    <h2>Support the Mission</h2>
+    <p>
+        Your support keeps Reality Check alive. It helps people in crisis, supports homeless individuals and veterans,
+        and now extends to animals in need through partnerships with humane organizations.
+    </p>
+    <div class="support-buttons">
+        <a href="https://www.paypal.com/donate" class="cta-button">Donate</a>
+        <a href="#tiers" class="cta-button secondary">Supporter Tiers</a>
+    </div>
+</section>
+
+<!-- TRANSPARENCY SECTION -->
+<section id="transparency" class="section">
+    <h2>Radical Transparency</h2>
+    <p>
+        Reality Check is built on honesty. No hidden agendas. No corporate polish. Just lived experience,
+        clear communication, and full transparency about how support is used.
+    </p>
+    <p>
+        We believe trust is earned — and we show our work.
+    </p>
+</section>
+
+<!-- CHARLIE SECTION -->
+<section id="charlie" class="section dark-section">
+    <h2>Meet Charlie</h2>
+    <div class="charlie-container">
+        <img src="images/charlie-portrait.png" alt="Charlie the cat" class="charlie-photo">
         <p>
-            Reality Check is built on lived experience — homelessness, service, compassion, and the belief that 
-            no one should face crisis alone. We provide real support, real connection, and real hope.
+            Charlie is more than a mascot — he’s a daily companion, emotional anchor, and symbol of hope.
+            His presence reminds supporters that compassion begins with connection.
         </p>
-    </section>
+    </div>
+</section>
 
-    <!-- DONATE SECTION -->
-    <section class="donate">
-        <h2>Support the Mission</h2>
-        <p>Your donation helps people in crisis, homeless veterans, and animals in need.</p>
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>If you need help, want to collaborate, or simply want to reach out, you can contact Reality Check anytime.</p>
+    <p>Email: <strong>support@realitycheck-project.org</strong></p>
+</section>
 
-        <div id="paypal-button-container"></div>
-
-        <script>
-            paypal.Buttons({
-                style: {
-                    color: 'gold',
-                    shape: 'pill',
-                    label: 'donate'
-                },
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            amount: { value: '10.00' }
-                        }]
-                    });
-                },
-                onApprove: function(data, actions) {
-                    return actions.order.capture().then(function(details) {
-                        alert('Thank you for your donation, ' + details.payer.name.given_name + '!');
-                    });
-                }
-            }).render('#paypal-button-container');
-        </script>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Reality Check Project — Built with compassion and lived experience.</p>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Reality Check Project — Built on trust, compassion, and lived experience.</p>
+</footer>
 
 </body>
 </html>
