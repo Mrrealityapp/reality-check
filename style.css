@@ -1,63 +1,166 @@
-body {
+/* GLOBAL RESET */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    color: #222;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER */
-header {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background: #111;
-    color: white;
+    padding: 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
 }
 
-.logo {
-    height: 60px;
-    margin-right: 15px;
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a970ff;
 }
 
-/* HERO */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #a970ff;
+}
+
+/* HERO SECTION */
 .hero {
-    text-align: center;
-    padding: 40px 20px;
-    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #0d0d0d;
 }
 
-.charlie-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #111;
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-commit
-    
+    color: #a970ff;
 }
 
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a970ff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #8b5ce6;
+}
+
+.cta-button.secondary {
+    background-color: #333;
+    border: 1px solid #a970ff;
+}
+
+.cta-button.secondary:hover {
+    background-color: #222;
+}
+
+.hero-image img {
+    width: 280px;
+    border-radius: 50%;
+    border: 4px solid #a970ff;
+}
 
 /* SECTIONS */
-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
+.section {
+    padding: 60px 10%;
+    background-color: #0d0d0d;
 }
 
-.about, .donate {
-    background: white;
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a970ff;
+}
+
+.dark-section {
+    background-color: #111;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+/* CHARLIE SECTION */
+.charlie-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.charlie-photo {
+    width: 220px;
+    border-radius: 12px;
+    border: 3px solid #a970ff;
+}
+
+/* SUPPORT BUTTONS */
+.support-buttons {
     margin-top: 20px;
-    border-radius: 10px;
-    padding: 30px;
+    display: flex;
+    gap: 20px;
 }
 
 /* FOOTER */
-footer {
+.footer {
     text-align: center;
     padding: 20px;
-    background: #111;
-    color: white;
-    margin-top: 40px;
+    background-color: #111;
+    border-top: 1px solid #333;
+    color: #888;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        margin-top: 30px;
+    }
+
+    .charlie-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
