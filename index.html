@@ -1,305 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reality Check Project</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #05030a;
-        color: #f2e9ff;
-        line-height: 1.6;
-    }
-
-    .page-wrap {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    header {
-        background: radial-gradient(circle at top, #6a0dad 0%, #05030a 55%, #020108 100%);
-        padding: 30px 20px 20px 20px;
-        text-align: center;
-        border-bottom: 3px solid #8b2ce0;
-        box-shadow: 0 0 25px rgba(139, 44, 224, 0.6);
-    }
-
-    .charlie-circle {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        border: 4px solid #f2e9ff;
-        box-shadow: 0 0 30px rgba(242, 233, 255, 0.9);
-        object-fit: cover;
-        margin-bottom: 15px;
-    }
-
-    header img.logo-main {
-        height: 110px;
-        display: block;
-        margin: 0 auto 5px auto;
-        filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
-    }
-
-    header .tagline {
-        color: #f2e9ff;
-        font-size: 1.05rem;
-        margin-top: 5px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        opacity: 0.9;
-    }
-
-    nav {
-        background: #0b0615;
-        padding: 14px 10px;
-        text-align: center;
-        border-bottom: 2px solid #8b2ce0;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-        position: sticky;
-        top: 0;
-        z-index: 50;
-    }
-
-    nav a {
-        display: inline-block;
-        color: #f2e9ff;
-        margin: 0 10px;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 9px 18px;
-        border-radius: 999px;
-        background: linear-gradient(135deg, #6a0dad, #b277ff);
-        box-shadow: 0 0 14px rgba(178, 119, 255, 0.8);
-        transition: 0.25s;
-        font-size: 0.9rem;
-    }
-
-    nav a:hover {
-        background: linear-gradient(135deg, #b277ff, #f2e9ff);
-        color: #1a082b;
-        box-shadow: 0 0 20px rgba(242, 233, 255, 1);
-        transform: translateY(-1px);
-    }
-
-    main {
-        flex: 1;
-    }
-
-    section {
-        padding: 35px 20px;
-        max-width: 950px;
-        margin: 25px auto;
-        background: rgba(13, 7, 28, 0.96);
-        border-radius: 14px;
-        border: 1px solid rgba(178, 119, 255, 0.7);
-        box-shadow: 0 0 30px rgba(106, 13, 173, 0.55);
-    }
-
-    section.hero {
-        border-width: 2px;
-        box-shadow: 0 0 40px rgba(242, 233, 255, 0.5);
-    }
-
-    h1, h2, h3 {
-        color: #f2e9ff;
-        text-shadow: 0 0 10px rgba(178, 119, 255, 0.6);
-        margin-top: 0;
-    }
-
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 12px;
-    }
-
-    h3 {
-        font-size: 1.15rem;
-        margin-bottom: 8px;
-    }
-
-    p {
-        margin-bottom: 12px;
-    }
-
-    ul {
-        margin-top: 8px;
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 6px;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .charlie-inline {
-        width: 100%;
-        max-width: 420px;
-        border-radius: 16px;
-        border: 3px solid #b277ff;
-        box-shadow: 0 0 25px rgba(178, 119, 255, 0.9);
-        display: block;
-        margin: 18px auto 0 auto;
-        object-fit: cover;
-    }
-
-    .section-label {
-        font-size: 0.85rem;
-        text-transform: uppercase;
-        letter-spacing: 0.18em;
-        color: #c8b3ff;
-        opacity: 0.8;
-        margin-bottom: 6px;
-    }
-
-    .highlight {
-        color: #ffddff;
-        font-weight: bold;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #05030a;
-        color: #b8a1e8;
-        border-top: 2px solid #6a0dad;
-        box-shadow: 0 0 18px rgba(106, 13, 173, 0.8);
-        margin-top: 35px;
-    }
-
-    footer img.logo-footer {
-        height: 60px;
-        display: block;
-        margin: 0 auto 8px auto;
-        filter: drop-shadow(0 0 8px rgba(178, 119, 255, 0.9));
-    }
-
-    a.text-link {
-        color: #d7b8ff;
-        text-decoration: underline;
-    }
-
-    a.text-link:hover {
-        color: #ffffff;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<div class="page-wrap">
 
-<header>
-    <img src="images/charlie-circle.png" alt="Charlie" class="charlie-circle">
-    <img src="images/realitycheck-logo.png" class="logo-main" alt="Reality Check Logo">
-    <div class="tagline">Reality Check • Clarity, Safety, and Lived Experience</div>
-</header>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/realitycheck-logo.png" alt="Reality Check Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mission.html">Mission</a>
+            <a href="founder.html">Founder’s Story</a>
+            <a href="charlie.html">Charlie’s Corner</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#how-it-works">How It Works</a>
-    <a href="#who-we-help">Who We Help</a>
-    <a href="#donate">Donate</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Reality Check</h1>
+        <p class="tagline">Helping communities distinguish real from fake — restoring trust, safety, and hope.</p>
+        <div class="hero-image">
+            <img src="images/charlie-circle.png" alt="Charlie the Cat">
+        </div>
+    </section>
 
-<main>
+    <!-- MISSION SECTION -->
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            Reality Check is a service built from lived experience — homelessness, military service, crisis support, and a lifetime of helping others.
+            We provide transparent trust scores, real‑world guidance, and emotional grounding for people who feel overwhelmed by misinformation, scams, and uncertainty.
+        </p>
+        <p>
+            Every tool, every message, every page is designed to help someone who needs clarity, safety, and a real human connection.
+        </p>
+    </section>
 
-<section class="hero">
-    <div class="section-label">Welcome</div>
-    <h1>Welcome to Reality Check</h1>
-    <p>Reality Check is a clarity tool built from lived experience — created for people who feel overwhelmed, confused, pressured, or unsure who to trust.</p>
-    <p>When your world is loud and your head is spinning, Reality Check gives you something simple: <span class="highlight">a grounded, honest look at what’s really happening — without judgment.</span></p>
-</section>
+    <!-- CHARLIE SECTION -->
+    <section class="charlie">
+        <h2>Meet Charlie</h2>
+        <img src="images/charlie-upright.png" alt="Charlie the Cat" class="charlie-photo">
+        <p>
+            Charlie is more than a mascot — he’s the emotional anchor of Reality Check.
+            His presence reminds supporters that compassion, warmth, and connection are at the heart of everything we do.
+        </p>
+    </section>
 
-<section id="charlie">
-    <div class="section-label">Charlie</div>
-    <h2>Charlie — The Heart of Reality Check</h2>
-    <p>Charlie is comfort, stability, and the emotional anchor of this mission.</p>
-    <img src="images/charlie-circle.png" alt="Charlie the Cat" class="charlie-inline">
-</section>
+    <!-- DONATION SECTION -->
+    <section class="donate">
+        <h2>Support the Mission</h2>
+        <p>Your support helps us reach people in crisis, protect the vulnerable, and expand our tools for truth and safety.</p>
 
-<section id="what-we-do">
-    <div class="section-label">What We Do</div>
-    <h2>What We Do</h2>
-    <p>We help people understand situations that feel confusing or unsafe.</p>
-</section>
+        <!-- PAYPAL BUTTON -->
+        <div class="paypal">
+            <!-- Replace with your actual PayPal button code -->
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+                <input type="image" src="images/paypal-donate.png" border="0" name="submit" alt="Donate with PayPal">
+            </form>
+        </div>
+    </section>
 
-<section id="why-it-matters">
-    <div class="section-label">Why It Matters</div>
-    <h2>Why It Matters</h2>
-    <p>When you're overwhelmed, it’s hard to see red flags. Reality Check gives you clarity when you need it most.</p>
-</section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Reality Check Project — Built with transparency, compassion, and lived experience.</p>
+    </footer>
 
-<section id="how-it-works">
-    <div class="section-label">Process</div>
-    <h2>How Reality Check Works — Full Breakdown</h2>
-
-    <h3>Step 1 — You Bring the Situation</h3>
-    <p>A message, a conversation, a relationship, a request, a fear — anything.</p>
-
-    <h3>Step 2 — We Break It Down</h3>
-    <p>We look at behavior, motive, pressure, inconsistencies, emotional hooks, and risk.</p>
-
-    <h3>Step 3 — You Get a Trust Score</h3>
-    <p>A clarity rating based on safety, transparency, consistency, motive, and risk.</p>
-
-    <h3>Step 4 — Red Flags & Green Flags</h3>
-    <p>We highlight danger signs and safety signs.</p>
-
-    <h3>Step 5 — Plain-English Explanation</h3>
-    <p>No jargon. No shame. Just truth.</p>
-
-    <h3>Step 6 — Your Next Steps</h3>
-    <p>Simple guidance on what to ask, what to avoid, and how to protect yourself.</p>
-
-    <h3>Step 7 — You Stay in Control</h3>
-    <p>Reality Check never tells you what to do — it gives you clarity so YOU decide.</p>
-</section>
-
-<section id="who-we-help">
-    <div class="section-label">People We Serve</div>
-    <h2>Who We Help</h2>
-    <p>People who feel confused, overwhelmed, pressured, manipulated, isolated, or unsure who to trust.</p>
-</section>
-
-<section id="founder">
-    <div class="section-label">Story</div>
-    <h2>Founder’s Story</h2>
-    <p>Reality Check was built from decades of lived experience — homelessness, trauma, service, survival, and helping people in crisis.</p>
-</section>
-
-<section id="donate">
-    <div class="section-label">Support</div>
-    <h2>What Your Donation Supports</h2>
-    <p>Your support keeps the site online, helps people in crisis, supports Charlie, and grows the mission.</p>
-
-    <p class="center">(PayPal buttons will go here.)</p>
-</section>
-
-<section id="contact">
-    <div class="section-label">Contact</div>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:support@realitycheck-project.org" class="text-link">support@realitycheck-project.org</a></p>
-</section>
-
-</main>
-
-<footer>
-    <img src="images/realitycheck-logo.png" class="logo-footer" alt="Reality Check Logo">
-    <p>© 2025 Reality Check Project</p>
-</footer>
-
-</div>
 </body>
 </html>
