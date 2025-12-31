@@ -1,128 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reality Check Project</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f7f7f7;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 3px solid #e0e0e0;
-        }
-
-        header img {
-            width: 180px;
-            height: auto;
-        }
-
-        .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-            background: #ffffff;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .charlie-circle {
-            display: block;
-            margin: 20px auto;
-            width: 180px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .paypal-buttons {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .paypal-buttons form {
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Reality Check – Because Trust Is Earned</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="logo-area">
+        <img src="realitycheck-logo.png" alt="Reality Check logo" class="logo-image" />
+        <div class="logo-text">
+          <h1>Reality Check</h1>
+          <p>Because trust is earned, not assumed.</p>
+        </div>
+      </div>
 
-<header>
-    <img src="realitycheck.png.png" alt="Reality Check Logo">
-</header>
+      <nav class="nav">
+        <a href="#mission" class="nav-link">Mission</a>
+        <a href="#charlie" class="nav-link">Meet Charlie</a>
+        <a href="#stories" class="nav-link">Stories</a>
+        <a href="#support" class="nav-link nav-highlight">Support Reality Check</a>
+      </nav>
+    </header>
 
-<div class="section">
-    <h1>Welcome to Reality Check</h1>
-    <p>
-        Reality Check helps communities distinguish real from fake by providing transparent trust scores,
-        lived‑experience guidance, and simple explanations anyone can understand.
-    </p>
-</div>
+    <main>
+      <!-- HERO / CHARLIE FOCUS -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="charlie-circle-wrap">
+            <img src="charlie-circle.png" alt="Charlie the cat in a circle frame" class="charlie-circle" />
+          </div>
+          <div class="hero-text">
+            <h2>Your Reality Check starts with one honest story.</h2>
+            <p>
+              I’m Chris, a disabled veteran who has lived homelessness more than once, survived the system, 
+              and spent the last decade quietly helping others through crisis on a disability check. 
+              No board. No big salaries. Just lived experience, radical transparency, and a promise:
+              <strong>every dollar is treated like it came from someone who couldn’t afford to lose it.</strong>
+            </p>
+            <p>
+              Reality Check exists to rebuild trust where it’s been shattered — for people, for animals, and for 
+              anyone who’s tired of wondering where their support really goes.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<div class="section">
-    <h2>Support the Mission</h2>
-    <p class="center">
-        Your support helps us keep people safe, informed, and empowered.
-    </p>
+      <!-- MISSION -->
+      <section id="mission" class="section-card">
+        <h3>What Reality Check actually does</h3>
+        <p>
+          Reality Check is not a feel‑good slogan. It’s a working promise built on three pillars:
+        </p>
+        <ul class="pillars-list">
+          <li>
+            <strong>People in crisis:</strong> Helping individuals and families facing homelessness, trauma, and 
+            impossible choices — with direct, practical support and no judgment.
+          </li>
+          <li>
+            <strong>Homeless veterans:</strong> Standing with those who served and were left behind, partnering with 
+            boots‑on‑the‑ground organizations to reach those the system ignores.
+          </li>
+          <li>
+            <strong>Animals in need:</strong> Working alongside humane societies, shelters, and animal welfare groups 
+            so that no one has to choose between their survival and their animal’s safety.
+          </li>
+        </ul>
+        <p>
+          Everything is documented, explained, and open to questions. If something doesn’t make sense, you get an answer — 
+          not a marketing line.
+        </p>
+      </section>
 
-    <div class="paypal-buttons">
+      <!-- MEET CHARLIE -->
+      <section id="charlie" class="section-card section-split">
+        <div class="section-text">
+          <h3>Meet Charlie – the heart of Reality Check</h3>
+          <p>
+            Charlie isn’t a mascot. He’s my daily reminder that connection is what keeps us going. 
+            His face is the first one I see when I wake up and the presence that sits with me 
+            while I write, design, and answer messages from people in crisis.
+          </p>
+          <p>
+            Charlie is here on this page because I want you to see who sits next to me when decisions are made 
+            about how your support is used. If you feel calmer seeing him, you already understand why he matters.
+          </p>
+          <p>
+            Reality Check now intentionally includes animals and animal welfare partners in its mission, because 
+            nobody should have to lose the one being that kept them alive through their darkest days.
+          </p>
+        </div>
+        <div class="section-image">
+          <img src="charlie-upright.png" alt="Charlie the cat sitting upright and calm" class="charlie-upright" />
+        </div>
+      </section>
 
-        <!-- One-Time Donation Button -->
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="U5Y923FVNEFRC">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                   border="0" name="submit" alt="Donate with PayPal">
-        </form>
+      <!-- STORIES -->
+      <section id="stories" class="section-card">
+        <h3>Stories, not statistics</h3>
+        <p>
+          For more than a decade, I’ve been the person people call when everything falls apart. 
+          Sometimes that means listening at 2 a.m. Sometimes it means finding a motel room, food, 
+          or a ride before the temperature drops below freezing.
+        </p>
+        <p>
+          You won’t see glossy “impact numbers” here. You’ll see real stories — with identities protected — 
+          that show exactly how support is used and why it was needed in the first place.
+        </p>
+        <p>
+          Reality Check is built for people who don’t just want to feel generous — they want to know 
+          their support actually changed something.
+        </p>
+      </section>
 
-        <!-- Monthly Donation Button -->
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="QNM7RLZWN5H2Q">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                   border="0" name="submit" alt="Donate Monthly with PayPal">
-        </form>
+      <!-- SUPPORT / PAYPAL -->
+      <section id="support" class="section-card support-card">
+        <h3>Support Reality Check</h3>
+        <p>
+          I live on a fixed disability income. Reality Check exists because people like you choose to stand in the gap 
+          with me — for humans, for veterans, and for animals who can’t ask for help themselves.
+        </p>
+        <p>
+          Your support doesn’t disappear into overhead. There’s no corporate office. No luxury anything. Just 
+          survival‑level stewardship and a commitment to show you where help goes.
+        </p>
 
-    </div>
-</div>
+        <div class="support-buttons">
+          <!-- Replace the # with your actual PayPal hosted button URLs or forms -->
+          <div class="support-option">
+            <h4>One‑time support</h4>
+            <p>Give once to help someone get through right now.</p>
+            <!-- Example PayPal button placeholder -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <!-- Replace with your real PayPal hosted button ID -->
+              <input type="hidden" name="hosted_button_id" value="YOUR_ONE_TIME_BUTTON_ID_HERE" />
+              <input type="image" 
+                     src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+                     border="0" 
+                     name="submit" 
+                     alt="Donate with PayPal button" />
+              <img alt="" border="0" 
+                   src="https://www.paypal.com/en_US/i/scr/pixel.gif" 
+                   width="1" height="1" />
+            </form>
+          </div>
 
-<div class="section">
-    <h2>Meet Charlie</h2>
-    <img src="charlie-circle.png" alt="Charlie the Cat" class="charlie-circle">
+          <div class="support-option">
+            <h4>Monthly support</h4>
+            <p>Stand with Reality Check every month and help build something steady.</p>
+            <!-- Example PayPal button placeholder -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <!-- Replace with your real PayPal hosted button ID -->
+              <input type="hidden" name="hosted_button_id" value="YOUR_MONTHLY_BUTTON_ID_HERE" />
+              <input type="image" 
+                     src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+                     border="0" 
+                     name="submit" 
+                     alt="Donate with PayPal button" />
+              <img alt="" border="0" 
+                   src="https://www.paypal.com/en_US/i/scr/pixel.gif" 
+                   width="1" height="1" />
+            </form>
+          </div>
+        </div>
 
-    <p class="center">
-        Charlie is the emotional anchor of Reality Check — a symbol of comfort, honesty, and connection.
-        His full story and upright photo will be added soon.
-    </p>
-</div>
+        <p class="support-disclaimer">
+          Reality Check is built on radical transparency. I will always tell you the truth about what your support 
+          is doing — even when it’s messy, complicated, or not Instagram‑pretty.
+        </p>
+      </section>
+    </main>
 
-<footer>
-    © 2025 Reality Check Project — Built with honesty, compassion, and lived experience.
-</footer>
-
+    <footer class="footer">
+      <p>© Reality Check – Founded by Chris, built on lived experience, service, and radical transparency.</p>
+    </footer>
+  </div>
 </body>
 </html>
