@@ -9,224 +9,297 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #0d0d0d;
-        color: #e6e6e6;
+        background: #05030a;
+        color: #f2e9ff;
         line-height: 1.6;
     }
 
-    header {
-        background: #111;
-        padding: 25px;
-        text-align: center;
-        border-bottom: 3px solid #6a0dad;
+    .page-wrap {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
-    header img.logo {
-        height: 90px;
+    header {
+        background: radial-gradient(circle at top, #6a0dad 0%, #05030a 55%, #020108 100%);
+        padding: 30px 20px 20px 20px;
+        text-align: center;
+        border-bottom: 3px solid #8b2ce0;
+        box-shadow: 0 0 25px rgba(139, 44, 224, 0.6);
+    }
+
+    .charlie-circle {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 4px solid #f2e9ff;
+        box-shadow: 0 0 30px rgba(242, 233, 255, 0.9);
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    header img.logo-main {
+        height: 110px;
+        display: block;
+        margin: 0 auto 5px auto;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+    }
+
+    header .tagline {
+        color: #f2e9ff;
+        font-size: 1.05rem;
+        margin-top: 5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        opacity: 0.9;
     }
 
     nav {
-        background: #1a1a1a;
-        padding: 15px;
+        background: #0b0615;
+        padding: 14px 10px;
         text-align: center;
-        border-bottom: 2px solid #6a0dad;
+        border-bottom: 2px solid #8b2ce0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        position: sticky;
+        top: 0;
+        z-index: 50;
     }
 
     nav a {
-        color: #e6e6e6;
-        margin: 0 15px;
+        display: inline-block;
+        color: #f2e9ff;
+        margin: 0 10px;
         text-decoration: none;
         font-weight: bold;
-        padding: 10px 18px;
-        border-radius: 6px;
-        background: #6a0dad;
-        transition: 0.3s;
+        padding: 9px 18px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #6a0dad, #b277ff);
+        box-shadow: 0 0 14px rgba(178, 119, 255, 0.8);
+        transition: 0.25s;
+        font-size: 0.9rem;
     }
 
     nav a:hover {
-        background: #8b2ce0;
+        background: linear-gradient(135deg, #b277ff, #f2e9ff);
+        color: #1a082b;
+        box-shadow: 0 0 20px rgba(242, 233, 255, 1);
+        transform: translateY(-1px);
+    }
+
+    main {
+        flex: 1;
     }
 
     section {
-        padding: 40px 20px;
-        max-width: 900px;
-        margin: 30px auto;
-        background: #1a1a1a;
-        border-left: 4px solid #6a0dad;
-        border-right: 4px solid #6a0dad;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
+        padding: 35px 20px;
+        max-width: 950px;
+        margin: 25px auto;
+        background: rgba(13, 7, 28, 0.96);
+        border-radius: 14px;
+        border: 1px solid rgba(178, 119, 255, 0.7);
+        box-shadow: 0 0 30px rgba(106, 13, 173, 0.55);
+    }
+
+    section.hero {
+        border-width: 2px;
+        box-shadow: 0 0 40px rgba(242, 233, 255, 0.5);
     }
 
     h1, h2, h3 {
-        color: #d9b3ff;
+        color: #f2e9ff;
+        text-shadow: 0 0 10px rgba(178, 119, 255, 0.6);
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .charlie-inline {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 16px;
+        border: 3px solid #b277ff;
+        box-shadow: 0 0 25px rgba(178, 119, 255, 0.9);
+        display: block;
+        margin: 18px auto 0 auto;
+        object-fit: cover;
+    }
+
+    .section-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: #c8b3ff;
+        opacity: 0.8;
+        margin-bottom: 6px;
+    }
+
+    .highlight {
+        color: #ffddff;
+        font-weight: bold;
     }
 
     footer {
         text-align: center;
-        padding: 25px;
-        background: #111;
-        color: #e6e6e6;
-        margin-top: 40px;
-        border-top: 3px solid #6a0dad;
+        padding: 20px;
+        background: #05030a;
+        color: #b8a1e8;
+        border-top: 2px solid #6a0dad;
+        box-shadow: 0 0 18px rgba(106, 13, 173, 0.8);
+        margin-top: 35px;
     }
 
-    footer img.logo {
+    footer img.logo-footer {
         height: 60px;
-        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto 8px auto;
+        filter: drop-shadow(0 0 8px rgba(178, 119, 255, 0.9));
+    }
+
+    a.text-link {
+        color: #d7b8ff;
+        text-decoration: underline;
+    }
+
+    a.text-link:hover {
+        color: #ffffff;
     }
 </style>
 </head>
 
 <body>
+<div class="page-wrap">
 
 <header>
-    <img src="images/realitycheck-logo.png" class="logo" alt="Reality Check Logo">
+    <img src="images/charlie-circle.png" alt="Charlie" class="charlie-circle">
+    <img src="images/realitycheck-logo.png" class="logo-main" alt="Reality Check Logo">
+    <div class="tagline">Reality Check • Clarity, Safety, and Lived Experience</div>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">How It Works</a>
-    <a href="#">Donate</a>
-    <a href="#">Contact</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#who-we-help">Who We Help</a>
+    <a href="#donate">Donate</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section>
+<main>
+
+<section class="hero">
+    <div class="section-label">Welcome</div>
     <h1>Welcome to Reality Check</h1>
-    <p>Reality Check is a clarity tool built from lived experience — designed to help people who feel overwhelmed, confused, pressured, or unsure who to trust. This project exists because no one should face manipulation, fear, or uncertainty alone.</p>
+    <p>Reality Check is a clarity tool built from lived experience — created for people who feel overwhelmed, confused, pressured, or unsure who to trust.</p>
+    <p>When your world is loud and your head is spinning, Reality Check gives you something simple: <span class="highlight">a grounded, honest look at what’s really happening — without judgment.</span></p>
 </section>
 
-<section>
+<section id="charlie">
+    <div class="section-label">Charlie</div>
     <h2>Charlie — The Heart of Reality Check</h2>
-    <p>Charlie is more than a mascot. He is comfort, stability, and the emotional anchor of this mission. His presence reminds us that connection saves lives, and that everyone deserves safety and clarity.</p>
-    <img src="images/charlie.jpg" alt="Charlie the Cat" style="width:100%; border-radius:8px;">
+    <p>Charlie is comfort, stability, and the emotional anchor of this mission.</p>
+    <img src="images/charlie-circle.png" alt="Charlie the Cat" class="charlie-inline">
 </section>
 
-<section>
+<section id="what-we-do">
+    <div class="section-label">What We Do</div>
     <h2>What We Do</h2>
-    <p>We help people understand situations that feel confusing or unsafe. Reality Check breaks down behavior, motives, patterns, and emotional pressure so you can see the truth clearly — without judgment, shame, or fear.</p>
+    <p>We help people understand situations that feel confusing or unsafe.</p>
 </section>
 
-<section>
+<section id="why-it-matters">
+    <div class="section-label">Why It Matters</div>
     <h2>Why It Matters</h2>
-    <p>When you're overwhelmed, your brain can't process red flags. When you're scared, you can't see the truth. Reality Check gives you clarity when you need it most — so you can protect yourself, make grounded decisions, and stay safe.</p>
+    <p>When you're overwhelmed, it’s hard to see red flags. Reality Check gives you clarity when you need it most.</p>
 </section>
 
-<section>
+<section id="how-it-works">
+    <div class="section-label">Process</div>
     <h2>How Reality Check Works — Full Breakdown</h2>
 
     <h3>Step 1 — You Bring the Situation</h3>
     <p>A message, a conversation, a relationship, a request, a fear — anything.</p>
 
     <h3>Step 2 — We Break It Down</h3>
-    <p>We analyze behavior, motives, pressure, inconsistencies, emotional hooks, and risk factors.</p>
+    <p>We look at behavior, motive, pressure, inconsistencies, emotional hooks, and risk.</p>
 
     <h3>Step 3 — You Get a Trust Score</h3>
     <p>A clarity rating based on safety, transparency, consistency, motive, and risk.</p>
 
     <h3>Step 4 — Red Flags & Green Flags</h3>
-    <p>We highlight danger signs and safety signs so you can see what’s really happening.</p>
+    <p>We highlight danger signs and safety signs.</p>
 
     <h3>Step 5 — Plain-English Explanation</h3>
-    <p>No jargon. No judgment. Just truth.</p>
+    <p>No jargon. No shame. Just truth.</p>
 
     <h3>Step 6 — Your Next Steps</h3>
-    <p>Clear guidance on what to ask, what to avoid, and how to protect yourself.</p>
+    <p>Simple guidance on what to ask, what to avoid, and how to protect yourself.</p>
 
     <h3>Step 7 — You Stay in Control</h3>
     <p>Reality Check never tells you what to do — it gives you clarity so YOU decide.</p>
 </section>
 
-<section>
+<section id="who-we-help">
+    <div class="section-label">People We Serve</div>
     <h2>Who We Help</h2>
-    <p>People who feel confused, overwhelmed, pressured, manipulated, isolated, or unsure who to trust. If you’ve ever felt lost or scared — this is for you.</p>
+    <p>People who feel confused, overwhelmed, pressured, manipulated, isolated, or unsure who to trust.</p>
 </section>
 
-<section>
+<section id="founder">
+    <div class="section-label">Story</div>
     <h2>Founder’s Story</h2>
-    <p>Reality Check was built from decades of lived experience — homelessness, trauma, service, survival, and helping people in crisis. This project exists because I know what it feels like to have no clarity and no safety. Reality Check is the tool I wish I had when I needed it most.</p>
+    <p>Reality Check was built from decades of lived experience — homelessness, trauma, service, survival, and helping people in crisis.</p>
 </section>
 
-<section>
-    <h2>Trust Score Explained</h2>
-    <p>The Trust Score is not a number — it’s a clarity rating based on behavior, motive, consistency, transparency, emotional impact, and risk level.</p>
-</section>
-
-<section>
-    <h2>Red Flags / Green Flags</h2>
-
-    <h3>Red Flags</h3>
-    <ul>
-        <li>Pressure</li>
-        <li>Urgency</li>
-        <li>Guilt</li>
-        <li>Confusion</li>
-        <li>Inconsistency</li>
-        <li>Secrecy</li>
-        <li>Money requests</li>
-        <li>Emotional manipulation</li>
-    </ul>
-
-    <h3>Green Flags</h3>
-    <ul>
-        <li>Transparency</li>
-        <li>Patience</li>
-        <li>Consistency</li>
-        <li>Respect</li>
-        <li>Stability</li>
-        <li>Clear communication</li>
-        <li>No pressure</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Examples</h2>
-
-    <h3>Example 1 — Someone Asking for Money</h3>
-    <p>Red flags: urgency, secrecy, emotional pressure. Trust Score: low.</p>
-
-    <h3>Example 2 — A Relationship Moving Too Fast</h3>
-    <p>Red flags: intensity, love bombing. Trust Score: medium.</p>
-
-    <h3>Example 3 — A Friend Checking In</h3>
-    <p>Green flags: consistency, care. Trust Score: high.</p>
-</section>
-
-<section>
-    <h2>Values</h2>
-    <p>Honesty, compassion, transparency, lived experience, safety, clarity, respect, humanity.</p>
-</section>
-
-<section>
-    <h2>Promise to the Community</h2>
-    <p>Reality Check will always be honest, transparent, compassionate, judgment‑free, and built on lived experience.</p>
-</section>
-
-<section>
+<section id="donate">
+    <div class="section-label">Support</div>
     <h2>What Your Donation Supports</h2>
-    <p>Your support keeps the site online, helps people in crisis, expands tools, supports Charlie, and grows the mission.</p>
+    <p>Your support keeps the site online, helps people in crisis, supports Charlie, and grows the mission.</p>
+
+    <p class="center">(PayPal buttons will go here.)</p>
 </section>
 
-<section>
-    <h2>Supporter Tiers</h2>
-    <ul>
-        <li><strong>Supporter</strong> — $5/mo</li>
-        <li><strong>Protector</strong> — $10/mo</li>
-        <li><strong>Guardian</strong> — $25/mo</li>
-        <li><strong>Champion</strong> — $50/mo</li>
-    </ul>
-</section>
-
-<section>
+<section id="contact">
+    <div class="section-label">Contact</div>
     <h2>Contact</h2>
-    <p>Email: support@realitycheck-project.org</p>
+    <p>Email: <a href="mailto:support@realitycheck-project.org" class="text-link">support@realitycheck-project.org</a></p>
 </section>
+
+</main>
 
 <footer>
-    <img src="images/realitycheck-logo.png" class="logo" alt="Reality Check Logo">
+    <img src="images/realitycheck-logo.png" class="logo-footer" alt="Reality Check Logo">
     <p>© 2025 Reality Check Project</p>
 </footer>
 
+</div>
 </body>
 </html>
