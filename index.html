@@ -1,175 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reality Check</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reality Check Project</title>
 
-  <style>
+<style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d001a;
-      color: white;
-      text-align: center;
-      line-height: 1.6;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        color: #222;
+        line-height: 1.6;
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: #1a0033;
+        background: #ffffff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid #e0e0e0;
     }
 
-   header img.logo {
-  height: 90px;
-}
+    header img.logo {
+        height: 90px;
+    }
 
-footer img.logo {
-  height: 60px;
-}
-
+    nav {
+        background: #333;
+        padding: 10px;
+        text-align: center;
+    }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 60px 20px;
-    }
-
-    .hero img.charlie {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      box-shadow: 0 0 30px #ff66ff;
-      object-fit: cover;
-      margin-top: 20px;
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
-    h1, h2 {
-      color: #ff66ff;
-    }
-
-    .paypal-buttons button {
-      background-color: #ff66ff;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
+    h1, h2, h3 {
+        color: #333;
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #1a0033;
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+        margin-top: 40px;
     }
 
-  header img.logo {
-  height: 90px;
-}
-
-footer img.logo {
-  height: 60px;
-}
-
+    footer img.logo {
+        height: 60px;
+        margin-bottom: 10px;
     }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <header>
-    <img src="realitychecklogo.png" alt="Reality Check Logo" class="logo" />
+<header>
+    <img src="images/realitycheck-logo.png" class="logo" alt="Reality Check Logo">
+</header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="donate.html">Donate</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-  </header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">How It Works</a>
+    <a href="#">Donate</a>
+    <a href="#">Contact</a>
+</nav>
 
-  <section class="hero">
-    <img src="charlie-circle.png" alt="Charlie the Cat" class="charlie" />
-    <h1>Reality Check</h1>
-    <p>Real support. Real truth. Real lived experience.</p>
-  </section>
+<section>
+    <h1>Welcome to Reality Check</h1>
+    <p>Reality Check is a clarity tool built from lived experience — designed to help people who feel overwhelmed, confused, pressured, or unsure who to trust. This project exists because no one should face manipulation, fear, or uncertainty alone.</p>
+</section>
 
-  <section>
-    <h2>Our Mission</h2>
-    <p>
-      Reality Check exists to help people in crisis make safer decisions with honesty,
-      compassion, and transparency. Built on lived experience — homelessness, trauma,
-      service, survival, and rebuilding — this project gives people what I never had:
-      truth, clarity, and someone who genuinely cares.
-    </p>
-  </section>
+<section>
+    <h2>Charlie — The Heart of Reality Check</h2>
+    <p>Charlie is more than a mascot. He is comfort, stability, and the emotional anchor of this mission. His presence reminds us that connection saves lives, and that everyone deserves safety and clarity.</p>
+    <img src="images/charlie.jpg" alt="Charlie the Cat" style="width:100%; border-radius:8px;">
+</section>
 
-  <section>
-    <h2>Charlie</h2>
-    <p>
-      Charlie is more than a mascot — he’s a symbol of comfort, stability, and hope.
-      A reminder that even in the darkest moments, connection can save a life.
-    </p>
-  </section>
-
-  <section>
+<section>
     <h2>What We Do</h2>
-    <p>We provide:</p>
-    <ul style="text-align:left; max-width:600px; margin:auto;">
-      <li>Transparent trust scores</li>
-      <li>Red flags and green flags</li>
-      <li>Simple, human‑readable explanations</li>
-      <li>Guidance to avoid scams and manipulation</li>
-      <li>Support without judgment</li>
-      <li>Real stories from real experience</li>
-    </ul>
-  </section>
+    <p>We help people understand situations that feel confusing or unsafe. Reality Check breaks down behavior, motives, patterns, and emotional pressure so you can see the truth clearly — without judgment, shame, or fear.</p>
+</section>
 
-  <section>
+<section>
     <h2>Why It Matters</h2>
-    <p>
-      People in crisis don’t need lectures. They need clarity. They need honesty.
-      They need someone who understands what it feels like to be scared, alone,
-      or unsure who to trust. Reality Check is built for them.
-    </p>
-  </section>
+    <p>When you're overwhelmed, your brain can't process red flags. When you're scared, you can't see the truth. Reality Check gives you clarity when you need it most — so you can protect yourself, make grounded decisions, and stay safe.</p>
+</section>
 
-  <section>
-    <h2>Support Reality Check</h2>
-    <p>Your support keeps Reality Check alive and helps people in crisis.</p>
+<section>
+    <h2>How Reality Check Works — Full Breakdown</h2>
 
-    <div class="paypal-buttons">
-      <button onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=PLACEHOLDER_ONETIME'">
-        One-Time Donation
-      </button>
+    <h3>Step 1 — You Bring the Situation</h3>
+    <p>A message, a conversation, a relationship, a request, a fear — anything.</p>
 
-      <button onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=PLACEHOLDER_MONTHLY'">
-        Monthly Support
-      </button>
-    </div>
-  </section>
+    <h3>Step 2 — We Break It Down</h3>
+    <p>We analyze behavior, motives, pressure, inconsistencies, emotional hooks, and risk factors.</p>
 
-  <footer>
-    <img src="realitychecklogo.png" alt="Reality Check Logo" class="logo" />
-    <p>&copy; Reality Check — Built on lived experience, compassion, and truth.</p>
-  </footer>
+    <h3>Step 3 — You Get a Trust Score</h3>
+    <p>A clarity rating based on safety, transparency, consistency, motive, and risk.</p>
 
-</body>
-</html>
-
+    <h3>Step 4 — Red Flags & Green Flags</h3>
+    <p>We highlight danger signs and safety
