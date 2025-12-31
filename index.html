@@ -4,75 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reality Check Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+        }
+        .hero img {
+            width: 200px;
+            border-radius: 50%;
+        }
+        section {
+            padding: 40px 20px;
+            background: white;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+        }
+        .charlie-photo {
+            width: 250px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .paypal {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="images/realitycheck-logo.png" alt="Reality Check Logo">
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mission.html">Mission</a>
-            <a href="founder.html">Founder’s Story</a>
-            <a href="charlie.html">Charlie’s Corner</a>
-            <a href="support.html">Support</a>
-        </nav>
-    </header>
+<header>
+    <img src="realitycheck-logo.jpg" alt="Reality Check Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">How It Works</a>
+        <a href="profile.html">Who We Help</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Reality Check</h1>
-        <p class="tagline">Helping communities distinguish real from fake — restoring trust, safety, and hope.</p>
-        <div class="hero-image">
-            <img src="images/charlie-circle.png" alt="Charlie the Cat">
-        </div>
-    </section>
+<div class="hero">
+    <h1>Reality Check</h1>
+    <p>Clarity, Safety, and Lived Experience</p>
+    <img src="charlie-circle.png" alt="Charlie the Cat">
+</div>
 
-    <!-- MISSION SECTION -->
-    <section class="mission">
-        <h2>Our Mission</h2>
-        <p>
-            Reality Check is a service built from lived experience — homelessness, military service, crisis support, and a lifetime of helping others.
-            We provide transparent trust scores, real‑world guidance, and emotional grounding for people who feel overwhelmed by misinformation, scams, and uncertainty.
-        </p>
-        <p>
-            Every tool, every message, every page is designed to help someone who needs clarity, safety, and a real human connection.
-        </p>
-    </section>
+<section>
+    <h2>Welcome</h2>
+    <p>
+        Reality Check is built from lived experience — homelessness, military service, crisis support, and a lifetime of helping others.
+        We provide clarity, truth, and emotional grounding for people overwhelmed by misinformation, scams, and uncertainty.
+    </p>
+</section>
 
-    <!-- CHARLIE SECTION -->
-    <section class="charlie">
-        <h2>Meet Charlie</h2>
-        <img src="images/charlie-upright.png" alt="Charlie the Cat" class="charlie-photo">
-        <p>
-            Charlie is more than a mascot — he’s the emotional anchor of Reality Check.
-            His presence reminds supporters that compassion, warmth, and connection are at the heart of everything we do.
-        </p>
-    </section>
+<section>
+    <h2>Meet Charlie</h2>
+    <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" class="charlie-photo" alt="Charlie Upright">
+    <p>
+        Charlie is the emotional anchor of Reality Check — a reminder that compassion, warmth, and connection are at the heart of everything we do.
+    </p>
+</section>
 
-    <!-- DONATION SECTION -->
-    <section class="donate">
-        <h2>Support the Mission</h2>
-        <p>Your support helps us reach people in crisis, protect the vulnerable, and expand our tools for truth and safety.</p>
+<section>
+    <h2>Support the Mission</h2>
+    <p>Your support helps us reach people in crisis and expand tools for truth and safety.</p>
 
-        <!-- PAYPAL BUTTON -->
-        <div class="paypal">
-            <!-- Replace with your actual PayPal button code -->
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
-                <input type="image" src="images/paypal-donate.png" border="0" name="submit" alt="Donate with PayPal">
-            </form>
-        </div>
-    </section>
+    <div class="paypal">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_HERE">
+            <input type="image" src="realitycheck.png.png" border="0" name="submit" alt="Donate with PayPal">
+        </form>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Reality Check Project — Built with transparency, compassion, and lived experience.</p>
-    </footer>
+<footer>
+    <p>© 2025 Reality Check Project • Built with transparency, compassion, and lived experience.</p>
+</footer>
 
 </body>
 </html>
