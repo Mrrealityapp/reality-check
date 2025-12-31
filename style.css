@@ -265,3 +265,15 @@ body {
     height: 180px;
   }
 }
+.logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+.bottom-logo {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  opacity: 0.9;
+}
