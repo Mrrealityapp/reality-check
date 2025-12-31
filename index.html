@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reality Check Project</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reality Check</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d001a;
+      color: white;
+      text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a0033;
+    }
+    header img.logo {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+    }
+    .hero img.charlie {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px #8000ff;
+      object-fit: cover;
+    }
+    .paypal-buttons {
+      margin-top: 40px;
+    }
+    .paypal-buttons button {
+      background-color: #8000ff;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #1a0033;
+    }
+    footer img.logo {
+      height: 40px;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-<header class="navbar">
-    <div class="logo">Reality Check</div>
+  <header>
+    <img src="images/logo/reality-check-logo.png" alt="Reality Check Logo" class="logo" />
     <nav>
-        <ul>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#support">Support</a></li>
-            <li><a href="#transparency">Transparency</a></li>
-            <li><a href="#charlie">Meet Charlie</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
     </nav>
-</header>
+  </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Reality Check</h1>
-        <p class="tagline">Restoring trust, dignity, and human connection — one person at a time.</p>
-        <a href="#support" class="cta-button">Support the Mission</a>
+  <section class="hero">
+    <img src="images/charlie/charlie-circle.png" alt="Charlie the Cat" class="charlie" />
+    <h1>Reality Check</h1>
+    <p>Helping communities distinguish real from fake with transparent trust scores.</p>
+
+    <div class="paypal-buttons">
+      <button onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID'">Donate</button>
+      <button onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=YOUR_MONTHLY_ID'">Donate Monthly</button>
     </div>
+  </section>
 
-    <div class="hero-image">
-        <img src="images/charlie-circle.png" alt="Charlie the cat in purple circle">
-    </div>
-</section>
-
-<!-- MISSION SECTION -->
-<section id="mission" class="section">
-    <h2>Our Mission</h2>
-    <p>
-        Reality Check is a service built from lived experience — homelessness, military service, crisis support,
-        and decades of helping people one‑on‑one. We exist to restore trust, provide clarity, and offer real help
-        to those who feel invisible.
-    </p>
-    <p>
-        Every message, every design choice, every word is shaped by compassion, transparency, and the belief that
-        no one should face crisis alone.
-    </p>
-</section>
-
-<!-- SUPPORT SECTION -->
-<section id="support" class="section dark-section">
-    <h2>Support the Mission</h2>
-    <p>
-        Your support keeps Reality Check alive. It helps people in crisis, supports homeless individuals and veterans,
-        and now extends to animals in need through partnerships with humane organizations.
-    </p>
-    <div class="support-buttons">
-        <a href="https://www.paypal.com/donate" class="cta-button">Donate</a>
-        <a href="#tiers" class="cta-button secondary">Supporter Tiers</a>
-    </div>
-</section>
-
-<!-- TRANSPARENCY SECTION -->
-<section id="transparency" class="section">
-    <h2>Radical Transparency</h2>
-    <p>
-        Reality Check is built on honesty. No hidden agendas. No corporate polish. Just lived experience,
-        clear communication, and full transparency about how support is used.
-    </p>
-    <p>
-        We believe trust is earned — and we show our work.
-    </p>
-</section>
-
-<!-- CHARLIE SECTION -->
-<section id="charlie" class="section dark-section">
-    <h2>Meet Charlie</h2>
-    <div class="charlie-container">
-        <img src="images/charlie-portrait.png" alt="Charlie the cat" class="charlie-photo">
-        <p>
-            Charlie is more than a mascot — he’s a daily companion, emotional anchor, and symbol of hope.
-            His presence reminds supporters that compassion begins with connection.
-        </p>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>If you need help, want to collaborate, or simply want to reach out, you can contact Reality Check anytime.</p>
-    <p>Email: <strong>support@realitycheck-project.org</strong></p>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2025 Reality Check Project — Built on trust, compassion, and lived experience.</p>
-</footer>
+  <footer>
+    <img src="images/logo/reality-check-logo.png" alt="Reality Check Logo" class="logo" />
+    <p>&copy; 2025 Reality Check. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
