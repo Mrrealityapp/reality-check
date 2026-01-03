@@ -276,4 +276,11 @@ body {
   display: block;
   margin: 40px auto;
   opacity: 0.9;
+}.mama-photo {
+    width: 250px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
+
