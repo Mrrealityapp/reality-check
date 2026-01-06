@@ -32,9 +32,11 @@ body {
 }
 
 .logo-image {
-    height: 42px;
+    height: 70px;
     width: auto;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.9));
 }
+
 
 .site-title {
     font-size: 1.3em;
@@ -61,10 +63,12 @@ body {
 }
 
 .trust-badge img {
-    height: 38px;
-    width: 38px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(130, 92, 255, 0.9);
+    box-shadow: 0 0 18px rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.15);
+    padding: 6px;
 }
 
 /* PAGE CONTENT */
