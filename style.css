@@ -214,3 +214,15 @@ body {
         text-align: center;
     }
 }
+.mama-photo-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mama-photo {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
