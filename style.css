@@ -1,169 +1,53 @@
-/* Global layout */
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #0a0c1b 0%, #1a1033 40%, #2d1a55 100%);
-  color: #e8e0ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
 
-/* Centered content wrapper */
-.page-wrap {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
 }
 
-/* Header */
-.site-header {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+.top-image {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.site-logo {
-  height: 64px;
-  width: auto;
-}
-
-.site-title-block h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: #d9c6ff;
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0 5px;
 }
 
 .tagline {
-  margin: 0.25rem 0 0;
-  font-size: 0.95rem;
-  color: #bfa8ff;
+    font-size: 1.2em;
+    color: #666;
 }
 
-/* Sections */
-main section {
-  padding: 2.75rem 0;
-  text-align: center;
+section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-main h2 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  color: #e8d8ff;
+.tribute h2,
+.mission h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-main p {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #e8e0ff;
-}
-
-/* Charlie hero */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.charlie-circle {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid #f5c542;
-  box-shadow: 0 0 18px rgba(245, 197, 66, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.charlie-photo {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-/* Mission */
+.tribute p,
 .mission p {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Donate buttons */
-.donate-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.25rem;
-}
-
-.donate-btn {
-  background: #f5c542;
-  color: #1a1033;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(245, 197, 66, 0.4);
-}
-
-.donate-btn:hover {
-  background: #ffd763;
-}
-
-/* Tribute sections */
-.tribute {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding-top: 2rem;
-}
-
-.tribute-content {
-  max-width: 750px;
-  margin: 0.5rem auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.tribute-photo {
-  max-width: 260px;
-  border-radius: 16px;
-  border: 2px solid #f5c542;
-  box-shadow: 0 0 18px rgba(245, 197, 66, 0.4);
-}
-
-/* Disclaimer */
-.disclaimer p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 0.95rem;
-  color: #d2c4ff;
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 1.5rem 0 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #cbbaff;
-}
-
-/* Mobile */
-@media (min-width: 700px) {
-  .hero {
-    flex-direction: column;
-  }
+    font-size: 1.1em;
+    line-height: 1.6em;
 }
