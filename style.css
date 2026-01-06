@@ -32,8 +32,9 @@ body {
 }
 
 .logo-image {
-    height: 70px;
-    width: auto;
+    height: 120px;   /* twice the size */
+    width: 120px;    /* square */
+    object-fit: contain;
     filter: drop-shadow(0 0 8px rgba(255,255,255,0.9));
 }
 
@@ -46,6 +47,7 @@ body {
 
 .main-nav {
     display: flex;
+    justify-content: center;   /* centers the nav buttons */
     gap: 20px;
 }
 
@@ -63,19 +65,20 @@ body {
 }
 
 .trust-badge img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
+    height: 120px;   /* twice the size */
+    width: 120px;    /* square */
+    border-radius: 8px;   /* slight rounding, not a circle */
     box-shadow: 0 0 18px rgba(255,255,255,0.9);
     background: rgba(255,255,255,0.15);
     padding: 6px;
+    object-fit: contain;
 }
 
-/* PAGE CONTENT */
 .page-content {
     max-width: 900px;
-    margin: 90px auto 40px auto;
+    margin: 0 auto;      /* centers everything down the page */
     padding: 0 15px;
+    text-align: center;  /* centers text inside each card */
 }
 
 /* GLOWING CARDS */
