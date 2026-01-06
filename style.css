@@ -132,11 +132,13 @@ body {
 }
 
 .mama-photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 8px; /* soft square */
+    display: block;
+    border-radius: 8px;
 }
+
 
 .mama-text p {
     margin-bottom: 10px;
