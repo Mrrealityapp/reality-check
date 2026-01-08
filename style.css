@@ -88,3 +88,43 @@ footer {
 p {
     line-height: 1.6;
 }
+/* TOP HEADER BAR */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1528;
+    padding: 15px 30px;
+    box-shadow: 0 0 20px rgba(120, 70, 255, 0.25);
+}
+
+.header-left,
+.header-right {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 80px;
+    height: auto;
+}
+
+/* NAVIGATION */
+.header-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header-nav a {
+    color: #d8c8ff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #a47cff;
+    text-shadow: 0 0 10px rgba(164, 124, 255, 0.6);
+}
