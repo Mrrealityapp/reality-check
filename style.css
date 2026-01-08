@@ -78,3 +78,40 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
 }
+Add Charlie circular image container and styling to Meet Charlie section
+/* Center EVERYTHING on the page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center each content block */
+.section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center all images */
+.section img,
+.logo-container img,
+.charlie-circle-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center button groups */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center supporter tiers */
+.tiers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
