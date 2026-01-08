@@ -1,66 +1,96 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.top-logo, .bottom-logo {
-    width: 180px;
-    margin: 20px auto;
-    display: block;
-}
+<body>
 
-.charlie-section h1 {
-    font-size: 2.2rem;
-    margin-top: 20px;
-}
+    <!-- Top Logo -->
+    <div class="logo-container top-logo">
+        <img src="images/reality-check-logo.png" alt="Reality Check Logo">
+    </div>
 
-.charlie-photo {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    margin-top: 10px;
-}
+    <!-- Meet Charlie -->
+    <section class="section">
+        <h2>Meet Charlie</h2>
+        <img src="images/charlie.jpg" alt="Charlie the Cat" class="profile-image">
+        <p>Charlie is my daily companion and emotional anchor. His presence reminds me why compassion, patience, and honesty matter in everything we do.</p>
+    </section>
 
-.charlie-text {
-    width: 80%;
-    margin: 15px auto;
-    font-size: 1.1rem;
-}
+    <!-- Mama Tribute -->
+    <section class="section">
+        <h2>My Mama</h2>
+        <img src="images/mama.jpg" alt="Mama" class="profile-image">
+        <p>My mother taught me compassion, strength, and resilience. Her lessons guide Reality Check and everything I do to help others.</p>
+    </section>
 
-.tribute-section {
-    margin-top: 40px;
-}
+    <!-- Chef George Tribute -->
+    <section class="section">
+        <h2>Chef George</h2>
+        <img src="images/chef-george.jpg" alt="Chef George" class="profile-image">
+        <p>Chef George was my mentor, teacher, and dear friend. His influence shaped my work ethic, my creativity, and my commitment to service.</p>
+    </section>
 
-.tribute-photo {
-    width: 240px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
+    <!-- Mission Statement -->
+    <section class="section">
+        <h2>Our Mission</h2>
+        <p>Reality Check helps people make safer decisions with honesty, compassion, and lived experience. We provide transparency, trust scores, red flags, green flags, and simple explanations anyone can understand.</p>
+    </section>
 
-.tribute-text {
-    width: 80%;
-    margin: 10px auto;
-    font-size: 1.1rem;
-}
+    <!-- How the Service Works -->
+    <section class="section">
+        <h2>How Reality Check Works</h2>
+        <ul>
+            <li>Submit a message, profile, or situation.</li>
+            <li>We analyze red flags, green flags, and trust signals.</li>
+            <li>You receive a simple, human-readable explanation.</li>
+            <li>Final recommendation: Safe to trust, Be careful, or Do not trust.</li>
+        </ul>
+    </section>
 
-.support-section {
-    margin-top: 50px;
-}
+    <!-- Supporter Tiers -->
+    <section class="section">
+        <h2>Supporter Tiers</h2>
+        <p>Your support helps us help others — the homeless, the vulnerable, veterans, and animals in need.</p>
 
-.tier {
-    margin: 30px auto;
-    padding: 20px;
-    width: 80%;
-    background-color: #222;
-    border-radius: 12px;
-}
+        <div class="tiers">
+            <div class="tier">
+                <h3>Basic Supporter</h3>
+                <p>$5/month</p>
+            </div>
 
-.badge {
-    width: 120px;
-    margin: 10px auto;
-    display: block;
-}
+            <div class="tier">
+                <h3>Community Supporter</h3>
+                <p>$10/month</p>
+            </div>
+
+            <div class="tier">
+                <h3>Guardian Supporter</h3>
+                <p>$25/month</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Join / Support -->
+    <section class="section">
+        <h2>Get Involved</h2>
+        <p>Join us, support the mission, or reach out anytime.</p>
+
+        <div class="button-group">
+            <a href="mailto:doctormo920@gmail.com" class="button">Contact</a>
+            <a href="#" class="button">Join</a>
+            <a href="#" class="button">Support</a>
+        </div>
+    </section>
+
+    <!-- Bottom Logo -->
+    <div class="logo-container bottom-logo">
+        <img src="images/reality-check-logo.png" alt="Reality Check Logo">
+    </div>
+
+</body>
+</html>
