@@ -9,8 +9,8 @@
 
 <body>
 
-<!-- TOP HEADING -->
-<h1 style="text-align:center; font-weight:700; margin-top:20px;">
+<!-- TOP HEADING (CENTERED, CLEAN, SIMPLE) -->
+<h1 style="text-align: center; font-weight: 700; font-size: 2rem; margin: 20px 0;">
     Reality Check
 </h1>
 
@@ -36,9 +36,12 @@
 
 <!-- CHARLIE BLOCK (ROTATED 90° CLOCKWISE) -->
 <section id="about" class="charlie-block">
-    <img src="images/charlie picture for circle.jpeg" 
-         alt="Charlie the Cat" 
-         class="circle-photo rotated">
+    <img 
+        src="images/charlie picture for circle.jpeg" 
+        alt="Charlie the Cat" 
+        class="circle-photo"
+        style="transform: rotate(90deg); display: block; margin: 0 auto;"
+    >
     <h2>Meet Charlie</h2>
     <p>Charlie is my daily companion and emotional anchor.</p>
     <p>His presence brings comfort, grounding, and connection.</p>
@@ -46,7 +49,7 @@
     <p>Charlie’s story reminds us that healing often begins with trust.</p>
 </section>
 
-<!-- MAMA & ME TRIBUTE -->
+<!-- MAMA & ME TRIBUTE (WITH IMAGE) -->
 <section id="mama" class="tribute-block">
     <img src="images/mama-me.jpeg" alt="Me and Mama" class="mama-photo">
     <h2>Me & Mama</h2>
@@ -81,11 +84,11 @@
     <p>We stand with those who feel forgotten and help them find their footing again.</p>
 </section>
 
-<!-- DONATION TIERS (ONE HORIZONTAL LINE) -->
+<!-- DONATION TIERS (FORCED INTO ONE HORIZONTAL LINE) -->
 <section id="support" class="donation-tiers">
     <h2>Support Reality Check</h2>
 
-    <div class="tier-row">
+    <div class="tier-row" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: nowrap;">
 
         <div class="tier">
             <h3>$5 Tier</h3>
@@ -127,9 +130,14 @@
 
 </main>
 
-<!-- FOOTER -->
+<!-- FOOTER WITH DOWNSIZED LOGO + CREATED BY CHRIS -->
 <footer class="footer">
-    <img src="images/realitychecklogo.png" alt="Reality Check Logo" class="footer-logo">
+    <img 
+        src="images/realitychecklogo.png" 
+        alt="Reality Check Logo" 
+        class="footer-logo"
+        style="width: 120px; height: auto; margin-bottom: 10px;"
+    >
     <p class="copyright">© 2026 Reality Check. All rights reserved.</p>
     <p class="created-by">Created by Chris.</p>
 </footer>
