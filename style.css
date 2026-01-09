@@ -161,3 +161,8 @@ p {
 .circle-photo {
     transform: rotate(90deg) !important;
 }
+.circle-photo {
+    transform: rotate(90deg) !important;
+    width: 150px;   /* or whatever size you want */
+    height: auto;
+}
