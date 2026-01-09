@@ -270,3 +270,27 @@ p {
     height: 150px;
     object-fit: contain;
 }
+/* Anchor page for absolute logo positioning */
+body {
+    position: relative;
+}
+
+/* TOP LEFT LOGO */
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* TOP RIGHT LOGO */
+.header-logo-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
