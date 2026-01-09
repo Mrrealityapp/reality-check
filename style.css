@@ -166,3 +166,9 @@ p {
     width: 150px;   /* or whatever size you want */
     height: auto;
 }
+.circle-photo {
+    transform: rotate(90deg);
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
