@@ -109,8 +109,10 @@ p {
     width: 80px;
     height: auto;
 }
-.circle-photo {.circle-photo 
-    transform: rotate(180deg) !important;
+.circle-photo {.circle-photo {
+    transform: rotate(90deg) !important;
+}
+
 }
 
 }
