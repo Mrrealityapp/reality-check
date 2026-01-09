@@ -196,3 +196,58 @@ p {
 .nav-button:hover {
   background-color: #6a3fb0;
 }
+.charlie-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* centers the circle */
+}
+.header-logo,
+.header-logo-2 {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.charlie-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* TOP CORNER LOGOS — 150x150 squares */
+.header-logo,
+.header-logo-2 {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* CHARLIE'S PIC — 200x200 circle */
+.charlie-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAV BUTTONS — centered above Charlie */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
