@@ -55,7 +55,10 @@ footer {
 }
 
 /* IMAGE BLOCKS (Charlie, Mama, Chef George) */
-.circle-photo {
+.circle-photo {.circle-photo 
+    transform: rotate(90deg) !important;
+}
+
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -154,4 +157,7 @@ p {
 .header-logo {
     width: 120px;
     height: auto;
+}
+.circle-photo {
+    transform: rotate(90deg) !important;
 }
