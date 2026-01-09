@@ -57,13 +57,13 @@ footer {
 /* IMAGE BLOCKS (Charlie, Mama, Chef George) */
 .circle-photo {
     display: block;
-    margin: 0 auto 20px auto; /* centers the image */
+    margin: 0 auto 20px auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #a47cff;
-    transform: rotate(180deg); /* rotates Charlie 180 degrees */
+    transform: rotate(180deg) !important;
 }
 
 .mama-photo {
