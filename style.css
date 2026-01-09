@@ -63,7 +63,7 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #a47cff;
-    transform: rotate(180deg); /* rotates Charlie 180 degrees clockwise */
+    transform: rotate(180deg); /* rotates Charlie 180 degrees */
 }
 
 .mama-photo {
