@@ -135,3 +135,8 @@ p {
     color: #a47cff;
     text-shadow: 0 0 10px rgba(164, 124, 255, 0.6);
 }
+.header-logo,
+.header-logo-2 {
+  width: 150px;
+  height: auto;
+}
