@@ -1,3 +1,21 @@
+.header-logo,
+.header-logo-2 {
+  width: 150px;
+  height: auto;
+}
+
+.nav-button {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 0 6px;
+}
+
+.charlie-pic {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* GLOBAL RESET */
 body {
     margin: 0;
