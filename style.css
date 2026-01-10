@@ -785,3 +785,26 @@ header {
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+/* Top-left and top-right logo boxes */
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+.logo-left {
+    left: 10px;
+}
+
+.logo-right {
+    right: 10px;
+}
+
+.logo-left img,
+.logo-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
