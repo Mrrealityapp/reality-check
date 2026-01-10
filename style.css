@@ -768,3 +768,7 @@ header {
     font-weight: bold;
     color: #333;
 }
+.charlie-block {
+    margin-top: 20px;
+    text-align: center;
+}
