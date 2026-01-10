@@ -399,3 +399,38 @@ body {
     line-height: 1.7;
 }
 
+/* Supporter tier card styling */
+.supporter-tier {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fafafa;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.supporter-tier h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.supporter-tier p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.supporter-tier .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.supporter-tier button,
+.supporter-tier .paypal-button {
+    margin-top: 10px;
+    display: inline-block;
+}
