@@ -724,3 +724,47 @@ header {
     font-weight: bold;
     color: #333;
 }
+/* Logo sizing and positioning */
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 20px;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
+
+.logo-left img,
+.logo-right img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Title styling */
+.site-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 180px; /* pushes title below the logos */
+    font-weight: bold;
+}
+
+/* Navigation bar */
+.main-nav {
+    display: flex;
+    justify-content: space-evenly; /* spreads buttons evenly */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
