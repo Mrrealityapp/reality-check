@@ -2,7 +2,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0a0712;        /* deep dark purple-black */
+background: linear-gradient(to bottom, #2c1a4b, #4b2c7a);
+
   margin: 0;
   padding: 0;
   color: #e8d9ff;                   /* soft lavender text */
