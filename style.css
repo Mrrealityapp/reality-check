@@ -630,3 +630,97 @@ header {
     width: 120px;
     height: auto;
 }
+/* Logo placeholders */
+.placeholder {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Logo positioning */
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 20px;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
+
+/* Title styling */
+.site-title {
+    text-align: center;
+    margin-top: 160px; /* pushes title below logos */
+    font-size: 48px;
+}
+
+/* Navigation styling */
+.main-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+/* Logo placeholders */
+.placeholder {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Logo positioning */
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 20px;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
+
+/* Title styling */
+.site-title {
+    text-align: center;
+    margin-top: 160px; /* pushes title below logos */
+    font-size: 48px;
+}
+
+/* Navigation styling */
+.main-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
