@@ -344,3 +344,11 @@ body {
     height: 150px;
     object-fit: contain;
 }
+/* Footer logo alignment fix */
+.footer-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+    opacity: 0.95;
+}
