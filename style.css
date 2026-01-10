@@ -1,737 +1,136 @@
-xt
-x.header-logo,
-.header-logo-2 {
-  width: 150px;
-  height: auto;
-}
-
-.nav-button {
-  font-size: 16px;
-  padding: 8px 12px;
-  margin: 0 6px;
-}
-
-/* GLOBAL RESET */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d0b14; /* deep dark purple-black */
-    color: #e6e0ff; /* soft lavender text */
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-/* HEADER */
+/* HEADER + LOGOS + NAV */
+
 header {
-    padding: 30px 0;
-    background: linear-gradient(180deg, #1a1528, #0d0b14);
-    color: #d8c8ff;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  position: relative;
 }
 
-.logo {
-    width: 140px;
-    height: auto;
-    margin-bottom: 10px;
+.logo-left, .logo-right {
+  width: 80px;
+  position: absolute;
+  top: 20px;
 }
 
-/* SECTION STYLING */
-section {
-    margin: 40px auto;
-    max-width: 800px;
-    padding: 20px;
-    background-color: #1a1528;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(120, 70, 255, 0.25);
+.logo-left { left: 20px; }
+.logo-right { right: 20px; }
+
+nav {
+  margin-top: 25px;
 }
 
-/* HEADINGS */
-h1, h2 {
-    color: #c7b3ff;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-/* LISTS */
-ul {
-    list-style-type: none;
-    padding: 0;
+nav li {
+  display: inline;
 }
 
-ul li {
-    margin: 10px 0;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: #5e2ca5;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* FOOTER */
-footer {
-    background-color: #1a1528;
-    padding: 20px 0;
-    margin-top: 40px;
-    color: #b8a4ff;
+nav a:hover {
+  background-color: #7a42d1;
 }
 
-/* IMAGE BLOCKS (Charlie, Mama, Chef George) */
+/* HERO */
 
+.hero {
+  text-align: center;
+  background-color: #e0d4f7;
+  padding: 40px 20px;
 }
 
-  
-
-
+.circle-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* SUPPORTER TIERS */
+/* MEET CHARLIE + ABOUT + TRIBUTES */
+
+.meet-charlie,
+.about,
+.tribute,
+.support-tiers {
+  background-color: #f0e6ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.charlie-upright,
+.tribute-photo {
+  width: 260px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* SUPPORT TIERS */
+
 .tier {
-    background-color: #241b38;
-    border: 1px solid #6a4bcc;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 25px auto;
-    max-width: 600px;
-    box-shadow: 0 0 15px rgba(120, 70, 255, 0.2);
+  background-color: #fff;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 420px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .tier h3 {
-    color: #d8c8ff;
-    margin-bottom: 10px;
+  color: #5e2ca5;
 }
 
-.paypal-button {
-    margin-top: 15px;
-}
-
-/* SPACING FIXES */
-p {
-    line-height: 1.6;
-}
-
-/* TOP HEADER BAR */
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1a1528;
-    padding: 15px 30px;
-    box-shadow: 0 0 20px rgba(120, 70, 255, 0.25);
-}
-
-.header-left,
-.header-right {
-    width: 120px;
-    display: flex;
-    justify-content: center;
-}
-
-.header-logo {
-    width: 120px;
-    height: auto;
-}
-
-/* NAVIGATION */
-.header-nav {
-    display: flex;
-    gap: 25px;
-}
-
-.header-nav a {
-    color: #d8c8ff;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: 0.2s ease;
-}
-
-.header-nav a:hover {
-    color: #a47cff;
-    text-shadow: 0 0 10px rgba(164, 124, 255, 0.6);
-}
-.header-logo,
-.header-logo-2 {
-  width: 150px;
-  height: auto;
-}
-.header-logo,
-.header-logo-2 {
-  width: 150px;
-  height: auto;
-}
-
-.nav-button {
-  font-size: 16px;
-  padding: 8px 12px;
-  margin: 0 6px;
-}
-
-
-}
-.nav-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.nav-button {
-  font-size: 18px;
-  padding: 10px 18px;
-  margin: 0 10px;
-  background-color: #4b2e83;
-  color: white;
+button {
+  background-color: #5e2ca5;
+  color: #fff;
   border: none;
-  border-radius: 6px;
+  padding: 12px 22px;
+  margin-top: 12px;
   cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
- {
-  background-color: #6a3fb0;
+button:hover {
+  background-color: #7a42d1;
 }
 
-}
-.header-logo,
-.header-logo-2 {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
+/* FOOTER */
+
+footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
 }
 
-.nav-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-}
-/* TOP CORNER LOGOS — 150x150 squares */
-.header-logo,
-.header-logo-2 {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-
-/* NAV BUTTONS — centered above Charlie */
-.nav-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-}
-/* TOP LEFT LOGO */
-.header-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-/* TOP RIGHT LOGO */
-.header-logo-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-/* Anchor page for absolute logo positioning */
-body {
-    position: relative;
-}
-
-/* TOP LEFT LOGO */
-.header-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-/* TOP RIGHT LOGO */
-.header-logo-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-/* Anchor page for absolute positioning */
-body {
-    position: relative;
-}
-
-/* TOP LEFT LOGO */
-.header-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-/* TOP RIGHT LOGO */
-.header-logo-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-/* FINAL HEADER POSITIONING */
-.top-header {
-    position: relative;
-    width: 100%;
-    height: 160px;
-}
-
-/* TOP LEFT LOGO */
-.header-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-/* TOP RIGHT LOGO */
-.header-logo-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-/* Footer logo alignment fix */
 .footer-logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 20px auto 0 auto;
-    opacity: 0.95;
+  width: 110px;
+  margin-bottom: 10px;
 }
-/* Section spacing and flow smoothing */
-.section-block {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
-}/* Top header and logo spacing refinement */
-.header-block {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.header-block img {
-    width: 160px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    opacity: 0.98;
-}
-/* Tribute block styling for Mama, Chef George, and others */
-.tribute-block {
-    max-width: 850px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.tribute-block img {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-.tribute-block h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.tribute-block p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-/* Supporter tier card styling */
-.supporter-tier {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 25px 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background: #fafafa;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.supporter-tier h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.supporter-tier p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.supporter-tier .price {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.supporter-tier button,
-.supporter-tier .paypal-button {
-    margin-top: 10px;
-    display: inline-block;
-}
-/* Universal button styling for clean, modern interactions */
-.rc-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #1a73e8;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.rc-button:hover {
-    background: #155fc0;
-    transform: translateY(-2px);
-}
-
-.rc-button:active {
-    background: #0f4a96;
-    transform: translateY(0);
-}
-Commit: added navbar styling for centered, modern navigation layout
-/* Charlie's circle photo styling */
-
-/* Footer spacing, alignment, and readability */
-.site-footer {
-    width: 100%;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    background: #f5f5f5;
-    border-top: 1px solid #ddd;
-}
-
-.site-footer p {
-    font-size: 1rem;
-    color: #444;
-    margin: 8px 0;
-    line-height: 1.5;
-}
-
-.site-footer a {
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: 600;
-    transition: opacity 0.2s ease;
-}
-
-.site-footer a:hover {
-    opacity: 0.7;
-}
-/* Global typography refinement for smoother reading */
-body {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #222;
-    line-height: 1.7;
-    font-size: 1.05rem;
-    letter-spacing: 0.2px;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4 {
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-p {
-    margin-bottom: 18px;
-}
-/* Header layout fix */
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: white;
-}
-
-.header-left,
-.header-right {
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-logo {
-    width: 100px;
-    height: auto;
-}
-
-.header-title {
-    text-align: center;
-    flex-grow: 1;
-}
-
-.header-title h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.header-nav {
-    margin-top: 8px;
-}
-
-.header-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-}
-/* Header layout */
-header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-/* Logo boxes */
-.logo-left img,
-.logo-right img {
-    width: 120px;
-    height: auto;
-}
-
-/* Title stays centered */
-.site-title {
-    font-size: 42px;
-    font-weight: bold;
-    margin: 0;
-}
-
-/* Nav buttons centered under title */
-.nav-buttons {
-    grid-column: 1 / 4;
-    margin-top: 15px;
-}
-
-.nav-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 6px;
-    border: none;
-    background-color: #444;
-    color: white;
-}
-
-/* Charlie circle image centered */
-.charlie-hero {
-    grid-column: 1 / 4;
-    margin-top: 25px;
-}
-
-
-/* Top-left and top-right logo boxes */
-.logo-left,
-.logo-right {
-    position: absolute;
-    top: 20px;
-}
-
-.logo-left {
-    left: 20px;
-}
-
-.logo-right {
-    right: 20px;
-}
-
-
-/* Logo placeholders */
-.placeholder {
-    width: 120px;
-    height: 120px;
-    background: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
-/* Logo positioning */
-.logo-left,
-.logo-right {
-    position: absolute;
-    top: 20px;
-}
-
-.logo-left {
-    left: 20px;
-}
-
-.logo-right {
-    right: 20px;
-}
-
-/* Title styling */
-.site-title {
-    text-align: center;
-    margin-top: 160px; /* pushes title below logos */
-    font-size: 48px;
-}
-
-/* Navigation styling */
-.main-nav {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.main-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-}
-/* Logo placeholders */
-.placeholder {
-    width: 120px;
-    height: 120px;
-    background: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
-/* Logo positioning */
-.logo-left,
-.logo-right {
-    position: absolute;
-    top: 20px;
-}
-
-.logo-left {
-    left: 20px;
-}
-
-.logo-right {
-    right: 20px;
-}
-
-/* Title styling */
-.site-title {
-    text-align: center;
-    margin-top: 160px; /* pushes title below logos */
-    font-size: 48px;
-}
-
-/* Navigation styling */
-.main-nav {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.main-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-}
-/* Logo sizing and positioning */
-.logo-left,
-.logo-right {
-    position: absolute;
-    top: 20px;
-}
-
-.logo-left {
-    left: 20px;
-}
-
-.logo-right {
-    right: 20px;
-}
-
-
-/* Title styling */
-.site-title {
-    text-align: center;
-    font-size: 48px;
-    margin-top: 180px; /* pushes title below the logos */
-    font-weight: bold;
-}
-
-/* Navigation bar */
-.main-nav {
-    display: flex;
-    justify-content: space-evenly; /* spreads buttons evenly */
-    width: 100%;
-    margin-top: 20px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-}
-.charlie-block {
-    margin-top: 20px;
-    text-align: center;
-}
-
-
-/* Top-left and top-right logo boxes */
-.logo-left,
-.logo-right {
-    position: absolute;
-    top: 10px;
-    width: 90px;
-    height: 90px;
-}
-
-.logo-left {
-    left: 10px;
-}
-
-.logo-right {
-    right: 10px;
-}
-
-.logo-left img,
-.logo-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
