@@ -1,9 +1,58 @@
+/* GLOBAL DARK MODE WITH PURPLE HUES */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #0d0b14;        /* deep near‑black purple */
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #e6d9ff;                   /* soft lavender text */
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(180deg, #1a132b, #0d0b14);
+  color: #e6d9ff;
+}
+
+/* NAV BUTTONS */
+nav a {
+  background-color: #5e2ca5;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #7a42d1;
+}
+
+/* HERO SECTION */
+.hero {
+  background: radial-gradient(circle at center, #3a2a5f 0%, #0d0b14 70%);
+}
+
+/* CONTENT BLOCKS */
+.meet-charlie,
+.about,
+.tribute,
+.support-tiers {
+  background: rgba(46, 28, 80, 0.35);   /* translucent purple glow */
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(120, 70, 200, 0.25);
+  border-radius: 12px;
+  margin: 40px 20px;
+  color: #e6d9ff;
+}
+
+/* SUPPORT TIERS */
+.tier {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(150, 100, 255, 0.25);
+  color: #e6d9ff;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(180deg, #0d0b14, #1a132b);
+  color: #e6d9ff;
 }
 
 /* HEADER + LOGOS + NAV */
