@@ -358,4 +358,18 @@ body {
     margin: 40px auto;
     padding: 0 20px;
     line-height: 1.6;
+}/* Top header and logo spacing refinement */
+.header-block {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
+
+.header-block img {
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.98;
+}
+
