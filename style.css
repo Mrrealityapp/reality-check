@@ -372,4 +372,30 @@ body {
     margin: 0 auto;
     opacity: 0.98;
 }
+/* Tribute block styling for Mama, Chef George, and others */
+.tribute-block {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.tribute-block img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.tribute-block h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.tribute-block p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
 
