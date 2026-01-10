@@ -610,3 +610,23 @@ header {
     border-radius: 50%;
     object-fit: cover;
 }
+/* Top-left and top-right logo boxes */
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 20px;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
+
+.logo-left img,
+.logo-right img {
+    width: 120px;
+    height: auto;
+}
