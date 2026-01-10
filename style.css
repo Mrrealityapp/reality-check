@@ -11,12 +11,6 @@ x.header-logo,
   margin: 0 6px;
 }
 
-.charlie-pic {
-  width: 180px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
 /* GLOBAL RESET */
 body {
     margin: 0;
@@ -74,19 +68,12 @@ footer {
 }
 
 /* IMAGE BLOCKS (Charlie, Mama, Chef George) */
-.circle-photo {.circle-photo {
-    transform: rotate(180deg) !important;
-    display: inline-block !important;
+
 }
 
   
 
-.mama-photo {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
+
 }
 
 /* SUPPORTER TIERS */
@@ -171,11 +158,7 @@ p {
   margin: 0 6px;
 }
 
-.charlie-pic {
-  width: 180px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
+
 }
 .nav-container {
   display: flex;
@@ -194,16 +177,10 @@ p {
   cursor: pointer;
 }
 
-.nav-button:hover {
+ {
   background-color: #6a3fb0;
 }
-.charlie-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto; /* centers the circle */
+
 }
 .header-logo,
 .header-logo-2 {
@@ -211,14 +188,7 @@ p {
     height: 150px;
     object-fit: contain;
 }
-.charlie-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
+
 .nav-buttons {
     display: flex;
     justify-content: center;
@@ -234,15 +204,6 @@ p {
     object-fit: contain;
 }
 
-/* CHARLIE'S PIC — 200x200 circle */
-.charlie-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
 
 /* NAV BUTTONS — centered above Charlie */
 .nav-buttons {
@@ -459,16 +420,7 @@ body {
 }
 Commit: added navbar styling for centered, modern navigation layout
 /* Charlie's circle photo styling */
-.charlie-photo {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 40px auto 20px auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    opacity: 0.98;
-}
+
 /* Footer spacing, alignment, and readability */
 .site-footer {
     width: 100%;
@@ -604,12 +556,7 @@ header {
     margin-top: 25px;
 }
 
-.charlie-hero img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 /* Top-left and top-right logo boxes */
 .logo-left,
 .logo-right {
@@ -625,11 +572,7 @@ header {
     right: 20px;
 }
 
-.logo-left img,
-.logo-right img {
-    width: 120px;
-    height: auto;
-}
+
 /* Logo placeholders */
 .placeholder {
     width: 120px;
@@ -739,12 +682,6 @@ header {
     right: 20px;
 }
 
-.logo-left img,
-.logo-right img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
 
 /* Title styling */
 .site-title {
@@ -772,19 +709,8 @@ header {
     margin-top: 20px;
     text-align: center;
 }
-.charlie-circle {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.charlie-circle img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+
 /* Top-left and top-right logo boxes */
 .logo-left,
 .logo-right {
@@ -808,9 +734,4 @@ header {
     height: 100%;
     object-fit: contain;
 }
-.charlie-pic img {
-    width: 200px;        /* adjust size */
-    height: 200px;       /* adjust size */
-    border-radius: 50%;  /* keeps it circle */
-    object-fit: cover;   /* ensures perfect crop */
-}
+
