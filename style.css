@@ -808,3 +808,9 @@ header {
     height: 100%;
     object-fit: contain;
 }
+.charlie-pic img {
+    width: 200px;        /* adjust size */
+    height: 200px;       /* adjust size */
+    border-radius: 50%;  /* keeps it circle */
+    object-fit: cover;   /* ensures perfect crop */
+}
