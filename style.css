@@ -434,3 +434,25 @@ body {
     margin-top: 10px;
     display: inline-block;
 }
+/* Universal button styling for clean, modern interactions */
+.rc-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #1a73e8;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rc-button:hover {
+    background: #155fc0;
+    transform: translateY(-2px);
+}
+
+.rc-button:active {
+    background: #0f4a96;
+    transform: translateY(0);
+}
