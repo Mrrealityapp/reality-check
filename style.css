@@ -1,4 +1,4 @@
-.header-logo,
+x.header-logo,
 .header-logo-2 {
   width: 150px;
   height: auto;
@@ -457,3 +457,14 @@ body {
     transform: translateY(0);
 }
 Commit: added navbar styling for centered, modern navigation layout
+/* Charlie's circle photo styling */
+.charlie-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 40px auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    opacity: 0.98;
+}
