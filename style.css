@@ -183,3 +183,20 @@ footer {
 .logo-right {
     right: 10px;       /* slight padding from right */
 }
+.logo-left,
+.logo-right {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.logo-left {
+    left: 10px;
+}
+
+.logo-right {
+    right: 10px;
+}
