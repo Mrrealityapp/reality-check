@@ -165,3 +165,21 @@ footer {
     right: 20px;
 }
  
+/* PERFECT CORNER LOGO BOXES */
+.logo-left,
+.logo-right {
+    position: absolute;
+    width: 160px;      /* adjust size here */
+    height: 160px;     /* keep square */
+    top: 10px;         /* slight padding from top */
+    object-fit: contain;
+    z-index: 10;
+}
+
+.logo-left {
+    left: 10px;        /* slight padding from left */
+}
+
+.logo-right {
+    right: 10px;       /* slight padding from right */
+}
