@@ -128,3 +128,21 @@ footer {
   width: 110px;
   margin-bottom: 10px;
 }
+/* CORNER LOGOS */
+.logo-left,
+.logo-right {
+    position: absolute;
+    width: 140px;      /* increased size */
+    height: 140px;     /* increased size */
+    top: 20px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
