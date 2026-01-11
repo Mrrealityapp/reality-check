@@ -200,3 +200,20 @@ footer {
 .logo-right {
     right: 10px;
 }
+.logo-left,
+.logo-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;          /* lock to very top */
+    object-fit: contain;
+    z-index: 10;
+}
+
+.logo-left {
+    left: 0;         /* lock to very left */
+}
+
+.logo-right {
+    right: 0;        /* lock to very right */
+}
