@@ -146,3 +146,21 @@ footer {
 .logo-right {
     right: 20px;
 }
+/* CORNER LOGOS — DOUBLED SIZE */
+.logo-left,
+.logo-right {
+    position: absolute;
+    width: 280px;      /* doubled size */
+    height: 280px;     /* doubled size */
+    top: 20px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.logo-left {
+    left: 20px;
+}
+
+.logo-right {
+    right: 20px;
+}
