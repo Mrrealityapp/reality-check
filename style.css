@@ -217,3 +217,7 @@ footer {
 .logo-right {
     right: 0;        /* lock to very right */
 }
+header {
+    position: relative;
+    height: 120px;   /* gives room for 100px logos */
+}
