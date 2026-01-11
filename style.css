@@ -221,3 +221,11 @@ header {
     position: relative;
     height: 120px;   /* gives room for 100px logos */
 }
+.charlie-circle {
+    width: 200px;          /* adjust size here */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;        /* centers it */
+}
