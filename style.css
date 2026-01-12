@@ -214,5 +214,16 @@ footer {
     position: relative;
     z-index: 20;
 }
+/* CENTER THE REALITY CHECK TITLE PROPERLY */
+.top-header {
+    position: relative;
+    padding-top: 160px;  /* keep room for corner logos */
+    text-align: center;  /* center anything inside, including the title */
+}
+
+.top-header h1 {
+    display: inline-block;
+    margin: 0 auto;
+}
 
     
