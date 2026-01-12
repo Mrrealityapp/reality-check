@@ -119,3 +119,10 @@ footer {
     width: 90px;
     margin-bottom: 10px;
 }
+/* TOP CORNER LOGOS — SQUARE AND LARGER */
+.logo-left,
+.logo-right {
+    width: 140px;      /* increase size */
+    height: 140px;     /* force square shape */
+    object-fit: contain;
+}
