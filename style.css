@@ -205,4 +205,14 @@ footer {
 .top-header {
     position: relative;
     padding-top: 160px;
+/* FORCE REALITY CHECK TITLE TO CENTER */
+.top-header h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20;
 }
+
+    
