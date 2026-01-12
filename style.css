@@ -158,3 +158,27 @@ footer {
     position: relative;
     padding-top: 170px;
 }
+/* TOP CORNER LOGOS — FLUSH TO THE CORNERS */
+.logo-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain;
+}
+
+.logo-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain;
+}
+
+/* Give header room so title doesn't overlap logos */
+.top-header {
+    position: relative;
+    padding-top: 160px;
+}
