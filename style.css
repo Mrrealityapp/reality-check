@@ -126,3 +126,11 @@ footer {
     height: 140px;     /* force square shape */
     object-fit: contain;
 }
+/* TOP CORNER LOGOS — SQUARE, LARGER, AND FORCED */
+.logo-left,
+.logo-right {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain;
+    display: block;
+}
