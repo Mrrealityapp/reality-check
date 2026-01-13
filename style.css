@@ -237,3 +237,14 @@ footer {
 }
 
     
+.rc-title {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #a855f7, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
