@@ -92,3 +92,16 @@ section p {
     font-size: 20px;
     margin-bottom: 10px;
 }
+header.top-header h1 {
+    font-size: 90px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    background: linear-gradient(90deg, #a855f7, #3b82f6) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+    letter-spacing: 2px !important;
+}
