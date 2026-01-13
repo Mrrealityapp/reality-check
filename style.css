@@ -272,3 +272,18 @@ footer {
     letter-spacing: 2px;
     text-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 }
+.top-header {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+.top-header h1.rc-title {
+    background: linear-gradient(90deg, #a855f7, #3b82f6) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    font-size: 60px !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+}
