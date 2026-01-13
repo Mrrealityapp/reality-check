@@ -104,3 +104,36 @@ header.top-header h1 {
     display: block !important;
     letter-spacing: 2px !important;
 }
+/* HEADER LAYOUT */
+.top-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* LOGOS IN TOP LEFT + TOP RIGHT */
+.top-logo {
+    width: 120px;      /* adjust size here */
+    height: auto;
+    position: absolute;
+    top: 10px;
+}
+
+.top-logo:first-of-type {
+    left: 10px;
+}
+
+.top-logo:last-of-type {
+    right: 10px;
+}
+
+/* REALITY CHECK TITLE */
+.rc-title {
+    font-size: 3.5rem;   /* DOUBLE SIZE */
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(90deg, #ff6a00, #ff0099);
+    -webkit-background-clip: text;
+    color: transparent;
+}
