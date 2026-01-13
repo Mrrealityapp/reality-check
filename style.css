@@ -225,5 +225,15 @@ footer {
     display: inline-block;
     margin: 0 auto;
 }
+.top-header h1 {
+    font-size: 64px;          /* Bigger title */
+    font-weight: 800;         /* Strong bold */
+    text-align: center;       /* Centered */
+    letter-spacing: 3px;      /* Spacing for modern look */
+    color: #ffffff;           /* White text */
+    text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7; /* Purple glow */
+    margin: 0 auto;           /* Ensures centering */
+    padding-top: 10px;
+}
 
     
