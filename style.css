@@ -255,3 +255,20 @@ footer {
     color: transparent;
     text-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 }
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.top-header h1.rc-title {
+    background: linear-gradient(90deg, #a855f7, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
