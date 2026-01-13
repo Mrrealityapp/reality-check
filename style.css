@@ -320,3 +320,12 @@ footer {
     margin: 0 !important;
     padding: 0 !important;
 }
+.top-header h1.rc-title {
+    font-size: 90px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    color: white !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
