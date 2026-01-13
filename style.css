@@ -287,3 +287,22 @@ footer {
     font-weight: 800 !important;
     text-align: center !important;
 }
+.top-header {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 20px !important;
+}
+.top-header h1.rc-title {
+    background: linear-gradient(90deg, #a855f7, #3b82f6) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    font-size: 70px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    letter-spacing: 3px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
