@@ -306,3 +306,17 @@ footer {
     margin: 0 !important;
     padding: 0 !important;
 }
+.top-header {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+.top-header h1.rc-title {
+    font-size: 80px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
