@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-/* HEADER */
+/* HEADER (LOCKED AND UNCHANGED) */
 header {
     display: flex;
     justify-content: space-between;
@@ -68,13 +68,12 @@ header {
     background-color: #0a0014;
 }
 
-.charlie-top-circle img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #4b0082;
-    box-shadow: 0 0 25px #4b0082;
+/* CHARLIE CIRCLE ABOVE MEET CHARLIE */
+.charlie-top-circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 .charlie-top-circle img {
