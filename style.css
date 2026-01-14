@@ -9,6 +9,7 @@ body {
 }
 
 /* HEADER */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,7 @@ header {
 
 .title-area {
     text-align: center;
+    flex-grow: 1;
 }
 
 .site-title {
@@ -47,6 +49,7 @@ header {
 
 .nav-buttons {
     margin-top: 10px;
+    text-align: center;
 }
 
 .nav-buttons a {
