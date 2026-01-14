@@ -68,12 +68,13 @@ header {
     background-color: #0a0014;
 }
 
-/* CHARLIE CIRCLE AT TOP */
-.charlie-top-circle {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+.charlie-top-circle img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4b0082;
+    box-shadow: 0 0 25px #4b0082;
 }
 
 .charlie-top-circle img {
