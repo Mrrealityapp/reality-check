@@ -1,81 +1,71 @@
-/* GLOBAL PAGE STYLE */
+/* GLOBAL */
 body {
+    margin: 0;
+    padding: 0;
     background-color: #0a0014;
     color: #e6d6ff;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* SECTION SPACING */
-section {
-    padding: 40px 20px;
     text-align: center;
-    border-bottom: 1px solid #2b005c;
 }
 
-/* SECTION TITLES WITH RADIANT PURPLE */
-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0014;
+    padding: 10px 20px;
+    border-bottom: 2px solid #4b0082;
+}
+
+.logo-box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-area {
+    text-align: center;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: 800;
     background: linear-gradient(90deg, #b26bff, #d9a7ff, #ffffff);
     -webkit-background-clip: text;
     color: transparent;
+    margin: 0;
 }
 
-/* PARAGRAPH TEXT */
-section p {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #e6d6ff;
+.nav-buttons {
+    margin-top: 10px;
 }
 
-/* IMAGES */
-.charlie-img,
-.tribute-img {
-    width: 260px;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #4b0082;
-    box-shadow: 0 0 20px #4b0082;
-}
-
-/* SUPPORT TIERS */
-.tiers {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.tier-box {
-    background-color: #1a0033;
-    padding: 20px;
-    width: 260px;
-    border-radius: 12px;
-    border: 2px solid #4b0082;
-    box-shadow: 0 0 15px #4b0082;
-}
-
-.tier-box h3 {
+.nav-buttons a {
     color: #d9a7ff;
-    margin-bottom: 10px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px 20px;
+.nav-buttons a:hover {
+    color: #ffffff;
+}
+
+.header-spacer {
+    height: 20px;
     background-color: #0a0014;
-    border-top: 2px solid #4b0082;
 }
 
-.footer-logo {
-    width: 120px;
-    margin-bottom: 10px;
-}
 /* CHARLIE CIRCLE AT TOP */
 .charlie-top-circle {
     display: flex;
@@ -91,4 +81,58 @@ footer {
     object-fit: cover;
     border: 3px solid #4b0082;
     box-shadow: 0 0 25px #4b0082;
+}
+
+/* SECTION SPACING */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #2b005c;
+}
+
+/* CHARLIE IMAGE IN SECTION */
+.charlie-img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px #4b0082;
+}
+
+/* TRIBUTE IMAGES */
+.tribute-img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px #4b0082;
+}
+
+/* SUPPORT TIERS */
+.tiers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tier-box {
+    background-color: #1a0033;
+    border: 2px solid #4b0082;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #4b0082;
+}
+
+.tier-box h3 {
+    color: #d9a7ff;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-color: #0a0014;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
 }
