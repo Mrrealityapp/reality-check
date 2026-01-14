@@ -110,3 +110,20 @@ footer {
     height: auto;
     margin-bottom: 10px;
 }
+/* NAV BUTTONS */
+.nav-buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nav-buttons a {
+    color: #d9a7ff;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-buttons a:hover {
+    color: #ffffff;
+}
