@@ -3,48 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <title>Reality Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-wrapper">
 
-<header class="header-container">
-  <div class="header-left-logo">
-    <img src="RealityCheckLogo.png" alt="Reality Check Logo Left">
+    <!-- TOP HEADER WITH CORNER LOGOS -->
+    <header class="site-header">
+      <div class="logo-box logo-left">
+        <!-- Left logo image -->
+        <img src="realitycheck-logo-left.png" alt="Reality Check Logo Left">
+      </div>
+
+      <div class="header-block">
+        <h1 class="site-title">Reality Check</h1>
+        <p class="site-tagline">A real person, a real story, a real lifeline.</p>
+
+        <nav class="main-nav">
+          <button class="nav-btn">Home</button>
+          <button class="nav-btn">Our Mission</button>
+          <button class="nav-btn">Supporters</button>
+          <button class="nav-btn">Contact</button>
+        </nav>
+      </div>
+
+      <div class="logo-box logo-right">
+        <!-- Right logo image -->
+        <img src="realitycheck-logo-right.png" alt="Reality Check Logo Right">
+      </div>
+    </header>
+
+    <!-- PURPLE DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- MEET CHARLIE SECTION -->
+    <main>
+      <section id="meet-charlie" class="content-section">
+        <h2 class="section-title">Meet Charlie</h2>
+        <div class="section-inner two-column">
+          <div class="text-block">
+            <!-- KEEP YOUR EXISTING MEET CHARLIE TEXT HERE -->
+            <p>
+              Charlie is the heartbeat of Reality Check, a daily reminder that connection, comfort,
+              and small acts of kindness can change everything.
+            </p>
+          </div>
+          <div class="image-block">
+            <!-- Your existing Charlie image filename here -->
+            <img src="charlie.png" alt="Charlie the cat">
+          </div>
+        </div>
+      </section>
+
+      <!-- SPACER -->
+      <div class="spacer-large"></div>
+
+      <!-- ME & MAMA SECTION (SQUARE IMAGE + TRIBUTE) -->
+      <section id="me-and-mama" class="content-section">
+        <h2 class="section-title">Me &amp; Mama</h2>
+        <div class="section-inner two-column reverse">
+          <div class="image-block square-image">
+            <!-- Your existing Me & Mama square image -->
+            <img src="me-and-mama.png" alt="Me and Mama">
+          </div>
+          <div class="text-block">
+            <!-- MAMA 6-LINE TRIBUTE BLOCK -->
+            <p>She taught me compassion when the world looked away.</p>
+            <p>She showed me strength when everything felt impossible.</p>
+            <p>She reminded me that dignity is not negotiable.</p>
+            <p>She believed in service long before I had the words.</p>
+            <p>She is the quiet courage behind Reality Check.</p>
+            <p>This project is for her, and for everyone like her.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPACER -->
+      <div class="spacer-large"></div>
+
+      <!-- CHEF GEORGE SECTION (PHOTO + TRIBUTE) -->
+      <section id="chef-george" class="content-section">
+        <h2 class="section-title">Chef George</h2>
+        <div class="section-inner two-column">
+          <div class="image-block square-image">
+            <!-- Chef George photo space -->
+            <img src="chef-george.png" alt="Chef George">
+          </div>
+          <div class="text-block">
+            <!-- CHEF GEORGE 6-LINE TRIBUTE BLOCK -->
+            <p>He taught me discipline in the heat of the kitchen.</p>
+            <p>He showed me that excellence is an act of love.</p>
+            <p>He treated every plate like it mattered to someone’s soul.</p>
+            <p>He reminded me that service is a craft, not a chore.</p>
+            <p>He helped shape the way I show up for others.</p>
+            <p>His legacy lives in every act of care we offer.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PURPLE DIVIDER -->
+      <div class="section-divider"></div>
+
+      <!-- MISSION STATEMENT SECTION -->
+      <section id="mission" class="content-section">
+        <h2 class="section-title">Our Mission</h2>
+        <div class="section-inner single-column">
+          <p>
+            Reality Check exists to restore trust, dignity, and real human connection in a world
+            that often feels cold and automated. I’ve been homeless, I’ve been hungry, and I’ve
+            been the person on the other end of the phone when someone had nowhere else to turn.
+          </p>
+          <p>
+            This project is a lifeline for people who are slipping through the cracks—homeless
+            individuals, homeless veterans, and animals in need—through direct support, honest
+            communication, and partnerships with organizations that actually show up.
+          </p>
+          <p>
+            Your support doesn’t disappear into a black box. It becomes food, warmth, safety,
+            and a real person answering when someone reaches out for help.
+          </p>
+        </div>
+      </section>
+
+      <!-- SPACER -->
+      <div class="spacer-large"></div>
+
+      <!-- SUPPORTER TIERS + PAYPAL BUTTONS -->
+      <section id="supporters" class="content-section">
+        <h2 class="section-title">Become a Reality Check Supporter</h2>
+        <div class="section-inner supporter-grid">
+          <div class="tier-card">
+            <h3 class="tier-title">$10 / month</h3>
+            <p class="tier-text">Helps cover a warm meal or a small supply run for someone in crisis.</p>
+          </div>
+          <div class="tier-card">
+            <h3 class="tier-title">$25 / month</h3>
+            <p class="tier-text">Supports emergency needs like blankets, pet food, or transportation.</p>
+          </div>
+          <div class="tier-card">
+            <h3 class="tier-title">$50 / month</h3>
+            <p class="tier-text">Backs ongoing outreach, check-ins, and crisis response for those on the edge.</p>
+          </div>
+          <div class="tier-card">
+            <h3 class="tier-title>Custom Support</h3>
+            <p class="tier-text">Choose your own amount and become part of the Reality Check backbone.</p>
+          </div>
+        </div>
+
+        <div class="section-inner paypal-row">
+          <!-- PLACE YOUR TWO WORKING PAYPAL BUTTONS HERE -->
+
+          <div class="paypal-button">
+            <!-- PayPal Button 1 (e.g., one-time support) -->
+            <!-- PASTE YOUR EXISTING WORKING PAYPAL BUTTON CODE HERE -->
+          </div>
+
+          <div class="paypal-button">
+            <!-- PayPal Button 2 (e.g., monthly subscription) -->
+            <!-- PASTE YOUR EXISTING WORKING PAYPAL BUTTON CODE HERE -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; Reality Check Project. A real person, a real story, a real lifeline.</p>
+      </div>
+    </footer>
+
   </div>
-
-  <div class="header-title-block">
-    <h1 class="site-title">Reality Check</h1>
-    <nav class="nav-buttons">
-      <a href="#charlie">Meet Charlie</a>
-      <a href="#mama">Tribute to Mama</a>
-      <a href="#chef">Tribute to Chef George</a>
-    </nav>
-  </div>
-
-  <div class="header-right-logo">
-    <img src="RealityCheckLogo.png" alt="Reality Check Logo Right">
-  </div>
-</header>
-
-<hr class="divider-line" />
-
-<section id="charlie">
-  <h2>Meet Charlie</h2>
-  <img src="charlie picture for circle.jpeg" class="charlie-img" alt="Charlie">
-  <p>Charlie is the emotional anchor of Reality Check. His presence brings comfort, hope, and connection to everyone who visits.</p>
-</section>
-
-<section id="mama">
-  <h2>Tribute to Mama</h2>
-  <img src="(Upload-from-mobile-1767436142)2020-09-27_Original.jpeg" class="mama-img" alt="Me and Mama">
-  <p>Mama taught compassion, strength, and resilience. Her legacy lives in every act of kindness Reality Check delivers.</p>
-</section>
-
-<section id="chef">
-  <h2>Tribute to Chef George</h2>
-  <img src="chef-placeholder.jpeg" class="mama-img" alt="Chef George">
-  <p>Chef George shaped the founder’s culinary journey and philosophy of service. His mentorship is honored here.</p>
-</section>
-
 </body>
 </html>
