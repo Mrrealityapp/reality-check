@@ -20,6 +20,12 @@ h2.section-title {
   color: purple;
 }
 
+.mission-text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 /* HEADER */
 .site-header {
   background-color: #111;
@@ -70,6 +76,7 @@ h2.section-title {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-btn {
@@ -89,7 +96,7 @@ h2.section-title {
 /* CONTENT */
 .content-section {
   padding: 60px 20px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -134,10 +141,12 @@ h2.section-title {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .donation-tier {
   flex: 1;
+  min-width: 220px;
   background: #fafafa;
   padding: 20px;
   border-radius: 12px;
