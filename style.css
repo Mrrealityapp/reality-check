@@ -1,2 +1,177 @@
-Forced rebuild: cleared style.css to flush old cached styling.
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
 
+.purple-outline {
+  border: 3px solid purple;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+h2.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: purple;
+}
+
+.mission-text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #111;
+  padding: 40px 0 60px 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.header-logo-box {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-logo-box {
+  left: 20px;
+}
+
+.right-logo-box {
+  right: 20px;
+}
+
+.header-logo {
+  width: 140px;
+  height: auto;
+}
+
+.header-center-block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-shadow: 0 0 25px purple;
+}
+
+/* NAV */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background-color: purple;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background-color: #5a0b8a;
+}
+
+/* CONTENT */
+.content-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circle-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px purple;
+}
+
+.square-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 25px purple;
+}
+
+.placeholder-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border: 3px solid purple;
+  background: #f0f0f0;
+}
+
+.text-block p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+/* DONATION TIERS */
+.donation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.donation-tier {
+  flex: 1;
+  min-width: 240px;
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 3px solid purple;
+}
+
+.paypal-btn {
+  background-color: purple;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.paypal-btn:hover {
+  background-color: #5a0b8a;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #fafafa;
+  margin-top: 40px;
+}
