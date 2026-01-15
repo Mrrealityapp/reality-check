@@ -15,57 +15,70 @@ h2.section-title {
 
 /* HEADER */
 .site-header {
+  background-color: #111;
+  padding: 40px 0 60px 0;
   position: relative;
   width: 100%;
-  padding: 60px 0 80px 0;
   text-align: center;
-  background-color: #ffffff;
+  color: white;
 }
 
-.header-logo {
-  width: 100px;
+/* Logo boxes */
+.header-logo-box {
+  width: 140px;
+  height: 140px;
   position: absolute;
   top: 20px;
-}
-
-.left-logo {
-  left: 20px;
-}
-
-.right-logo {
-  right: 20px;
-}
-
-.header-center {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.left-logo-box {
+  left: 20px;
+}
+
+.right-logo-box {
+  right: 20px;
+}
+
+.header-logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Center block */
+.header-center-block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .site-title {
-  font-size: 52px;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0 0 15px purple;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px purple;
 }
 
-.site-tagline {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #444;
+/* Nav buttons */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.nav-buttons a {
-  margin: 0 12px;
-  padding: 12px 20px;
+.nav-btn {
   background-color: purple;
   color: white;
-  border-radius: 6px;
-  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 }
 
-.nav-buttons a:hover {
+.nav-btn:hover {
   background-color: #5a0b8a;
 }
 
