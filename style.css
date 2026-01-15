@@ -277,3 +277,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* CHARLIE CIRCLE IMAGE */
+.charlie-circle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.charlie-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.45);
+}
