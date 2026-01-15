@@ -6,6 +6,13 @@ body {
   color: #222;
 }
 
+.purple-outline {
+  border: 3px solid purple;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
 h2.section-title {
   text-align: center;
   font-size: 32px;
@@ -23,7 +30,6 @@ h2.section-title {
   color: white;
 }
 
-/* Logo boxes */
 .header-logo-box {
   width: 140px;
   height: 140px;
@@ -47,7 +53,6 @@ h2.section-title {
   height: auto;
 }
 
-/* Center block */
 .header-center-block {
   max-width: 600px;
   margin: 0 auto;
@@ -60,7 +65,7 @@ h2.section-title {
   text-shadow: 0 0 20px purple;
 }
 
-/* Nav buttons */
+/* NAV */
 .main-nav {
   display: flex;
   justify-content: center;
@@ -71,18 +76,17 @@ h2.section-title {
   background-color: purple;
   color: white;
   padding: 12px 24px;
-  border: none;
   border-radius: 8px;
+  text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .nav-btn:hover {
   background-color: #5a0b8a;
 }
 
-/* CONTENT SECTIONS */
+/* CONTENT */
 .content-section {
   padding: 60px 20px;
   max-width: 800px;
@@ -119,11 +123,40 @@ h2.section-title {
   background: #f0f0f0;
 }
 
-/* TEXT BLOCKS */
 .text-block p {
   text-align: center;
   margin: 8px 0;
   font-size: 18px;
+}
+
+/* DONATION TIERS */
+.donation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.donation-tier {
+  flex: 1;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid purple;
+}
+
+.paypal-btn {
+  background-color: purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.paypal-btn:hover {
+  background-color: #5a0b8a;
 }
 
 /* FOOTER */
