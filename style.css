@@ -451,3 +451,53 @@ body {
 .nav-buttons a:hover {
   background-color: #5a0b8a;
 }
+/* === HEADER OVERRIDE — FORCE APPLY === */
+.site-header {
+  position: relative !important;
+  width: 100% !important;
+  padding: 50px 0 !important;
+  text-align: center !important;
+  background-color: #ffffff !important;
+}
+
+.header-logo {
+  width: 100px !important;
+  position: absolute !important;
+  top: 20px !important;
+}
+
+.left-logo {
+  left: 20px !important;
+}
+
+.right-logo {
+  right: 20px !important;
+}
+
+.header-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.site-title {
+  font-size: 52px !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  text-shadow: 0 0 15px purple !important;
+}
+
+.nav-buttons a {
+  margin: 0 14px !important;
+  padding: 12px 20px !important;
+  background-color: purple !important;
+  color: white !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+.nav-buttons a:hover {
+  background-color: #5a0b8a !important;
+}
