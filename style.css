@@ -1,79 +1,274 @@
-body {
-  background-color: #121212;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+/* GLOBAL RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.header-container {
+/* PAGE BACKGROUND + BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f3ff;
+  background: radial-gradient(circle at top, #5b2b82 0%, #12071f 40%, #05030a 100%);
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px 40px 16px;
+}
+
+/* HEADER + LOGOS */
+.site-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #1a1a1a;
-  padding: 25px;
-  border-bottom: 4px solid #4b0082;
+  justify-content: center;
+  padding: 40px 0 30px 0;
 }
 
-.header-left-logo img,
-.header-right-logo img {
+.logo-box {
+  position: absolute;
+  top: 10px;
   width: 90px;
-  height: auto;
+  height: 90px;
+  background: rgba(20, 10, 40, 0.8);
+  border: 1px solid #8b5cf6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
 }
 
-.header-title-block {
+.logo-left {
+  left: 10px;
+}
+
+.logo-right {
+  right: 10px;
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.header-block {
   text-align: center;
+  padding: 20px 16px;
+  background: linear-gradient(145deg, rgba(40, 20, 80, 0.9), rgba(15, 5, 35, 0.95));
+  border-radius: 18px;
+  border: 1px solid #a855f7;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+  max-width: 620px;
 }
 
 .site-title {
-  color: #b19cd9;
-  font-size: 40px;
-  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #f9f5ff;
 }
 
-.nav-buttons a {
-  color: #ffffff;
-  margin: 0 12px;
-  text-decoration: none;
-  font-size: 20px;
+.site-tagline {
+  font-size: 0.95rem;
+  color: #e9d5ff;
+  margin-bottom: 18px;
 }
 
-.nav-buttons a:hover {
-  color: #b19cd9;
+/* NAV BUTTONS */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.divider-line {
-  border: none;
-  border-bottom: 4px solid #4b0082;
-  margin: 0;
+.nav-btn {
+  background: transparent;
+  border: 1px solid #a855f7;
+  color: #f5f3ff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-section {
-  padding: 40px 20px;
-  text-align: center;
+.nav-btn:hover {
+  background: #a855f7;
+  color: #0b0415;
 }
 
-.charlie-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+/* SECTION DIVIDER + SPACERS */
+.section-divider {
+  height: 2px;
+  width: 100%;
+  margin: 24px 0;
+  background: linear-gradient(to right, transparent, #a855f7, transparent);
+  opacity: 0.8;
+}
+
+.spacer-large {
+  height: 32px;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+  background: rgba(10, 5, 25, 0.9);
+  border-radius: 18px;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  padding: 22px 18px 24px 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 18px rgba(15, 6, 40, 0.8);
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: #f9f5ff;
+  border-left: 4px solid #a855f7;
+  padding-left: 10px;
+}
+
+.section-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.section-inner.single-column {
+  flex-direction: column;
+}
+
+.section-inner.two-column {
+  justify-content: space-between;
+}
+
+.section-inner.two-column.reverse {
+  flex-direction: row-reverse;
+}
+
+/* TEXT + IMAGES */
+.text-block {
+  flex: 1 1 260px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e9d5ff;
+}
+
+.text-block p + p {
+  margin-top: 8px;
+}
+
+.image-block {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-block img {
+  max-width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(168, 85, 247, 0.7);
+  box-shadow: 0 0 18px rgba(88, 28, 135, 0.7);
+}
+
+/* FORCE SQUARE LOOK FOR MAMA & CHEF GEORGE */
+.square-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin: 20px auto;
-  display: block;
-  border: 4px solid #4b0082;
 }
 
-.mama-img {
-  width: 320px;
-  height: auto;
+/* SUPPORTER GRID */
+.supporter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.tier-card {
+  background: radial-gradient(circle at top, #3b1c5c 0%, #12071f 60%);
+  border-radius: 14px;
+  border: 1px solid rgba(168, 85, 247, 0.7);
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.tier-title {
+  font-size: 1rem;
+  color: #f9f5ff;
+  margin-bottom: 6px;
+}
+
+.tier-text {
+  font-size: 0.85rem;
+  color: #e9d5ff;
+}
+
+/* PAYPAL ROW */
+.paypal-row {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypal-button {
+  background: rgba(15, 7, 35, 0.9);
   border-radius: 12px;
-  object-fit: cover;
-  margin: 20px auto;
-  display: block;
-  border: 4px solid #4b0082;
+  padding: 10px;
+  border: 1px dashed rgba(250, 204, 21, 0.7);
 }
 
-#mama {
-  padding-top: 40px;
-  padding-bottom: 80px;
+/* FOOTER */
+.site-footer {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(55, 48, 163, 0.8);
+}
+
+.footer-inner {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #c4b5fd;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 800px) {
+  .logo-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header-block {
+    margin: 0 60px;
+  }
+
+  .supporter-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding-top: 70px;
+  }
+
+  .header-block {
+    margin: 0 10px;
+  }
+
+  .supporter-grid {
+    grid-template-columns: 1fr;
+  }
 }
