@@ -229,3 +229,59 @@ h2.section-title {
   font-weight: bold;
   font-size: 1.1em;
 }
+/* === FINAL HEADER STYLES === */
+.top-header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 4px solid #6a0dad;
+  flex-wrap: wrap;
+}
+
+.header-logo-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #6a0dad;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.header-center-block {
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.site-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #b266ff;
+  text-shadow: 0 0 10px #b266ff;
+  margin-bottom: 10px;
+}
+
+.nav-bar {
+  background-color: #6a0dad;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
