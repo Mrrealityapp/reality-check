@@ -99,3 +99,18 @@ body {
 /* ================= MAMA TRIBUTE ================= */
 .image-center {
   width: 100%;
+.mama-block {
+  text-align: center;
+}
+
+.mama-block img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-block {
+  margin-bottom: 60px;
+}
