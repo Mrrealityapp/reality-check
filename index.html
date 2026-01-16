@@ -1,105 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reality Check</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+/* GLOBAL PAGE STYLE */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
-<body>
+/* ================= HEADER ================= */
 
-  <!-- HEADER -->
-  <header class="top-header">
-    <div class="header-logo-box left-logo-box">
-      <img src="realitychecklogo.png" alt="Reality Check Logo" class="header-logo">
-    </div>
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(180deg, #1a0025, #000000);
+  border-bottom: 4px solid #6a00ff;
+  box-shadow: 0 0 25px rgba(150, 0, 255, 0.6);
+}
 
-    <div class="header-center-block">
-      <h1 class="site-title">Reality Check</h1>
-      <div class="nav-bar">
-        <a href="#mission" class="nav-btn">Mission</a>
-        <a href="#about" class="nav-btn">About</a>
-        <a href="#donate" class="nav-btn">Donate</a>
-        <a href="#contact" class="nav-btn">Contact</a>
-      </div>
-    </div>
+.header-logo-box {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    <div class="header-logo-box right-logo-box">
-      <img src="realitychecklogo.png" alt="Reality Check Logo" class="header-logo">
-    </div>
-  </header>
+.header-logo {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 12px #6a00ff);
+}
 
-  <main>
+.header-center-block {
+  text-align: center;
+  flex-grow: 1;
+}
 
-    <!-- MISSION -->
-    <section id="mission" class="content-section purple-outline">
-      <h2 class="section-title">Our Mission</h2>
-      <p class="mission-text">
-        Reality Check exists to restore trust, dignity, and connection for people who feel invisible.
-        We help the homeless, the struggling, the forgotten — and the animals who comfort them.
-      </p>
-    </section>
+.site-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  color: #c28aff;
+  text-shadow: 0 0 15px #9d4dff, 0 0 30px #6a00ff;
+}
 
-    <!-- ABOUT -->
-    <section id="about" class="content-section purple-outline">
-      <h2 class="section-title">Meet Charlie</h2>
-      <img src="charlie-circle.png" alt="Charlie the Cat" class="charlie-photo">
-      <p class="mission-text">
-        Charlie is the emotional anchor of Reality Check — a symbol of hope, comfort, and connection.
-      </p>
+/* NAV BUTTONS */
+.nav-bar {
+  margin-top: 12px;
+}
 
-      <h2 class="section-title">Mama</h2>
-      <img src="584478859_1558946898452949_6218734400148224100_n (1).jpg" alt="Mama and Me" class="mama-photo">
-      <p class="mission-text">
-        Mama taught compassion, strength, and resilience — the foundation of Reality Check’s mission.
-      </p>
+.nav-btn {
+  color: #e6ccff;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 8px 16px;
+  border: 1px solid #6a00ff;
+  border-radius: 6px;
+  background: rgba(60, 0, 90, 0.6);
+  box-shadow: 0 0 12px rgba(150, 0, 255, 0.5);
+  transition: 0.3s;
+}
 
-      <h2 class="section-title">Chef George</h2>
-      <img src="daf81941-3983-40c4-8452-94604ec7f652.jpg" alt="Chef George" class="chef-photo">
-      <p class="mission-text">
-        Chef George shaped the philosophy of service that guides Reality Check today.
-      </p>
-    </section>
+.nav-btn:hover {
+  background: #6a00ff;
+  color: white;
+  box-shadow: 0 0 20px #b266ff;
+}
 
-    <!-- DONATION TIERS -->
-    <section id="donate" class="content-section purple-outline">
-      <h2 class="section-title">Supporter Tiers</h2>
+/* STRONG PURPLE STRAP */
+.header-strap {
+  width: 100%;
+  height: 10px;
+  background: #6a00ff;
+  box-shadow: 0 0 25px #9d4dff;
+}
 
-      <div class="donation-row">
+/* ================= SECTIONS ================= */
 
-        <div class="donation-tier">
-          <h3>Supporter</h3>
-          <p>Small monthly gift that keeps the mission alive.</p>
-        </div>
+.section-block {
+  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  background: rgba(20, 0, 30, 0.7);
+  border: 2px solid #6a00ff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(150, 0, 255, 0.5);
+}
 
-        <div class="donation-tier">
-          <h3>Advocate</h3>
-          <p>Helps provide direct support to people and animals in need.</p>
-        </div>
+/* CHARLIE CIRCLE */
+.charlie-circle img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #b266ff;
+  box-shadow: 0 0 25px #9d4dff;
+}
 
-        <div class="donation-tier">
-          <h3>Champion</h3>
-          <p>Drives large‑scale impact and outreach.</p>
-        </div>
+/* TRIBUTE IMAGES */
+.image-center img,
+.tribute-image {
+  width: 260px;
+  border-radius: 12px;
+  border: 3px solid #6a00ff;
+  box-shadow: 0 0 25px #9d4dff;
+}
 
-      </div>
-    </section>
+/* CHEF GEORGE PLACEHOLDER */
+.chef-placeholder-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px dashed #6a00ff;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(150, 0, 255, 0.5);
+}
 
-    <!-- CONTACT -->
-    <section id="contact" class="content-section purple-outline">
-      <h2 class="section-title">Contact</h2>
-      <p class="mission-text">
-        Reach out anytime — Reality Check is here for you.
-      </p>
-    </section>
+/* TEXT BLOCKS */
+.content-box {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6ccff;
+}
 
-  </main>
+/* ================= DONATION TIERS ================= */
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <img src="realitychecklogo.png" alt="Reality Check Logo" class="footer-logo">
-  </footer>
+.tiers-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
 
-</body>
-</html>
+.tier-box {
+  padding: 15px 25px;
+  background: rgba(40, 0, 70, 0.8);
+  border: 2px solid #6a00ff;
+  border-radius: 10px;
+  color: #e6ccff;
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(150, 0, 255, 0.5);
+  transition: 0.3s;
+}
+
+.tier-box:hover {
+  background: #6a00ff;
+  color: white;
+  box-shadow: 0 0 30px #b266ff;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #0a0010;
+  border-top: 3px solid #6a00ff;
+  box-shadow: 0 0 25px rgba(150, 0, 255, 0.6);
+}
+
+.footer-logo {
+  width: 100px;
+  filter: drop-shadow(0 0 10px #6a00ff);
+}
