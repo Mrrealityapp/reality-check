@@ -5,111 +5,239 @@
     box-sizing: border-box;
 }
 
+/* BODY / BACKGROUND */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222;
-    line-height: 1.6;
-    padding-bottom: 40px;
+    color: #f5f5ff;
+    background: radial-gradient(circle at top, #5b3cff 0%, #1b1035 40%, #05030a 100%);
+    min-height: 100vh;
 }
 
-/* HEADER */
-.header {
+/* LINKS RESET */
+a {
+    color: inherit;
+}
+
+/* HERO HEADER */
+.hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.hero-logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 0 18px rgba(180, 140, 255, 0.9));
+}
+
+.hero-title {
+    font-size: 2.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-tagline {
+    max-width: 720px;
+    margin: 0 auto 24px;
+    font-size: 1rem;
+    color: #d7d2ff;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn-primary,
+.btn-secondary,
+.btn-tier {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #b37bff, #6f4bff);
+    color: #0b0618;
+    box-shadow: 0 0 14px rgba(179, 123, 255, 0.7);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #d0a4ff, #8a63ff);
+    transform: translateY(-1px);
+    box-shadow: 0 0 18px rgba(208, 164, 255, 0.9);
+}
+
+.btn-secondary {
+    border: 1px solid #b37bff;
+    color: #e6ddff;
+    background: rgba(10, 6, 30, 0.7);
+}
+
+.btn-secondary:hover {
+    background: rgba(25, 15, 60, 0.9);
+}
+
+/* MAIN BLOCKS */
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 24px;
+    border-top: 1px solid rgba(140, 110, 220, 0.25);
+}
+
+.block-alt {
+    background: radial-gradient(circle at top left, rgba(120, 80, 220, 0.18), transparent 55%);
+}
+
+.block-image-wrap {
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-image {
+    max-width: 240px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+}
+
+.block-image.circle {
+    border-radius: 50%;
+}
+
+.block-content {
+    flex: 1 1 260px;
+    max-width: 720px;
+}
+
+.block-content.wide {
+    margin: 0 auto;
+}
+
+/* BLOCK TYPOGRAPHY */
+.block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #f7f3ff;
+}
+
+.block p {
+    font-size: 0.98rem;
+    margin-bottom: 10px;
+    color: #d8d2ff;
+}
+
+/* PLACEHOLDER FOR CHEF GEORGE IMAGE */
+.placeholder {
+    border: 1px dashed rgba(200, 170, 255, 0.7);
+    border-radius: 16px;
+    min-height: 180px;
+}
+
+.placeholder-text {
+    font-size: 0.9rem;
+    color: #bba7ff;
     text-align: center;
     padding: 20px;
-    background-color: #f3f3f3;
-    border-bottom: 2px solid #ccc;
 }
 
-.top-logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
+/* SUPPORT BLOCK */
+.support-block {
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.site-title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* NAVIGATION */
-.nav {
-    margin-top: 10px;
-}
-
-.nav a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-}
-
-.nav a:hover {
-    color: #000;
-}
-
-/* SECTIONS */
-.section {
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-.section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-/* IMAGES */
-.circle-image,
-.tribute-image {
-    width: 220px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* TRIBUTE BLOCKS */
-.tribute {
-    background-color: #fafafa;
-    padding: 40px 20px;
-}
-
-/* SUPPORT SECTION */
-.support {
-    background-color: #f0f0ff;
-}
-
-.paypal-buttons {
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
     margin-top: 20px;
 }
 
-.paypal-btn {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 8px;
-    background-color: #4b4bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
+.tier-card {
+    background: rgba(10, 6, 30, 0.85);
+    border-radius: 16px;
+    padding: 18px 16px 20px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
 }
 
-.paypal-btn:hover {
-    background-color: #0000cc;
+.tier-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #f5f0ff;
+}
+
+.tier-card p {
+    font-size: 0.9rem;
+    color: #d3ccff;
+    margin-bottom: 12px;
+}
+
+.btn-tier {
+    background: linear-gradient(135deg, #b37bff, #6f4bff);
+    color: #0b0618;
+    text-align: center;
+}
+
+.btn-tier:hover {
+    background: linear-gradient(135deg, #d0a4ff, #8a63ff);
+    transform: translateY(-1px);
+}
+
+.paypal-note {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: #c9c0ff;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 20px;
-    background-color: #f3f3f3;
-    margin-top: 40px;
+    padding: 26px 20px 30px;
+    border-top: 1px solid rgba(140, 110, 220, 0.25);
+    margin-top: 20px;
 }
 
 .footer-logo {
-    width: 100px;
+    width: 90px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 0 12px rgba(179, 123, 255, 0.8));
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #cfc7ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 40px;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .block {
+        padding: 28px 16px;
+    }
+
+    .tier-grid {
+        grid-template-columns: 1fr;
+    }
 }
