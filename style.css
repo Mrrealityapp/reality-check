@@ -109,3 +109,74 @@ h2 {
   align-items: center;
   text-align: center;
 }
+/* ===== TRIBUTE BLOCKS (Charlie, Mama, Chef) ===== */
+
+.section-block {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  position: relative;
+}
+
+/* radiant streaks behind each block */
+.section-block::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(192,132,252,0.25), transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
+}
+
+/* glowing purple outline box */
+.content-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  background: rgba(20, 20, 30, 0.75);
+  border-radius: 14px;
+  border: 2px solid #c084fc;
+  box-shadow: 0 0 25px rgba(192,132,252,0.5);
+}
+
+/* titles */
+h2 {
+  color: #c084fc;
+  text-shadow: 0 0 12px #a855f7;
+  margin-bottom: 20px;
+}
+
+/* 8-line tribute text */
+.content-box p {
+  line-height: 1.6;
+  min-height: 8em; /* forces 8 lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* image styles */
+.charlie-circle img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 25px auto;
+  box-shadow: 0 0 25px #a855f7;
+}
+
+.tribute-image {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 25px auto;
+  box-shadow: 0 0 25px #a855f7;
+}
