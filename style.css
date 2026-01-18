@@ -349,3 +349,54 @@ body {
 .rc-nav a:hover {
     color: #b366ff;
 }
+/* === RESTORED VERSION C HEADER WITH 120PX LOGOS === */
+
+.rc-header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #6a0dad;
+}
+
+.rc-logo-left,
+.rc-logo-right {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    position: absolute;
+    top: 15px;
+}
+
+.rc-logo-left {
+    left: 20px;
+}
+
+.rc-logo-right {
+    right: 20px;
+}
+
+.rc-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.rc-nav {
+    margin-top: 20px;
+}
+
+.rc-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rc-nav a:hover {
+    color: #b366ff;
+}
