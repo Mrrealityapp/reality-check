@@ -264,3 +264,60 @@ a {
     background-color: #6a0dad;
     margin-top: 35px;
 }
+/* === FINAL HEADER WITH 140PX LOGOS + PURPLE STRIP === */
+
+.rc-header {
+    position: relative;
+    width: 100%;
+    padding: 40px 0 50px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+}
+
+.rc-logo-left,
+.rc-logo-right {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+}
+
+.rc-logo-left {
+    left: 20px;
+}
+
+.rc-logo-right {
+    right: 20px;
+}
+
+.rc-title {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.rc-nav {
+    margin-top: 30px;
+}
+
+.rc-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rc-nav a:hover {
+    color: #b366ff;
+}
+
+.rc-header-bottom {
+    width: 100%;
+    height: 12px;
+    background-color: #6a0dad;
+    margin-top: 35px;
+}
