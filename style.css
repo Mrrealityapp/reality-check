@@ -11,7 +11,6 @@ body {
     background: radial-gradient(circle at top, #5b3cff 0%, #1b1035 40%, #05030a 100%);
     min-height: 100vh;
 }
-
 /* HEADER BLOCK */
 .site-header.big-header {
     padding: 50px 0 50px;
@@ -74,6 +73,15 @@ body {
 }
 
 /* PURPLE STRIP */
+.header-strip {
+    height: 12px;
+    max-width: 1100px;
+    margin: 20px auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #b37bff, #6f4bff, #b37bff);
+    box-shadow: 0 0 22px rgba(179, 123, 255, 0.9);
+}
+
 .header-strip {
     height: 12px;
     max-width: 1100px;
