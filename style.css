@@ -400,3 +400,63 @@ body {
 .rc-nav a:hover {
     color: #b366ff;
 }
+/* === FINAL HEADER WITH 140PX LOGOS, RADIANT TITLE, PURPLE STRIP === */
+
+.rc-header {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 40px 0;
+    background: linear-gradient(180deg, #1a1a1a 0%, #2b0f3a 100%);
+    text-align: center;
+    color: white;
+}
+
+.rc-logo-left,
+.rc-logo-right {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+}
+
+.rc-logo-left {
+    left: 20px;
+}
+
+.rc-logo-right {
+    right: 20px;
+}
+
+.rc-title {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 20px;
+    background: linear-gradient(90deg, #b366ff, #ffffff, #b366ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rc-nav {
+    margin-top: 25px;
+}
+
+.rc-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rc-nav a:hover {
+    color: #d9a6ff;
+}
+
+.rc-header-bottom {
+    width: 100%;
+    height: 12px;
+    background-color: #6a0dad;
+    margin-top: 30px;
+}
