@@ -492,3 +492,35 @@ body {
 .rc-nav a:hover {
     color: #b366ff;
 }
+/* === BASELINE HEADER — TITLE + NAV ONLY === */
+
+.rc-header {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #6a0dad;
+}
+
+.rc-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rc-nav {
+    margin-top: 20px;
+}
+
+.rc-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rc-nav a:hover {
+    color: #b366ff;
+}
