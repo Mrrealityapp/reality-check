@@ -298,3 +298,54 @@ body {
 .rc-nav a:hover {
     color: #b366ff;
 }
+/* === HEADER BLOCK WITH 140PX LOGOS AND 20PX PADDING === */
+
+.rc-header {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #6a0dad;
+}
+
+.rc-logo-left,
+.rc-logo-right {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+}
+
+.rc-logo-left {
+    left: 20px;
+}
+
+.rc-logo-right {
+    right: 20px;
+}
+
+.rc-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.rc-nav {
+    margin-top: 20px;
+}
+
+.rc-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rc-nav a:hover {
+    color: #b366ff;
+}
