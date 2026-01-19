@@ -161,13 +161,18 @@ a {
     color: white;
 }
 
-.rc-logo-left,
-.rc-logo-right {
-    width: 140px;
-    height: 140px;
-    object-fit: contain;
+.rc-logo-left {
     position: absolute;
-    top: 20px;
+    top: 0;
+    left: 0;
+}
+
+.rc-logo-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 }
 
 .rc-logo-left {
