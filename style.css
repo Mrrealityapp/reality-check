@@ -1,267 +1,68 @@
-/* TOP HEADER BLOCK */
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0a0014;
-    padding: 20px;
-    border-bottom: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reality Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* LOGO BOXES */
-.logo-box {
-    width: 140px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<body>
 
-.logo-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+<!-- TOP HEADER (LOCKED IN — DO NOT TOUCH) -->
+<header class="top-header">
+    <div class="logo-box left-logo">
+        <img src="images/realitychecklogo.png" alt="Reality Check Logo Left">
+    </div>
 
-/* TITLE AREA */
-.title-area {
-    flex-grow: 1;
-    text-align: center;
-}
+    <div class="title-area">
+        <h1 class="site-title">Reality Check</h1>
 
-.site-title {
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin: 0;
-    background: linear-gradient(90deg, #b26bff, #d9a7ff, #ffffff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+        <nav class="nav-buttons">
+            <a href="#charlie">Meet Charlie</a>
+            <a href="#mama">Tribute to Mama</a>
+            <a href="#chef">Tribute to Chef George</a>
+            <a href="#about">About</a>
+            <a href="#support">Support Tiers</a>
+        </nav>
+    </div>
 
-/* NAV BUTTONS */
-.nav-buttons {
-    margin-top: 12px;
-}
+    <div class="logo-box right-logo">
+        <img src="images/realitychecklogo.png" alt="Reality Check Logo Right">
+    </div>
+</header>
 
-.nav-buttons a {
-    color: #d9a7ff;
-    margin: 0 18px;
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-weight: 600;
-}
+<div class="purple-strip"></div>
 
-.nav-buttons a:hover {
-    color: #ffffff;
-}
+<main class="rc-main">
 
-/* PURPLE STRIP UNDER HEADER */
-.purple-strip {
-    width: 100%;
-    height: 48px; /* ~1/2 inch on most screens */
-    background-color: #4b0082;
-}
+    <!-- RADIANT MISSION BLOCK -->
+    <section id="mission" class="purple-box">
+        <h2>Our Mission</h2>
+        <p>1. To restore trust through radical transparency.</p>
+        <p>2. To support those facing homelessness and hardship.</p>
+        <p>3. To uplift homeless veterans with dignity and respect.</p>
+        <p>4. To provide real help without judgment or barriers.</p>
+        <p>5. To protect animals and partner with humane groups.</p>
+        <p>6. To build a community grounded in compassion.</p>
+        <p>7. To ensure every donation is accounted for clearly.</p>
+        <p>8. To turn lived experience into real-world impact.</p>
+    </section>
 
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0a0014;
-    padding: 20px;
-    border-bottom: 0;
-}
+    <!-- RADIANT CHARLIE BLOCK -->
+    <section id="charlie" class="purple-box">
+        <h2>Charlie the Cat</h2>
+        <img src="images/charlie-circle.png" alt="Charlie the cat" class="rc-image">
+        <p>1. Charlie is the steady heartbeat behind Reality Check.</p>
+        <p>2. His calm presence carried me through impossible nights.</p>
+        <p>3. He reminds us that small comforts can save a spirit.</p>
+        <p>4. His loyalty and grounding energy shape this mission.</p>
+        <p>5. Every supporter joins Charlie’s circle of calm and care.</p>
+        <p>6. His story is the emotional foundation of Reality Check.</p>
+        <p>7. His presence guides every step of this project forward.</p>
+        <p>8. Charlie represents hope, resilience, and quiet strength.</p>
+    </section>
 
-/* LOGO BOXES */
-.logo-box {
-    width: 140px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* TITLE AREA */
-.title-area {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.site-title {
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin: 0;
-    background: linear-gradient(90deg, #b26bff, #d9a7ff, #ffffff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-/* NAV BUTTONS */
-.nav-buttons {
-    margin-top: 12px;
-}
-
-.nav-buttons a {
-    color: #d9a7ff;
-    margin: 0 18px;
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.nav-buttons a:hover {
-    color: #ffffff;
-}
-
-/* PURPLE STRIP UNDER HEADER */
-.purple-strip {
-    width: 100%;
-    height: 48px; /* ~1/2 inch on most screens */
-    background-color: #4b0082;
-}
-
-
-/* === GLOBAL === */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #0f0f10;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
-
-a {
-  color: inherit;
-}
-
-/* === HEADER === */
-.rc-header {
-  position: relative;
-  width: 100%;
-  padding: 40px 0 50px 0;
-  background-color: #1a1a1a;
-  text-align: center;
-  color: white;
-}
-
-.rc-logo-left,
-.rc-logo-right {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  position: absolute;
-  top: 20px;
-}
-
-.rc-logo-left {
-  left: 20px;
-}
-
-.rc-logo-right {
-  right: 20px;
-}
-
-.rc-title {
-  font-size: 56px;
-  font-weight: 800;
-  margin: 0;
-  padding-top: 20px;
-}
-
-.rc-nav {
-  margin-top: 30px;
-}
-
-.rc-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 18px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.rc-nav a:hover {
-  color: #b366ff;
-}
-
-.rc-header-bottom {
-  width: 100%;
-  height: 14px;
-  background-color: #6a0dad;
-  margin: 0;
-  padding: 0;
-}
-
-/* === MAIN === */
-.rc-main {
-  max-width: 900px;
-  margin: 40px auto 60px auto;
-  padding: 0 16px;
-}
-
-.rc-section {
-  margin-bottom: 40px;
-}
-
-.rc-section h2 {
-  font-size: 28px;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-/* === IMAGE BLOCKS === */
-.rc-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 18px auto;
-  border-radius: 10px;
-}
-
-/* === CARDS === */
-.rc-card {
-  background-color: #18181b;
-  border-radius: 10px;
-  padding: 20px 18px;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
-}
-
-.rc-card h2 {
-  margin-bottom: 8px;
-}
-
-.rc-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #d9a6ff;
-}
-
-/* === SUPPORT === */
-.rc-support {
-  background-color: #141417;
-  border-radius: 10px;
-  padding: 22px 18px;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
-}
-
-.rc-support-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.rc-support-tier {
-  background-color: #1f1f24;
-  border-radius: 8px;
-  padding: 14
+    <!-- MAMA BLOCK (UNCHANGED FOR NOW) -->
+    <section id="mama" class="rc-section rc-card">
+      <h2>Me & Mama
