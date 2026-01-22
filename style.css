@@ -7,6 +7,57 @@
   <link rel="stylesheet" href="style.css">
 </head>
 /* Reality Check Styles */
+/* ========================= */
+/*   DO NOT TOUCH HEADER     */
+/* ========================= */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border-bottom: 4px solid #6a0dad;
+}
+
+.logo-box img {
+  height: 80px;
+  width: auto;
+}
+
+.title-area {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.4rem;
+  margin: 0;
+  color: #6a0dad;
+  font-weight: 700;
+}
+
+.nav-buttons {
+  margin-top: 8px;
+}
+
+.nav-buttons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6a0dad;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-buttons a:hover {
+  text-decoration: underline;
+}
+
+.purple-strip {
+  width: 100%;
+  height: 6px;
+  background: #6a0dad;
+  margin-bottom: 20px;
+}
 
 <body>
 
