@@ -14,13 +14,40 @@
       font-family: Arial, sans-serif;
       color: #ffffff;
       text-align: center;
+      background: #000;
     }
 
-    /* Full-screen desert night sky from a stable online source */
-    body {
-      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80') 
-                  no-repeat center center fixed;
-      background-size: cover;
+    /* Starfield */
+    .stars, .stars:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2000px;
+      height: 2000px;
+      background: transparent url("https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/img/stars.png") repeat;
+      animation: drift 200s linear infinite;
+    }
+
+    @keyframes drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-1000px); }
+    }
+
+    /* Shooting stars */
+    .shooting-star {
+      position: absolute;
+      width: 2px;
+      height: 80px;
+      background: linear-gradient(white, rgba(255,255,255,0));
+      opacity: 0.8;
+      transform: rotate(45deg);
+      animation: shoot 3s linear infinite;
+    }
+
+    @keyframes shoot {
+      0% { transform: translate(-200px, -200px) rotate(45deg); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translate(1000px, 1000px) rotate(45deg); opacity: 0; }
     }
 
     .overlay {
@@ -64,6 +91,13 @@
 </head>
 
 <body>
+  <div class="stars"></div>
+  <div class="stars" style="animation-delay: -100s;"></div>
+
+  <div class="shooting-star" style="top: 20%; left: 10%; animation-delay: 1s;"></div>
+  <div class="shooting-star" style="top: 40%; left: 50%; animation-delay: 2.5s;"></div>
+  <div class="shooting-star" style="top: 70%; left: 30%; animation-delay: 4s;"></div>
+
   <div class="overlay"></div>
 
   <div class="content">
