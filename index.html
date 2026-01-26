@@ -11,45 +11,23 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
-      font-family: Arial, sans-serif;
-      color: #ffffff;
-      text-align: center;
       background: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
     }
 
-    /* Starfield */
-    .stars, .stars:after {
-      position: absolute;
+    /* REALISTIC STARFIELD */
+    canvas {
+      position: fixed;
       top: 0;
       left: 0;
-      width: 2000px;
-      height: 2000px;
-      background: transparent url("https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/img/stars.png") repeat;
-      animation: drift 200s linear infinite;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
     }
 
-    @keyframes drift {
-      from { transform: translateY(0); }
-      to { transform: translateY(-1000px); }
-    }
-
-    /* Shooting stars */
-    .shooting-star {
-      position: absolute;
-      width: 2px;
-      height: 80px;
-      background: linear-gradient(white, rgba(255,255,255,0));
-      opacity: 0.8;
-      transform: rotate(45deg);
-      animation: shoot 3s linear infinite;
-    }
-
-    @keyframes shoot {
-      0% { transform: translate(-200px, -200px) rotate(45deg); opacity: 0; }
-      10% { opacity: 1; }
-      100% { transform: translate(1000px, 1000px) rotate(45deg); opacity: 0; }
-    }
-
+    /* Overlay for readability */
     .overlay {
       position: fixed;
       top: 0;
@@ -91,13 +69,7 @@
 </head>
 
 <body>
-  <div class="stars"></div>
-  <div class="stars" style="animation-delay: -100s;"></div>
-
-  <div class="shooting-star" style="top: 20%; left: 10%; animation-delay: 1s;"></div>
-  <div class="shooting-star" style="top: 40%; left: 50%; animation-delay: 2.5s;"></div>
-  <div class="shooting-star" style="top: 70%; left: 30%; animation-delay: 4s;"></div>
-
+  <canvas id="stars"></canvas>
   <div class="overlay"></div>
 
   <div class="content">
@@ -107,5 +79,81 @@
     We’re getting everything ready to launch something powerful, transparent, and built to help people who need it most.</p>
     <p>Thank you for your patience.</p>
   </div>
+
+  <script>
+    const canvas = document.getElementById("stars");
+    const ctx = canvas.getContext("2d");
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.onresize = resize;
+
+    const stars = [];
+    const starCount = 400;
+
+    for (let i = 0; i < starCount; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.2,
+        twinkle: Math.random() * 0.5
+      });
+    }
+
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#ffffff";
+
+      stars.forEach(s => {
+        s.twinkle += (Math.random() - 0.5) * 0.05;
+        const brightness = 0.7 + Math.sin(s.twinkle) * 0.3;
+
+        ctx.globalAlpha = brightness;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      ctx.globalAlpha = 1;
+    }
+
+    function shootingStar() {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height * 0.5;
+
+      let length = 0;
+      const maxLength = 300;
+
+      function animate() {
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + length, y + length);
+        ctx.stroke();
+
+        length += 10;
+
+        if (length < maxLength) {
+          requestAnimationFrame(animate);
+        }
+      }
+
+      animate();
+    }
+
+    setInterval(() => {
+      if (Math.random() < 0.3) shootingStar();
+    }, 2000);
+
+    function loop() {
+      drawStars();
+      requestAnimationFrame(loop);
+    }
+    loop();
+  </script>
 </body>
 </html>
