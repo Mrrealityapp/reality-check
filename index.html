@@ -2,50 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reality Check – Coming Soon</title>
   <style>
-    /* Reset */
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: Arial, sans-serif;
-      color: white;
+      color: #fff;
       text-align: center;
-    }
-
-    /* Background image */
-    body {
-      background: url('night-sky-mountains.jpg') no-repeat center center fixed;
+      background: url('starry-night-mountain.jpg') no-repeat center center fixed;
       background-size: cover;
     }
-
-    /* Overlay for readability */
     .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
     }
-
+    .content {
+      position: relative;
+      top: 40%;
+      transform: translateY(-40%);
+      padding: 20px;
+    }
     h1 {
       font-size: 3em;
       margin-bottom: 0.5em;
     }
-
     p {
       font-size: 1.2em;
       max-width: 600px;
+      margin: 0 auto 1.5em;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .logo {
+      margin-top: 30px;
+    }
+    .logo img {
+      width: 120px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="logo">
+      <img src="reality-check-logo.png" alt="Reality Check Logo">
+    </div>
     <h1>Reality Check</h1>
-    <p>Our new site is coming soon. Stay tuned for launch!</p>
+    <p>Our full site is being built right now. We’re preparing to launch something powerful, transparent, and built to help those who need it most. Thank you for your patience.</p>
+  </div>
+  <div class="footer">
+    Launching soon – stay tuned | Contact: info@realitycheck-project.org
   </div>
 </body>
 </html>
