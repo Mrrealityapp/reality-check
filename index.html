@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>Reality Check – Coming Soon</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       color: #fff;
-      text-align: center;
-      background: url('starry-night-mountain.jpg') no-repeat center center fixed;
+      background: url('starry-night-mountain-comets.jpg') no-repeat center center fixed;
       background-size: cover;
     }
     .overlay {
@@ -21,9 +21,18 @@
     }
     .content {
       position: relative;
-      top: 40%;
-      transform: translateY(-40%);
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       padding: 20px;
+    }
+    .logo img {
+      width: 120px;
+      margin-bottom: 30px;
     }
     h1 {
       font-size: 3em;
@@ -38,14 +47,10 @@
       position: absolute;
       bottom: 20px;
       width: 100%;
+      text-align: center;
       font-size: 0.9em;
       color: #ccc;
-    }
-    .logo {
-      margin-top: 30px;
-    }
-    .logo img {
-      width: 120px;
+      z-index: 1;
     }
   </style>
 </head>
